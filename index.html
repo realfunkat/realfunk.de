@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ORF-Watch: Wir lesen die Nachrichten gegen den Strich und zeigen, wie der oeffentlich-rechtliche Rundfunk framt, etikettiert und weglaesst.">
+<link rel="canonical" href="https://realfunk.de/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ORealFunk">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="ORealFunk — die Nachrichten, bevor sie durch den Filter gehen">
+<meta property="og:description" content="ORF-Watch: Wir lesen die Nachrichten gegen den Strich und zeigen, wie der oeffentlich-rechtliche Rundfunk framt, etikettiert und weglaesst.">
+<meta property="og:url" content="https://realfunk.de/">
+<meta property="og:image" content="https://realfunk.de/images/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ORealFunk — die Nachrichten, bevor sie durch den Filter gehen">
+<meta name="twitter:description" content="ORF-Watch: Wir lesen die Nachrichten gegen den Strich und zeigen, wie der oeffentlich-rechtliche Rundfunk framt, etikettiert und weglaesst.">
+<meta name="twitter:image" content="https://realfunk.de/images/og-default.png">
+<title>ORealFunk — die Nachrichten, bevor sie durch den Filter gehen</title>
+<style>
+:root{--accent:#5b9bd5;--accent-dark:#3f7cb8;--accent-tint:#eaf2fb;--headline:#2f6cab;--ink:#1c1c1c;--muted:#7a7a7a;--line:#e2e2e2;--bg:#ffffff;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.5;font-size:16px;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1000px;margin:0 auto;padding:0 18px;}
+.topbar{background:var(--accent);color:#fff;}
+.topbar .wrap{display:flex;align-items:center;gap:16px;height:54px;}
+.logo{display:flex;align-items:center;font-weight:800;font-size:24px;letter-spacing:-.5px;color:#fff;}
+.logo .target{width:18px;height:18px;border-radius:50%;border:4px solid #fff;margin:0 5px;display:inline-block;position:relative;}
+.logo .target::after{content:"";position:absolute;inset:3px;border-radius:50%;background:#fff;}
+.logo .tld{font-weight:400;opacity:.85;font-size:18px;margin-left:2px;}
+.weather{flex:1;text-align:center;font-size:15px;font-weight:600;opacity:.97;}
+.weather .caret{opacity:.8;margin-right:4px;}
+.badge{background:#fff;color:var(--accent-dark);font-weight:800;font-size:12px;letter-spacing:.5px;padding:4px 9px;border-radius:3px;text-transform:uppercase;margin-left:auto;}
+.subbar{background:var(--accent-dark);color:#fff;}
+.subbar .wrap{padding:6px 18px;font-size:12.5px;font-weight:600;letter-spacing:.2px;line-height:1.35;}
+section.ressort{display:grid;grid-template-columns:140px 1fr;gap:22px;border-top:1px solid var(--line);padding:16px 0;scroll-margin-top:52px;}
+section.ressort .label{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#444;font-weight:700;}
+.headline-list a{display:block;color:#16314d;font-size:16px;line-height:1.3;font-weight:700;padding:8px 0;border-bottom:1px solid var(--line);}
+.headline-list a:last-child{border-bottom:0;}
+.headline-list a:hover{color:var(--accent-dark);text-decoration:underline;}
+.headline-list a .teaser{display:block;color:#555;font-size:13px;font-weight:400;margin-top:3px;line-height:1.4;}
+footer{background:#f4f4f4;border-top:4px solid var(--accent);margin-top:30px;}
+footer .wrap{padding:22px 18px 30px;font-size:13px;color:var(--muted);}
+.disclaimer{background:#fff;border:1px dashed var(--line);border-radius:4px;padding:14px 16px;margin-bottom:14px;line-height:1.5;color:#333;}
+footer strong{color:var(--ink);}
+.sod{margin:14px 0 4px;}
+.sod a{display:block;background:linear-gradient(135deg,#fff7e6,#fdeccd);border:1px solid #f0d49a;border-left:6px solid #e8a200;border-radius:5px;padding:13px 16px;}
+.sod a:hover{background:linear-gradient(135deg,#fff3d6,#fbe4ba);}
+.sod .sod-label{display:inline-block;background:#e8a200;color:#fff;font-size:11px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;padding:2px 8px;border-radius:3px;margin-bottom:7px;}
+.sod .sod-ttl{display:block;font-size:20px;line-height:1.2;font-weight:800;color:#7a4a00;margin-bottom:4px;}
+.sod .sod-teaser{display:block;font-size:14px;line-height:1.45;color:#5c4317;}
+@media(max-width:680px){section.ressort{grid-template-columns:1fr;gap:8px;}.weather{display:none;}.sod .sod-ttl{font-size:18px;}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"ORealFunk","url":"https://realfunk.de/","inLanguage":"de-DE","description":"ORF-Watch: die Nachrichten, bevor sie durch den Filter gehen.","publisher":{"@id":"https://realfunk.de/#org"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://realfunk.de/archiv.html?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"Organization","@id":"https://realfunk.de/#org","name":"ORealFunk","url":"https://realfunk.de/","logo":{"@type":"ImageObject","url":"https://realfunk.de/images/og-default.png"}}]}</script>
+<link rel="alternate" type="application/rss+xml" title="ORealFunk" href="https://realfunk.de/feed.xml">
+<!-- analytics: .de-Token hier einsetzen -->
+</head>
+<body>
+<h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;">ORealFunk — ORF-Watch: die Nachrichten, bevor sie durch den Filter gehen</h1>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="index.html">OReal<span class="target"></span>Funk<span class="tld">.de</span></a>
+    <span class="badge">Nachrichten ohne ÖRR-Filter</span>
+  </div>
+</div>
+
+<div class="subbar"><div class="wrap">Die Nachrichten, bevor sie durch den Filter gehen.</div></div>
+
+<main>
+  <div class="wrap">
+
+        <section class="sod">
+      <a href="artikel/srf-ubi-einseitig-afd.html">
+        <span class="sod-label">★ Fundstück des Tages</span>
+        <span class="sod-ttl">Amtlich: einseitig</span>
+        <span class="sod-teaser">Eine Aufsicht überführt einen öffentlich-rechtlichen Sender der Parteilichkeit gegen die AfD. Genau das, was der Gebührenfunk über sich selbst nie senden würde. Der Tell des Tages.</span>
+      </a>
+    </section>
+
+
+    <section class="ressort" id="orf-zensiert">
+      <div class="label">ÖRR zensiert</div>
+      <div class="headline-list">
+        <a href="artikel/stade-fluchtwagen-spd-ngo.html">Stade: wo die Meldung endet<span class="teaser">Der ÖRR meldet den Sechsfachmord von Stade samt Festnahme der 65-jährigen Fluchtwagen-Fahrerin und endet dort. Dass sie die Schwiegermutter eines SPD-Migrationsbeauftragten und Beraterin einer steuerfinanzierten NGO ist, fehlt. Es gilt die Unschuldsvermutung.</span></a>
+        <a href="artikel/pistorius-geheimakten-afd.html">Akten zu, wenn die AfD gewinnt<span class="teaser">Verteidigungsminister Pistorius will der AfD im Fall eines Wahlsiegs in Sachsen-Anhalt den Zugang zu geheimen Informationen verwehren, gestützt auf eine „Vermutung", die er selbst als unbewiesen bezeichnet. Beim Gebührenfunk wäre das höchstens eine Randnotiz.</span></a>
+        <a href="artikel/widersetzen-gewalt-presse.html">Faustrecht gegen die Presse<span class="teaser">Beim AfD-Parteitag werden Reporter angegriffen, das Bündnis Widersetzen rechtfertigt die Gewalt und droht CDU und BSW. Käme das von rechts, hieße es Terror.</span></a>
+        <a href="artikel/br-faktencheck-tvbz.html">Der Faktencheck, der kapituliert<span class="teaser">Ein öffentlich-rechtlicher Faktencheck kontert eine relative Aussage mit einer absoluten Zahl und räumt im selben Beitrag ein, dass die Aussage stimmt.</span></a>
+        <a href="artikel/afd-parteitag-journalisten-angriffe.html">Blockade gefeiert, Presse verprügelt<span class="teaser">Beim AfD-Parteitag in Erfurt wurden Journalisten angegriffen und die Polizei ermittelt, während Politiker die Proteste als „tolles Zeichen für die Demokratie“ lobten. Die Gewalt gegen die Presse hält der ÖRR klein.</span></a>
+        <a href="artikel/afd-parteitag-rechtsextrem-etikett.html">Ein Etikett, nur für eine Seite<span class="teaser">Der ÖRR nennt die AfD im selben Atemzug „in Teilen als rechtsextrem eingestuft“ und die Blockierer, die ihren Parteitag verhindern wollen, „antifaschistisch verstehend“. Das Etikett sitzt nur auf einer Seite.</span></a>
+        <a href="artikel/meinungsfreiheit-behoerde-grenzen.html">Meinungsfreiheit mit Grenzen<span class="teaser">Eine staatliche Medienaufsicht fordert von einem reichweitenstarken Podcaster eine nachträgliche Korrektur und hofft laut eigener Aussage auf einen „präventiven Effekt". Beim ÖRR, selbst Teil des öffentlich-rechtlichen Apparats, kein Thema.</span></a>
+      </div>
+    </section>
+
+    <section class="ressort" id="durchschaut">
+      <div class="label">Durchschaut</div>
+      <div class="headline-list">
+        <a href="artikel/wer-schuetzt-unsere-kinder.html">Wer schützt unsere Kinder?<span class="teaser">Frankreich, Wien, Hamburg: drei Fälle sexueller Gewalt an Kindern, ein Muster aus Behörden- und Justizversagen. Und ein ÖRR, der aus dem Staatsversagen eine Meldung über Proteste macht.</span></a>
+        <a href="artikel/inflation-macht-aermer.html">Wie die Inflation uns ärmer macht<span class="teaser">Die offizielle Rate klingt harmlos, doch Energie und Lebensmittel stiegen weit stärker. Warum wir weniger haben und kaum jemand darüber redet, mit Zahlen belegt und der Verantwortung von Brüssel, Berlin und der EZB.</span></a>
+      </div>
+    </section>
+
+    <section class="ressort" id="grubeln">
+      <div class="label">Zum Grübeln</div>
+      <div class="headline-list">
+        <a href="artikel/werte-oder-machterhalt.html">Werte oder Machterhalt?<span class="teaser">Kommenden Dienstag stimmt das EU-Parlament ab, der AfD-nahen Fraktion ESN Status und über zwei Millionen Euro Förderung zu entziehen, über einen selbst definierten Werte-Test. Wer definiert die europäischen Werte?</span></a>
+        <a href="artikel/hexenwahn-medien-korrektiv.html">Medien ohne Korrektiv<span class="teaser">Eine Rezension in der ORF-Religionsredaktion beschreibt, wie Massenmedien ab 1580 den Hexenwahn befeuerten, weil ein „mediales Korrektiv" fehlte. Der Text meint die Frühe Neuzeit und lädt selbst zur Gegenwart ein.</span></a>
+        <a href="artikel/integriert-und-weggeblendet.html">Integriert und weggeblendet<span class="teaser">Wähler aus der ehemaligen Sowjetunion stimmen laut DeZIM-Daten deutlich öfter für die AfD als Einheimische, Türkeistämmige stärken die migrationskritische Wagenknecht-Partei und meiden die Grünen. Für den ÖRR existieren diese Wähler nicht — sie würden das Weltbild stören.</span></a>
+      </div>
+    </section>
+
+    <section class="ressort" id="ausland">
+      <div class="label">Ausland</div>
+      <div class="headline-list">
+        <a href="artikel/groenland-einzige-loesung.html">Grönland als „einzige Lösung"<span class="teaser">Ein hochrangiger US-Beamter nennt den Erwerb Grönlands die „einzige Lösung" für die NATO-Verteidigung. Der Staatsfunk referiert die Ansage über das Gebiet eines Verbündeten im Ton einer nüchternen Sicherheitsmeldung.</span></a>
+        <a href="artikel/farage-vorwuerfe-orf.html">Bei Farage schaut der ÖRR hin<span class="teaser">Neue, unbewiesene Vorwürfe gegen Nigel Farage, prominent gemeldet samt Parteietikett. Bei einem Rivalen von rechts sitzt die Einordnung schneller als der Beweis.</span></a>
+        <a href="artikel/papst-lampedusa-us250.html">Lampedusa statt 250-Jahr-Feier<span class="teaser">Papst Leo XIV., der erste US-Amerikaner im Amt, besucht am US-Nationalfeiertag die „Flüchtlingsinsel“ Lampedusa. Der ÖRR inszeniert die Migrations-Symbolik, die brisantere Zeile bleibt klein.</span></a>
+        <a href="artikel/nigeria-hunger-uno.html">Nigeria: Hunger und die Ursache<span class="teaser">Die UNO warnt vor Hunger für mehr als 17 Millionen Menschen im Norden Nigerias. Als Treiber nennt das Welternährungsprogramm islamistische Aufstände und bewaffnete Banden, die Schlagzeile führt die runde Zahl und den Spendenbedarf.</span></a>
+        <a href="artikel/reformpaket-einigung-details.html">Einigung! Details folgen<span class="teaser">Union und SPD einigen sich nach sieben Stunden, Details erst morgen. Der ÖRR meldet den Erfolg schon mit den Zielvokabeln der Beteiligten. Ein Medienbericht nennt derweil auch einen höheren Spitzensteuersatz als Verhandlungsstoff.</span></a>
+        <a href="artikel/thessaloniki-sprengsaetze.html">Sprengsätze ohne Einordnung<span class="teaser">Anschläge auf die Privathäuser dreier konservativer Regierungspolitiker in Thessaloniki, fünf Verletzte, und keine Einordnungsstrecke. Bei umgekehrten Vorzeichen liefe sie längst.</span></a>
+      </div>
+    </section>
+
+    <section class="ressort" id="eu">
+      <div class="label">EU</div>
+      <div class="headline-list">
+        <a href="artikel/chatkontrolle-eilverfahren-sommerpause.html">Chatkontrolle 1.0 im Eiltempo<span class="teaser">Der Ministerrat holt das freiwillige Scannen privater Chats als formal neuen Vorschlag im Dringlichkeitsverfahren zurück, noch vor der Sommerpause. Das gewählte Parlament hält gegen die anlasslose Kontrolle.</span></a>
+        <a href="artikel/slowakei-referendum-beteiligung.html">Wenn Beteiligung zum Urteil wird<span class="teaser">In der Slowakei scheitert eine Volksabstimmung an der 50-Prozent-Hürde. Der ÖRR macht die geringe Beteiligung zum Urteil und lässt den Inhalt verschwinden.</span></a>
+        <a href="artikel/eu-demokratie-wortwahl-orf.html">Die EU-Demokratie-Simulation<span class="teaser">Die Kommission wird nicht gewählt, das gewählte Parlament darf keine Gesetze einbringen, die Einstimmigkeit fällt, sobald sie stört, und der Staatsfunk liefert die passende Wortwahl. Eine Durchschau des EU-Demokratiedefizits.</span></a>
+        <a href="artikel/eu-neuwagen-ueberwachung.html">Ab 7. Juli fährt Brüssel mit<span class="teaser">Ab 7. Juli müssen neue Autos ihre Fahrer per Kamera überwachen, vor jedem Blick aufs Handy warnen und per „Blackbox“ jede Fahrt mitschreiben. Der Staatsfunk verkauft die Dauerbeobachtung als reinen Sicherheitsgewinn.</span></a>
+        <a href="artikel/eu-haushalt-konditionalitaet.html">Zwei Billionen, mit Bedingungen<span class="teaser">Die EU-Kommission schlägt für 2028 bis 2034 rund zwei Billionen Euro vor und knüpft Auszahlungen stärker an Auflagen. Die Kommission nennt es Rechtsstaatsschutz, Kritiker einen Hebel gegen nationale Parlamente. Der ÖRR referiert vor allem die Ambition.</span></a>
+        <a href="artikel/eu-satelliten-tempokontrolle.html">Brüssel bremst per Satellit<span class="teaser">Die EU-Kommission prüft ein System, das Neuwagen per Satellit überwacht und bei zu hohem Tempo selbst die Motorleistung drosselt. Verkauft als Verkehrssicherheit, „rein exploratorisch". Im ÖRR: kein Wort davon.</span></a>
+        <a href="artikel/petition-save-europe-registrierung.html">400.000 Namen, kein Verfahren<span class="teaser">Eine migrationskritische europäische Bürgerinitiative sammelt über 400.000 Unterschriften, die EU-Kommission will sie gar nicht erst registrieren. Über das Verweigern einer direktdemokratischen Abstimmung berichtet der ÖRR nicht.</span></a>
+        <a href="artikel/eu-eurobarometer-zustimmung.html">74 Prozent Liebe — und trotzdem laufen sie in Scharen weg<span class="teaser">Eine vom EU-Parlament bezahlte Eurobarometer-Umfrage bescheinigt der EU 74 Prozent Zustimmung — der öffentlich-rechtliche Betrieb druckt die Zahl ungeprüft, während bei jeder Wahl mehr Menschen zu FPÖ, AfD und Co. abwandern.</span></a>
+      </div>
+    </section>
+
+    <section class="ressort" id="wirtschaft">
+      <div class="label">Wirtschaft</div>
+      <div class="headline-list">
+        <a href="artikel/deutschland-rekordschulden-sparkurs.html">204 Milliarden, angeblich Sparkurs<span class="teaser">Deutschland plant für 2027 neue Schulden von 203,7 Milliarden Euro und nennt das einen „strikten Konsolidierungskurs“. Der ÖRR reicht die Vokabel weitgehend ungeprüft weiter.</span></a>
+        <a href="artikel/eu-netzpaket-engpasserloese.html">Netze nach zentralem Plan<span class="teaser">Die EU-Energieminister bringen das Netzpaket voran, ein Zentralszenario der Kommission inklusive. Ein Teil der Engpasserlöse fließt künftig grenzüberschreitend, zahlen tun es die Netzentgelte. Wichtig: die Staaten sicherten sich eine stärkere Rolle.</span></a>
+        <a href="artikel/vw-management-umbau.html">VW dünnt die Chefetage aus<span class="teaser">Laut einem Zeitungsbericht will Volkswagen die Managementposten von 21.500 auf 16.000 senken. Der ÖRR referiert im Konjunktiv, die eigentliche Wucht steht am Ende: vier Werke auf der Kippe, Zehntausende Jobs.</span></a>
+        <a href="artikel/paketabgabe-verbraucherschutz.html">Teurer bestellen, Brüssel jubelt<span class="teaser">Seit 1. Juli erhebt die EU eine neue Abgabe auf Bestellungen aus Nicht-EU-Staaten unter 150 Euro. Kommissionspräsidentin von der Leyen nennt die zusätzliche Belastung „Fairness“ und Verbraucherschutz.</span></a>
+        
+      </div>
+    </section>
+
+    <section class="ressort" id="klima">
+      <div class="label">Klima</div>
+      <div class="headline-list">
+        <a href="artikel/frankreich-hitzetote-uebersterblichkeit.html">2.000 Hitzetote, vorläufig<span class="teaser">Frankreich meldet rund 2.000 zusätzliche Tote in der Hitzewelle. Der ÖRR macht aus der Übersterblichkeits-Schätzung eine feststehende Bilanz, den Drei-Wochen-Vorbehalt der Behörde lässt er weg.</span></a>
+        <a href="artikel/venetien-duerre-notstand.html">Notstand, italienische Routine<span class="teaser">Venetien ruft wegen Dürre den Notstand aus. Laut der Meldung selbst ist der Schritt in Italien vor allem ein Verwaltungsakt, der staatliche Mittel schneller freigibt. Der ÖRR liefert die Klima-Einordnung trotzdem gleich mit.</span></a>
+        <a href="artikel/glaubensorganisationen-klima-appell.html">170 Organisationen, kein Gegenwort<span class="teaser">Über 170 kirchliche Organisationen fordern von der EU einen rascheren Ausstieg aus fossilen Energien. Der Staatsfunk übernimmt den Appell samt „33,1 Millionen“ und „1,5 Billionen“ als Nachricht, ohne eine einzige Gegenstimme.</span></a>
+        <a href="artikel/meere-rekord-temperatur.html">Wärmster Ozean aller Zeiten — um 0,03 Grad<span class="teaser">Die Weltmeere waren zu Sommerbeginn so warm wie nie — der Rekord schlägt den alten um drei Hundertstel Grad. Copernicus nennt ihn „zu erwarten“, El Niño verstärkt. Verspottet wird die Dramaturgie, nicht die Wissenschaft.</span></a>
+              </div>
+    </section>
+
+
+    <section class="ressort" id="ukraine-krieg">
+      <div class="label">Ukraine-Krieg</div>
+      <div class="headline-list">
+        <a href="artikel/nato-gipfel-milliarden-ukraine.html">140 Milliarden, keiner gefragt<span class="teaser">140 Milliarden Euro über zwei Jahre soll die Ukraine in Ankara zugesagt bekommen. Der ÖRR meldet die Summe als „Versprechen“, ohne nach der Kontrolle zu fragen. Ein EU-Paket ist mitgerechnet, die USA sind ausgestiegen, zahlen wird vor allem der Steuerzahler.</span></a>
+        <a href="artikel/kiew-grossangriff-selenskyj.html">Der Prophet mit Standleitung<span class="teaser">Der ÖRR titelt „Selenskyjs Warnung bewahrheitete sich“, als hätte der Präsident die Zukunft gesehen. Tatsächlich speist sich die Warnung aus einem westlichen Aufklärungsnetz, und die Eskalation der Gegenseite steht im Kleingedruckten.</span></a>
+        <a href="artikel/drohnen-spionage-nato-bericht.html">144 Vorfälle, null Bestätigung<span class="teaser">Eine britische Denkfabrik zählt 144 russische Drohnen-Vorfälle über NATO-Staaten. Bestätigt hat sie keine westliche Regierung. Der Staatsfunk macht daraus die Schlagzeile „Russische Drohnen spionierten in Europa“, im Indikativ, den Vorbehalt klein im Text.</span></a>
+        <a href="artikel/kiew-grossangriff-vorgeschichte.html">Großangriff ohne Vorgeschichte<span class="teaser">Mindestens neun Tote nach russischen Luftangriffen auf Kiew. Die Fakten stimmen. Was fehlt, ist die Vorgeschichte, die der ÖRR andernorts selbst geliefert hat.</span></a>
+        <a href="artikel/nord-stream-erste-anklage.html">„Erste Anklage" — und die Nationalität steht erst im Text<span class="teaser">Fast vier Jahre nach der Sprengung klagt die deutsche Bundesanwaltschaft den ersten Verdächtigen an — einen Ukrainer. Im Titel steht das nicht; wer der Täter sein soll, verrät erst der zweite Absatz. Es gilt die Unschuldsvermutung.</span></a>
+        <a href="artikel/ukraine-gegenseitige-angriffe.html">„Gegenseitige Angriffe": Wie der Sender Täter und Reihenfolge sortiert<span class="teaser">„Gegenseitig" macht aus Angriff und Gegenangriff ein symmetrisches Geschehen ohne Urheber — und die fünf Toten stehen hinter den sechs Verletzten.</span></a>
+        <a href="artikel/ukraine-tote-luftangriffe.html">„Russische Luftangriffe" in der Schlagzeile — 323 ukrainische Drohnen im Kleingedruckten<span class="teaser">Die Schlagzeile kennt nur „russische Luftangriffe" — der Text listet 323 ukrainische Drohnen und Treffer auf der Krim und in Belgorod.</span></a>
+        <a href="artikel/krim-ostukraine-angriffe.html">Krim und Ostukraine: Angriffe auf beiden Seiten — beim ORF klingen sie verschieden<span class="teaser">Greift die Ukraine an, „stört" sie die Logistik. Greift Russland an, zählt der ORF die Opfer. Beides stimmt.</span></a>
+      </div>
+    </section>
+
+    <section class="ressort" id="medien">
+      <div class="label">Medien</div>
+      <div class="headline-list">
+        <a href="artikel/srf-ubi-einseitig-afd.html">Amtlich einseitig gegen die AfD<span class="teaser">Eine Aufsichtsbehörde rügt den öffentlich-rechtlichen Sender SRF für einen AfD-Bericht als einseitig und sieht das Sachgerechtigkeitsgebot verletzt. Über eigene Fälle dieser Art berichtet der Gebührenfunk nicht.</span></a>
+        <a href="artikel/haltung-auf-gebuehrenkosten.html">Haltung auf Gebührenkosten<span class="teaser">Der zwangsfinanzierte Rundfunk verkauft Haltung als Nachricht. ZDF-Moderatorin Dunja Hayali als Fallbeispiel: das Weidel-Interview, Charlie Kirk, Iran, Majdal Shams und der Fall Musk.</span></a>
+        <a href="artikel/wm-propaganda-deutungshoheit.html">Der ÖRR warnt vor Deutungshoheit<span class="teaser">Zur WM warnt der Staatsfunk vor dem Online-Kampf um die „Deutungshoheit". Eine Instanz kommt in der Warnung nicht vor: er selbst.</span></a>
+      </div>
+    </section>
+
+    <section class="ressort" id="kultur">
+      <div class="label">Kultur</div>
+      <div class="headline-list">
+        <a href="artikel/merkel-portraet-kanzleramt.html">„Da häng' ich dann eben" — und die feierlichste Stimme ist nicht die Kanzlerin<span class="teaser">Angela Merkels offizielles Porträt wandert in die Ahnengalerie des Kanzleramts, enthüllt im Bode-Museum. Die Berichterstattung wird andächtig — die trockenste Bemerkung im Raum kommt von Merkel selbst.</span></a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p style="margin:0 0 6px;">Nicht mit ARD, ZDF oder Deutschlandradio verbunden.</p>
+    <p>ORealFunk · realfunk.de · Ausgabe vom 3. Juli 2026</p>
+    <div class="footlinks" style="margin-top:8px;font-size:12px;"><a href="index.html" style="margin-right:12px;">Startseite</a><a href="impressum.html" style="margin-right:12px;">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+
+  </div>
+</footer>
+
+<script src="hero.js?v=20260706de1"></script>
+</body>
+</html>

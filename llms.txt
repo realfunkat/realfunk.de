@@ -1,0 +1,20 @@
+# ORealFunk (realfunk.at)
+
+> Deutschsprachiges "ORF-Watch"-Angebot: Beitraege zeigen, wie der oesterreichische
+> oeffentlich-rechtliche Rundfunk (ORF) Nachrichten rahmt, und greifen Themen auf, die im
+> oeffentlich-rechtlichen Angebot wenig vorkommen ("ÖRR zensiert"). Fakten, Namen und
+> Zahlen sind real, der Unterschied zum ÖRR liegt in Schlagzeile und Rahmung.
+
+## Wichtige Seiten
+- [Startseite](https://realfunk.at/index.html)
+- [Sport](https://realfunk.at/sport.html)
+- [Wetter](https://realfunk.at/wetter.html)
+- [Sitemap](https://realfunk.at/sitemap.xml)
+- [RSS-Feed](https://realfunk.at/feed.xml)
+
+## Ressorts
+Durchschaut, ÖRR zensiert, Zum Grübeln, Inland, Ausland, EU, Wirtschaft, Klima, Ukraine-Krieg, Medien, Kultur, Sport
+
+## Hinweis
+Meinungsstarke Nachrichten und Medienkritik. Quellenangaben zu Nicht-ORF-Medien sind in den Beitraegen
+neutralisiert. Es gilt die Unschuldsvermutung.

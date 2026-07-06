@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Archiv & Suche: alle Artikel von ORealFunk, dem ORF-Watch — nach Datum sortiert und durchsuchbar.">
+<link rel="canonical" href="https://realfunk.de/archiv.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ORealFunk">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Archiv & Suche — ORealFunk">
+<meta property="og:description" content="Alle Artikel durchsuchen und nach Datum stöbern.">
+<meta property="og:url" content="https://realfunk.de/archiv.html">
+<meta property="og:image" content="https://realfunk.de/images/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Archiv & Suche — ORealFunk">
+<meta name="twitter:description" content="Alle Artikel durchsuchen und nach Datum stöbern.">
+<meta name="twitter:image" content="https://realfunk.de/images/og-default.png">
+<title>Archiv & Suche — ORealFunk</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.arch-head{padding:22px 0 6px;}
+.arch-head h1{font-size:28px;margin:0 0 4px;}
+.arch-head p{color:var(--muted);font-size:14px;margin:0 0 14px;}
+.arch-search{width:100%;max-width:520px;font:inherit;font-size:16px;padding:11px 14px;border:1px solid var(--line);border-radius:6px;outline:none;}
+.arch-search:focus{border-color:var(--accent);}
+.arch-count{font-size:12px;color:var(--muted);margin:10px 0 0;text-transform:uppercase;letter-spacing:.5px;font-weight:700;}
+.arch-group{border-top:1px solid var(--line);padding:12px 0 4px;margin-top:10px;}
+.arch-group .gl{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#444;font-weight:700;margin-bottom:4px;}
+.arch-item{display:block;padding:8px 0;border-bottom:1px solid var(--line);color:#16314d;font-weight:700;font-size:16px;line-height:1.3;}
+.arch-item:last-child{border-bottom:0;}
+.arch-item:hover{color:var(--accent-dark);text-decoration:underline;}
+.arch-item .r{display:inline-block;min-width:104px;color:var(--accent-dark);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;}
+.arch-empty{color:var(--muted);padding:20px 0;}
+@media(max-width:680px){.arch-item .r{display:block;min-width:0;margin-bottom:1px;}}
+</style>
+<link rel="alternate" type="application/rss+xml" title="ORealFunk" href="https://realfunk.de/feed.xml">
+<!-- analytics: .de-Token hier einsetzen -->
+</head>
+<body class="no-hero">
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="index.html">OReal<span class="target"></span>Funk<span class="tld">.de</span></a>
+    <span class="badge">Nachrichten ohne ÖRR-Filter</span>
+  </div>
+</div>
+
+<div class="subbar"><div class="wrap">Die Nachrichten, bevor sie durch den Filter gehen.</div></div>
+
+<main>
+  <div class="wrap">
+    <div class="arch-head">
+      <h1>Archiv &amp; Suche</h1>
+      <p>Alle Artikel — durchsuchbar nach Titel, Thema und Ressort, sonst nach Datum sortiert.</p>
+      <input id="q" class="arch-search" type="search" placeholder="Suchen … (z. B. Klima, ORF, Trump)" autocomplete="off" aria-label="Artikel durchsuchen">
+      <div class="arch-count" id="count"></div>
+    </div>
+    <div id="list"><div class="arch-empty">Lade Artikel …</div></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p style="margin:0 0 6px;">Nicht mit ARD, ZDF oder Deutschlandradio verbunden.</p>
+    <p>ORealFunk · realfunk.de</p>
+    <div class="footlinks" style="margin-top:8px;font-size:12px;"><a href="index.html" style="margin-right:12px;">Startseite</a><a href="impressum.html" style="margin-right:12px;">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var MON = ["", "Jänner", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+  var listEl = document.getElementById("list");
+  var countEl = document.getElementById("count");
+  var qEl = document.getElementById("q");
+  var DATA = [];
+  function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  function monthLabel(d){var p=(d||"").split("-");return p.length>=2?(MON[parseInt(p[1],10)]+" "+p[0]):"Ohne Datum";}
+  function item(a){return '<a class="arch-item" href="'+a.u+'"><span class="r">'+esc(a.r||"")+'</span>'+esc(a.t)+'</a>';}
+  function render(q){
+    q=(q||"").trim().toLowerCase();
+    var items=DATA;
+    if(q){items=DATA.filter(function(a){return ((a.t||"")+" "+(a.d||"")+" "+(a.r||"")).toLowerCase().indexOf(q)>-1;});}
+    if(!items.length){listEl.innerHTML='<div class="arch-empty">Nichts gefunden.</div>';countEl.textContent="0 Artikel";return;}
+    countEl.textContent=items.length+" Artikel"+(q?" für „"+esc(q)+"“":"");
+    if(q){
+      listEl.innerHTML=items.map(item).join("");return;
+    }
+    // ohne Query: nach Monat gruppieren
+    var html="",cur=null;
+    items.forEach(function(a){
+      var m=monthLabel(a.date);
+      if(m!==cur){if(cur!==null)html+="</div>";html+='<div class="arch-group"><div class="gl">'+esc(m)+'</div>';cur=m;}
+      html+=item(a);
+    });
+    if(cur!==null)html+="</div>";
+    listEl.innerHTML=html;
+  }
+  fetch("search-index.json?v="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){
+    DATA=d.slice().sort(function(a,b){return (b.date||"").localeCompare(a.date||"");});
+    var params=new URLSearchParams(location.search);var q=params.get("q")||"";
+    if(q)qEl.value=q;
+    render(q);
+  }).catch(function(){listEl.innerHTML='<div class="arch-empty">Archiv konnte nicht geladen werden.</div>';});
+  qEl.addEventListener("input",function(){render(qEl.value);});
+})();
+</script>
+<script src="hero.js?v=20260706de1"></script>
+</body>
+</html>
