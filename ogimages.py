@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generiert gebrandete OG-Share-Bilder (1200x630) je Artikel: Logo + Headline auf ORealFunk-Blau.
+"""Generiert gebrandete OG-Share-Bilder (1200x630) je Artikel: Logo + Headline auf RealFunk-Blau.
 Nur für Artikel OHNE echtes Bild (og:image == og-default.png) oder die bereits eine og/<slug>.png nutzen.
 Schreibt images/og/<slug>.png und setzt og:image/twitter:image/JSON-LD image im Artikel darauf.
 """
