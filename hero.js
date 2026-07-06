@@ -25,10 +25,10 @@
 
   // Horizontale Menüleiste (ORF-Optik) – erscheint auf jeder Seite.
   var NAV = [
-    ["ÖRR zensiert", "index.html#orf-zensiert"], ["Durchschaut", "index.html#durchschaut"], ["Zum Grübeln", "index.html#grubeln"], 
-    ["Ausland", "index.html#ausland"], ["EU", "index.html#eu"], ["Wirtschaft", "index.html#wirtschaft"],
-    ["Klima", "index.html#klima"], ["Ukraine-Krieg", "index.html#ukraine-krieg"], ["Medien", "index.html#medien"],
-    ["Kultur", "index.html#kultur"], ["Archiv", "archiv.html"]
+    ["EU", "index.html#eu"], ["ÖRR zensiert", "index.html#orf-zensiert"], ["Durchschaut", "index.html#durchschaut"],
+    ["Gleichgeschaltet", "index.html#gleichgeschaltet"], ["Zum Grübeln", "index.html#grubeln"], ["DACH", "index.html#dach"],
+    ["Ausland", "index.html#ausland"], ["Klima", "index.html#klima"], ["Medien", "index.html#medien"],
+    ["Ukraine-Krieg", "index.html#ukraine-krieg"], ["Archiv", "archiv.html"]
   ];
   var navHtml = '<nav class="ornav"><div class="wrap">' +
     '<a class="home" href="' + homePrefix + 'index.html">News</a>' +
