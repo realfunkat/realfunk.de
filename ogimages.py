@@ -82,7 +82,7 @@ def make_card(headline, out):
         y += lh
     # Akzentlinie + Fußzeile
     d.rectangle([MARGIN, H - 92, MARGIN + 90, H - 86], fill=ACCENT)
-    d.text((MARGIN, H - 72), "realfunk.at — die Nachrichten, bevor sie durch den Filter gehen",
+    d.text((MARGIN, H - 72), "realfunk.de — die Nachrichten, bevor sie durch den Filter gehen",
            font=ImageFont.truetype(FONT_REG, 24), fill=(226, 238, 252))
     os.makedirs(OGDIR, exist_ok=True)
     img.save(out, "PNG")
@@ -100,7 +100,7 @@ def process(write_tags=True):
     for f in glob.glob("artikel/*.html"):
         slug = os.path.basename(f)[:-5]
         s = open(f, encoding="utf-8").read()
-        m = re.search(r'<meta property="og:image" content="https://realfunk\.at/images/([^"]+)"', s)
+        m = re.search(r'<meta property="og:image" content="https://realfunk\.de/images/([^"]+)"', s)
         cur = m.group(1) if m else ""
         # nur generieren, wenn kein echtes Bild (og-default) oder bereits og/<slug>.png
         if cur != "og-default.png" and not cur.startswith("og/"):
@@ -112,14 +112,14 @@ def process(write_tags=True):
         make_card(hl, out)
         n += 1
         if write_tags:
-            newimg = f"https://realfunk.at/images/og/{slug}.png"
-            s = s.replace('<meta property="og:image" content="https://realfunk.at/images/og-default.png">',
+            newimg = f"https://realfunk.de/images/og/{slug}.png"
+            s = s.replace('<meta property="og:image" content="https://realfunk.de/images/og-default.png">',
                           f'<meta property="og:image" content="{newimg}">')
-            s = s.replace('<meta name="twitter:image" content="https://realfunk.at/images/og-default.png">',
+            s = s.replace('<meta name="twitter:image" content="https://realfunk.de/images/og-default.png">',
                           f'<meta name="twitter:image" content="{newimg}">')
             # JSON-LD top-level image (nicht publisher logo)
-            s = s.replace('"mainEntityOfPage": "https://realfunk.at/artikel/%s.html", "image": "https://realfunk.at/images/og-default.png"' % slug,
-                          '"mainEntityOfPage": "https://realfunk.at/artikel/%s.html", "image": "%s"' % (slug, newimg))
+            s = s.replace('"mainEntityOfPage": "https://realfunk.de/artikel/%s.html", "image": "https://realfunk.de/images/og-default.png"' % slug,
+                          '"mainEntityOfPage": "https://realfunk.de/artikel/%s.html", "image": "%s"' % (slug, newimg))
             open(f, "w", encoding="utf-8").write(s)
     return n
 
