@@ -11,7 +11,7 @@
     { file: "stade-fluchtwagen-spd-ngo.html",             kick: "ÖRR-zensiert", ttl: "Stade: wo die Meldung endet", img: "20260706_stade.png", alt: "Symbolbild: ein dunkler Wagen fährt nachts auf leerer Straße davon" },
     { file: "chatkontrolle-eilverfahren-sommerpause.html", kick: "EU", ttl: "Chatkontrolle 1.0 im Eiltempo", img: "20260706_bigbrother.jpeg", alt: "Symbolbild zur EU-Chatkontrolle: das anlasslose Scannen privater Nachrichten" },
     { file: "haltung-auf-gebuehrenkosten.html",           kick: "Medien", ttl: "Haltung auf Gebührenkosten", img: "20270705_hayali.jpeg", alt: "Illustration: Nachrichtenmoderatorin am Studiotisch, im Hintergrund das Wort MEINUNG" },
-    { file: "eu-demokratie-wortwahl-orf.html",            kick: "EU", ttl: "Die EU-Demokratie-Simulation", img: "", alt: "Durchschau des EU-Demokratiedefizits" }
+    { file: "eu-demokratie-wortwahl-orf.html",            kick: "EU", ttl: "Die EU-Demokratie-Simulation", img: "20260704_urne.webp", alt: "Durchschau des EU-Demokratiedefizits" }
   ];
 
   // Sport ist eine eigene Seite (kein Ressort auf der Startseite). Fuer Top Stories
