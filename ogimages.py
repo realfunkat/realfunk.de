@@ -80,6 +80,18 @@ def wrap(draw, text, font, maxw):
     return lines
 
 
+def draw_signal(img, x, y, w=40, h=27):
+    d = ImageDraw.Draw(img)
+    cx, cy = x + w / 2.0, y + h / 2.0
+    white = (255, 255, 255)
+    r = 3.5
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=white)
+    for rad in (8, 13):
+        bb = [cx - rad, cy - rad, cx + rad, cy + rad]
+        d.arc(bb, start=-45, end=45, fill=white, width=2)
+        d.arc(bb, start=135, end=225, fill=white, width=2)
+
+
 def make_card(headline, out):
     img = gradient()
     d = ImageDraw.Draw(img)
@@ -88,7 +100,7 @@ def make_card(headline, out):
     d.text((MARGIN, 54), "Real", font=logo_f, fill=(255, 255, 255))
     rlw = d.textlength("Real", font=logo_f)
     fx = int(MARGIN + rlw + 16)
-    draw_flag(img, fx, 58)
+    draw_signal(img, fx, 58)
     funk_x = fx + 40 + 14
     d.text((funk_x, 54), "Funk", font=logo_f, fill=(255, 255, 255))
     fkw = d.textlength("Funk", font=logo_f)
