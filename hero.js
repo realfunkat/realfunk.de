@@ -7,11 +7,11 @@
 
 (function () {
   var HERO_ITEMS = [
-    { file: "stade-fluchtwagen-spd-ngo.html",             kick: "ÖRR-zensiert", ttl: "Stade: wo die Meldung endet", img: "20260706_stade.png", alt: "Symbolbild: ein dunkler Wagen fährt nachts auf leerer Straße davon, die Spur verliert sich im Schwarzen" },
-    { file: "chatkontrolle-eilverfahren-sommerpause.html", kick: "EU", ttl: "Chatkontrolle 1.0 im Eiltempo", img: "20260706_bigbrother.jpeg", alt: "Symbolbild zur EU-Chatkontrolle: das anlasslose Scannen privater Nachrichten und Chats" },
-    { file: "widersetzen-gewalt-presse.html",            kick: "ÖRR-zensiert", ttl: "Faustrecht gegen die Presse", img: "20260705antifa2.jpeg", alt: "Bericht über Gewalt gegen Journalisten und Drohungen des Bündnisses Widersetzen rund um den AfD-Parteitag in Erfurt" },
-    { file: "werte-oder-machterhalt.html",               kick: "Zum Grübeln", ttl: "Werte oder Machterhalt?", img: "EU20270705_MAchterhalt.jpeg", alt: "Satirische Illustration: eine EU-Spitzenpolitikerin umklammert vor den goldenen EU-Sternen einen prallen Geldsack mit Euro-Zeichen, süffisantes Lächeln" },
-    { file: "haltung-auf-gebuehrenkosten.html",           kick: "Medien", ttl: "Haltung auf Gebührenkosten", img: "20270705_hayali.jpeg", alt: "Illustration: eine Nachrichtenmoderatorin am Studiotisch, hinter ihr auf dem Studioschirm das Wort MEINUNG, auf dem Pult die Aufschrift GEBÜHRENFINANZIERT" }
+    { file: "habeck-berater-heizungsgesetz.html",         kick: "ÖRR-zensiert", ttl: "Vom Gesetz zum Honorar", img: "20260707_habeck.jpeg", alt: "Satirisches Bild: ein Mann im Nadelstreifenanzug im Designer-Chefsessel eines gläsernen Hochhausbüros, daneben eine Wärmepumpe mit Preisschild" },
+    { file: "stade-fluchtwagen-spd-ngo.html",             kick: "ÖRR-zensiert", ttl: "Stade: wo die Meldung endet", img: "20260706_stade.png", alt: "Symbolbild: ein dunkler Wagen fährt nachts auf leerer Straße davon" },
+    { file: "chatkontrolle-eilverfahren-sommerpause.html", kick: "EU", ttl: "Chatkontrolle 1.0 im Eiltempo", img: "20260706_bigbrother.jpeg", alt: "Symbolbild zur EU-Chatkontrolle: das anlasslose Scannen privater Nachrichten" },
+    { file: "haltung-auf-gebuehrenkosten.html",           kick: "Medien", ttl: "Haltung auf Gebührenkosten", img: "20270705_hayali.jpeg", alt: "Illustration: Nachrichtenmoderatorin am Studiotisch, im Hintergrund das Wort MEINUNG" },
+    { file: "eu-demokratie-wortwahl-orf.html",            kick: "EU", ttl: "Die EU-Demokratie-Simulation", img: "", alt: "Durchschau des EU-Demokratiedefizits" }
   ];
 
   // Sport ist eine eigene Seite (kein Ressort auf der Startseite). Fuer Top Stories
@@ -25,10 +25,11 @@
 
   // Horizontale Menüleiste (ORF-Optik) – erscheint auf jeder Seite.
   var NAV = [
-    ["EU", "index.html#eu"], ["ÖRR zensiert", "index.html#orf-zensiert"], ["Durchschaut", "index.html#durchschaut"],
-    ["Gleichgeschaltet", "index.html#gleichgeschaltet"], ["Zum Grübeln", "index.html#grubeln"], ["DACH", "index.html#dach"],
-    ["Ausland", "index.html#ausland"], ["Klima", "index.html#klima"], ["Medien", "index.html#medien"],
-    ["Ukraine-Krieg", "index.html#ukraine-krieg"], ["Archiv", "archiv.html"]
+    ["ÖRR zensiert", "index.html#orf-zensiert"], ["Gleichgeschaltet", "index.html#gleichgeschaltet"],
+    ["Österreich", "index.html#oesterreich"], ["Deutschland", "index.html#deutschland"],
+    ["EU", "index.html#eu"], ["Ausland", "index.html#ausland"], ["Ukraine-Krieg", "index.html#ukraine-krieg"],
+    ["Durchschaut", "index.html#durchschaut"], ["Medien", "index.html#medien"], ["Klima", "index.html#klima"],
+    ["Archiv", "archiv.html"]
   ];
   var navHtml = '<nav class="ornav"><div class="wrap">' +
     '<a class="home" href="' + homePrefix + 'index.html">News</a>' +
