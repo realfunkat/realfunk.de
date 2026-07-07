@@ -1,9 +1,9 @@
-# ORealFunk — realfunk.at
-# Hinweis: Die AI-Crawler-Policy wird von Cloudflare verwaltet
+# RealFunk — realfunk.de
+# AI-Crawler-Policy wird von Cloudflare verwaltet
 # (Content-Signal: search=yes, ai-train=no — Suche erlaubt, Training gesperrt).
-# Diese Datei setzt daher nur die Basis-Erlaubnis + die Sitemap.
+# Diese Datei setzt die Basis-Erlaubnis + die Sitemap.
 
 User-agent: *
 Allow: /
 
-Sitemap: https://realfunk.at/sitemap.xml
+Sitemap: https://realfunk.de/sitemap.xml

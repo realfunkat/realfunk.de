@@ -1,20 +1,21 @@
-# ORealFunk (realfunk.at)
+# RealFunk (realfunk.de)
 
-> Deutschsprachiges "ORF-Watch"-Angebot: Beitraege zeigen, wie der oesterreichische
-> oeffentlich-rechtliche Rundfunk (ORF) Nachrichten rahmt, und greifen Themen auf, die im
-> oeffentlich-rechtlichen Angebot wenig vorkommen ("ÖRR zensiert"). Fakten, Namen und
-> Zahlen sind real, der Unterschied zum ÖRR liegt in Schlagzeile und Rahmung.
+> Deutschsprachiges "ÖRR-Watch"-Angebot: Beitraege zeigen, wie der oeffentlich-rechtliche
+> Rundfunk (ORF, ARD, ZDF) Nachrichten rahmt, etikettiert und weglaesst, und greifen Themen
+> auf, die im oeffentlich-rechtlichen Angebot wenig vorkommen ("ÖRR zensiert"). Fakten, Namen
+> und Zahlen sind real, der Unterschied zum ÖRR liegt in Schlagzeile und Rahmung.
 
 ## Wichtige Seiten
-- [Startseite](https://realfunk.at/index.html)
-- [Sport](https://realfunk.at/sport.html)
-- [Wetter](https://realfunk.at/wetter.html)
-- [Sitemap](https://realfunk.at/sitemap.xml)
-- [RSS-Feed](https://realfunk.at/feed.xml)
+- [Startseite](https://realfunk.de/index.html)
+- [Archiv](https://realfunk.de/archiv.html)
+- [Sitemap](https://realfunk.de/sitemap.xml)
+- [RSS-Feed](https://realfunk.de/feed.xml)
+- [Impressum](https://realfunk.de/impressum.html)
+- [Datenschutz](https://realfunk.de/datenschutz.html)
 
 ## Ressorts
-Durchschaut, ÖRR zensiert, Zum Grübeln, Inland, Ausland, EU, Wirtschaft, Klima, Ukraine-Krieg, Medien, Kultur, Sport
+ÖRR zensiert, Gleichgeschaltet, Österreich, Deutschland, EU, Ausland, Ukraine-Krieg, Durchschaut, Medien, Klima
 
 ## Hinweis
-Meinungsstarke Nachrichten und Medienkritik. Quellenangaben zu Nicht-ORF-Medien sind in den Beitraegen
-neutralisiert. Es gilt die Unschuldsvermutung.
+Meinungsstarke Nachrichten und Medienkritik, rechts der Mitte. Quellenangaben zu Nicht-ÖRR-Medien
+sind in den Beitraegen neutralisiert. Es gilt die Unschuldsvermutung.
