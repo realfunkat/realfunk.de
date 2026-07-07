@@ -4,7 +4,7 @@
   <link>https://realfunk.de/</link>
   <description>ORF-Watch. Wie der Staatsfunk Nachrichten rahmt und was er weglaesst.</description>
   <language>de-at</language>
-  <lastBuildDate>Tue, 07 Jul 2026 09:54:18 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 07 Jul 2026 10:38:18 +0000</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://realfunk.de/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Die Krise als Wunschdenken</title>
@@ -53,6 +53,13 @@
     <link>https://realfunk.de/artikel/habeck-berater-heizungsgesetz.html</link>
     <guid>https://realfunk.de/artikel/habeck-berater-heizungsgesetz.html</guid>
     <description>Ex-Vizekanzler Robert Habeck wird Berater bei der Investmentgesellschaft Urban Partners. Zu deren Miteigentümern zählt ein Konzern, der von Habecks Heizungsgesetz profitierte.</description>
+    <pubDate>Tue, 07 Jul 2026 06:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Der Ton kommt von der Agentur</title>
+    <link>https://realfunk.de/artikel/dpa-ton-groenland.html</link>
+    <guid>https://realfunk.de/artikel/dpa-ton-groenland.html</guid>
+    <description>Eine dpa-Meldung über Trumps Grönland-Ansprüche liefert die Wertung gleich mit: „schockte“, „unverhohlen“. Wortgleich steht der Vorspann bei news.de, der Bietigheimer Zeitung und dem Handelsblatt.</description>
     <pubDate>Tue, 07 Jul 2026 06:00:00 +0000</pubDate>
   </item>
   <item>
