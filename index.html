@@ -204,12 +204,13 @@ main{padding-bottom:140px;}
 <footer>
   <div class="wrap">
     <p style="margin:0 0 6px;">Nicht mit ARD, ZDF, Deutschlandradio oder dem ORF verbunden.</p>
-    <p>RealFunk · realfunk.de · Ausgabe vom 6. Juli 2026</p>
+    <p>RealFunk · realfunk.de · <span id="ausgabe-datum">7. Juli 2026</span></p>
     <div class="footlinks" style="margin-top:8px;font-size:12px;"><a href="index.html" style="margin-right:12px;">Startseite</a><a href="impressum.html" style="margin-right:12px;">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
 
   </div>
 </footer>
 
 <script src="hero.js?v=20260707de7"></script>
+<script>(function(){var m=["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];var d=new Date();var el=document.getElementById("ausgabe-datum");if(el)el.textContent=d.getDate()+". "+m[d.getMonth()]+" "+d.getFullYear();})();</script>
 </body>
 </html>

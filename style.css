@@ -51,3 +51,5 @@ footer strong{color:var(--ink);}
 .grubeln .redaktion{background:var(--grubeln-tint);border-left-color:var(--grubeln);}
 .grubeln .redaktion .rl{color:var(--grubeln);}
 @media(max-width:680px){.figure.side{float:none;width:100%;max-width:none;margin:14px 0 6px;}.weather{display:none;}}
+
+.article .lead{width:100%;height:auto;display:block;border-radius:8px;margin:2px 0 22px}
