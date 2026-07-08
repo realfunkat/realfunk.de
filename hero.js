@@ -7,6 +7,7 @@
 
 (function () {
   var HERO_ITEMS = [
+    { file: "nato-gipfel-gleichklang.html",            kick: "Gleichgeschaltet", ttl: "Ein Gipfel, ein Ton, ein Feindbild", img: "20260708_natogipfel.png", alt: "NATO-Gipfel-Banner in Ankara, Summit 7. bis 8. Juli 2026" },
     { file: "habeck-berater-heizungsgesetz.html",         kick: "ÖRR-zensiert", ttl: "Vom Gesetz zum Honorar", img: "20260707_habeck.jpeg", alt: "Satirisches Bild: ein Mann im Nadelstreifenanzug im Designer-Chefsessel eines gläsernen Hochhausbüros, daneben eine Wärmepumpe mit Preisschild" },
     { file: "stade-fluchtwagen-spd-ngo.html",             kick: "ÖRR-zensiert", ttl: "Stade: wo die Meldung endet", img: "20260706_stade.png", alt: "Symbolbild: ein dunkler Wagen fährt nachts auf leerer Straße davon" },
     { file: "dpa-ton-groenland.html",                  kick: "Gleichgeschaltet", ttl: "Der Ton kommt von der Agentur", img: "20260707_greenland.png", alt: "Satirisches Bild: ein Stapel deutscher Zeitungen, alle mit derselben Schlagzeile ueber Trump und Groenland" },
