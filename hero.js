@@ -11,7 +11,6 @@
     { file: "habeck-berater-heizungsgesetz.html",         kick: "ÖRR-zensiert", ttl: "Vom Gesetz zum Honorar", img: "20260707_habeck.jpeg", alt: "Satirisches Bild: ein Mann im Nadelstreifenanzug im Designer-Chefsessel eines gläsernen Hochhausbüros, daneben eine Wärmepumpe mit Preisschild" },
     { file: "stade-fluchtwagen-spd-ngo.html",             kick: "ÖRR-zensiert", ttl: "Stade: wo die Meldung endet", img: "20260706_stade.png", alt: "Symbolbild: ein dunkler Wagen fährt nachts auf leerer Straße davon" },
     { file: "dpa-ton-groenland.html",                  kick: "Gleichgeschaltet", ttl: "Der Ton kommt von der Agentur", img: "20260707_greenland.png", alt: "Satirisches Bild: ein Stapel deutscher Zeitungen, alle mit derselben Schlagzeile ueber Trump und Groenland" },
-    { file: "deutschlandtrend-druck-auf-merz.html",        kick: "Durchschaut", ttl: "Die Umfrage als Druckmittel", img: "", alt: "" },
     { file: "eu-demokratie-wortwahl-orf.html",            kick: "EU", ttl: "Die EU-Demokratie-Simulation", img: "20260704_urne.webp", alt: "Durchschau des EU-Demokratiedefizits" }
   ];
 
