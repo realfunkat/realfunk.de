@@ -9,7 +9,7 @@
   var HERO_ITEMS = [
     { file: "ein-drittel-das-nicht-sein-darf.html", kick: "EU", ttl: "Ein Drittel, das nicht sein darf", img: "20260708AFD.jpg", alt: "Satirische Studio-Grafik: Friedensdemonstranten mit der Einblendung Alles böse Nazis" },
     { file: "habeck-berater-heizungsgesetz.html",         kick: "ÖRR-zensiert", ttl: "Vom Gesetz zum Honorar", img: "20260707_habeck.jpeg", alt: "Satirisches Bild: ein Mann im Nadelstreifenanzug im Designer-Chefsessel eines gläsernen Hochhausbüros, daneben eine Wärmepumpe mit Preisschild" },
-    { file: "nato-gipfel-gleichklang.html",            kick: "Gleichgeschaltet", ttl: "Ein Gipfel, ein Ton, ein Feindbild", img: "20260708_natogipfel.png", alt: "NATO-Gipfel-Banner in Ankara, Summit 7. bis 8. Juli 2026" },
+    { file: "merz-reformkanzler-inszenierung.html", kick: "Deutschland", ttl: "Reformkanzler auf Bestellung", img: "20260709_merz.jpg", alt: "Friedrich Merz am Rednerpult vor rotem Buehnenvorhang, Schild mit der Aufschrift Reform" },
     { file: "dpa-ton-groenland.html",                  kick: "Gleichgeschaltet", ttl: "Der Ton kommt von der Agentur", img: "20260707_greenland.png", alt: "Satirisches Bild: ein Stapel deutscher Zeitungen, alle mit derselben Schlagzeile ueber Trump und Groenland" }
   ];
 
