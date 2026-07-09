@@ -10,7 +10,7 @@
     { file: "merz-gebrochene-versprechen.html", kick: "Durchschaut", ttl: "Der Wahrheitsfritz? Eine Analyse", img: "merz-gebrochene-versprechen.jpg", alt: "Satirische Fotomontage von Friedrich Merz am Rednerpult mit einem Reformkanzler-Schild und langer Pinocchio-Nase" },
     { file: "ein-drittel-das-nicht-sein-darf.html", kick: "EU", ttl: "Ein Drittel, das nicht sein darf", img: "20260708AFD.jpg", alt: "Satirische Studio-Grafik: Friedensdemonstranten mit der Einblendung Alles boese Nazis" },
     { file: "habeck-berater-heizungsgesetz.html", kick: "OeRR-zensiert", ttl: "Vom Gesetz zum Honorar", img: "20260707_habeck.jpeg", alt: "Satirisches Bild: ein Mann im Nadelstreifenanzug im Designer-Chefsessel eines glaesernen Hochhausbueros, daneben eine Waermepumpe mit Preisschild" },
-    { file: "merz-reformkanzler-inszenierung.html", kick: "Deutschland", ttl: "Reformkanzler auf Bestellung", img: "20260709_merz.jpg", alt: "Friedrich Merz am Rednerpult vor rotem Buehnenvorhang, Schild mit der Aufschrift Reform" },
+    { file: "eu-demokratie-wortwahl-orf.html", kick: "EU", ttl: "Die EU-Demokratie-Simulation", img: "eu-demokratie-wortwahl-orf.jpg", alt: "Symbolbild zum EU-Demokratiedefizit" },
     { file: "dpa-ton-groenland.html", kick: "Gleichgeschaltet", ttl: "Der Ton kommt von der Agentur", img: "20260707_greenland.png", alt: "Satirisches Bild: ein Stapel deutscher Zeitungen, alle mit derselben Schlagzeile ueber Trump und Groenland" }
   ];
 
