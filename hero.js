@@ -7,10 +7,11 @@
 
 (function () {
   var HERO_ITEMS = [
-    { file: "ein-drittel-das-nicht-sein-darf.html", kick: "EU", ttl: "Ein Drittel, das nicht sein darf", img: "20260708AFD.jpg", alt: "Satirische Studio-Grafik: Friedensdemonstranten mit der Einblendung Alles böse Nazis" },
-    { file: "habeck-berater-heizungsgesetz.html",         kick: "ÖRR-zensiert", ttl: "Vom Gesetz zum Honorar", img: "20260707_habeck.jpeg", alt: "Satirisches Bild: ein Mann im Nadelstreifenanzug im Designer-Chefsessel eines gläsernen Hochhausbüros, daneben eine Wärmepumpe mit Preisschild" },
+    { file: "merz-gebrochene-versprechen.html", kick: "Durchschaut", ttl: "Der Wahrheitsfritz? Eine Analyse", img: "merz-gebrochene-versprechen.jpg", alt: "Satirische Fotomontage von Friedrich Merz am Rednerpult mit einem Reformkanzler-Schild und langer Pinocchio-Nase" },
+    { file: "ein-drittel-das-nicht-sein-darf.html", kick: "EU", ttl: "Ein Drittel, das nicht sein darf", img: "20260708AFD.jpg", alt: "Satirische Studio-Grafik: Friedensdemonstranten mit der Einblendung Alles boese Nazis" },
+    { file: "habeck-berater-heizungsgesetz.html", kick: "OeRR-zensiert", ttl: "Vom Gesetz zum Honorar", img: "20260707_habeck.jpeg", alt: "Satirisches Bild: ein Mann im Nadelstreifenanzug im Designer-Chefsessel eines glaesernen Hochhausbueros, daneben eine Waermepumpe mit Preisschild" },
     { file: "merz-reformkanzler-inszenierung.html", kick: "Deutschland", ttl: "Reformkanzler auf Bestellung", img: "20260709_merz.jpg", alt: "Friedrich Merz am Rednerpult vor rotem Buehnenvorhang, Schild mit der Aufschrift Reform" },
-    { file: "dpa-ton-groenland.html",                  kick: "Gleichgeschaltet", ttl: "Der Ton kommt von der Agentur", img: "20260707_greenland.png", alt: "Satirisches Bild: ein Stapel deutscher Zeitungen, alle mit derselben Schlagzeile ueber Trump und Groenland" }
+    { file: "dpa-ton-groenland.html", kick: "Gleichgeschaltet", ttl: "Der Ton kommt von der Agentur", img: "20260707_greenland.png", alt: "Satirisches Bild: ein Stapel deutscher Zeitungen, alle mit derselben Schlagzeile ueber Trump und Groenland" }
   ];
 
   // Sport ist eine eigene Seite (kein Ressort auf der Startseite). Fuer Top Stories
@@ -47,10 +48,10 @@
       '<span class="cap"><span class="kick">' + it.kick + '</span><span class="ttl">' + it.ttl + '</span></span></a>';
   }
 
-  var restTiles = HERO_ITEMS.slice(1).map(function (it) { return tile(it, false); }).join("");
+  var restTiles = HERO_ITEMS.slice(2).map(function (it) { return tile(it, false); }).join("");
   var html =
     '<div class="hero"><div class="wrap">' +
-      '<div class="lead">' + tile(HERO_ITEMS[0], true) + '</div>' +
+      '<div class="lead">' + tile(HERO_ITEMS[0], true) + tile(HERO_ITEMS[1], true) + '</div>' +
       '<div class="row">' + restTiles + '</div>' +
     '</div></div>';
 
@@ -63,12 +64,12 @@
     ".ornav a.home{color:var(--accent-dark,#05112A);}" +
     ".hero{padding:14px 0 4px;}" +
     ".hero .wrap{max-width:1000px;margin:0 auto;padding:0 18px;}" +
-    ".hero .lead{display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:10px;}" +
+    ".hero .lead{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;}" +
     ".hero .row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}" +
     ".hero .tile{position:relative;border-radius:4px;overflow:hidden;background:linear-gradient(135deg,#05112A,#20284A);display:flex;align-items:flex-end;}" +
     ".hero .row .tile{aspect-ratio:16/10;}" +
     ".hero .tile.big{width:100%;aspect-ratio:16/10;}" +
-    ".hero .lead .tile.big{aspect-ratio:3158/1328;}" +
+    ".hero .lead .tile.big{aspect-ratio:16/10;}" +
     ".hero .tile .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55);font-size:11px;letter-spacing:1px;text-transform:uppercase;}" +
     ".hero .tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}" +
     ".hero .tile .cap{position:relative;z-index:2;width:100%;background:linear-gradient(transparent,rgba(0,0,0,.78));padding:30px 14px 12px;}" +
