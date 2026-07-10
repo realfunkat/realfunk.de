@@ -7,10 +7,10 @@
 
 (function () {
   var HERO_ITEMS = [
-    { file: "merz-gebrochene-versprechen.html", kick: "Durchschaut", ttl: "Der Wahrheitsfritz? Eine Analyse", img: "merz-gebrochene-versprechen.jpg", alt: "Satirische Fotomontage von Friedrich Merz am Rednerpult mit einem Reformkanzler-Schild und langer Pinocchio-Nase" },
+    { file: "zweierlei-mass-klingbeil.html", kick: "Durchschaut", ttl: "Zweierlei Maß", img: "20260710klingbeil.jpeg", alt: "Satirische Fotomontage: der SPD-Politiker Lars Klingbeil im Rampenlicht auf rotem Teppich, umringt von applaudierenden Journalisten mit Kameras und Blumenstraeussen" },
     { file: "chatkontrolle-dritte-abstimmung.html", kick: "EU", ttl: "Abstimmen, bis es passt", img: "20260706_bigbrother.jpeg", alt: "Satirische Grafik: EU-Kommissionschefin am Rednerpult vor einem Big-Brother-Auge mit der Aufschrift Big Brother is watching you" },
     { file: "ein-drittel-das-nicht-sein-darf.html", kick: "EU", ttl: "Ein Drittel, das nicht sein darf", img: "20260708AFD.jpg", alt: "Satirische Studio-Grafik: Friedensdemonstranten mit der Einblendung Alles boese Nazis" },
-    { file: "habeck-berater-heizungsgesetz.html", kick: "OeRR-zensiert", ttl: "Vom Gesetz zum Honorar", img: "20260707_habeck.jpeg", alt: "Satirisches Bild: ein Mann im Nadelstreifenanzug im Designer-Chefsessel eines glaesernen Hochhausbueros, daneben eine Waermepumpe mit Preisschild" },
+    { file: "merz-gebrochene-versprechen.html", kick: "Durchschaut", ttl: "Der Wahrheitsfritz? Eine Analyse", img: "merz-gebrochene-versprechen.jpg", alt: "Satirische Fotomontage von Friedrich Merz am Rednerpult mit einem Reformkanzler-Schild und langer Pinocchio-Nase" },
     { file: "dpa-ton-groenland.html", kick: "Gleichgeschaltet", ttl: "Der Ton kommt von der Agentur", img: "20260707_greenland.png", alt: "Satirisches Bild: ein Stapel deutscher Zeitungen, alle mit derselben Schlagzeile ueber Trump und Groenland" }
   ];
 
