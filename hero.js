@@ -8,10 +8,10 @@
 (function () {
   var HERO_ITEMS = [
     { file: "zweierlei-mass-klingbeil.html", kick: "Durchschaut", ttl: "Zweierlei Maß", img: "20260710klingbeil.jpeg", alt: "Satirische Fotomontage: der SPD-Politiker Lars Klingbeil im Rampenlicht auf rotem Teppich, umringt von applaudierenden Journalisten mit Kameras und Blumenstraeussen" },
-    { file: "chatkontrolle-dritte-abstimmung.html", kick: "EU", ttl: "Abstimmen, bis es passt", img: "20260706_bigbrother.jpeg", alt: "Satirische Grafik: EU-Kommissionschefin am Rednerpult vor einem Big-Brother-Auge mit der Aufschrift Big Brother is watching you" },
+    { file: "das-letzte-wort-hat-der-richter.html", kick: "Ausland", ttl: "Wer klagt, bleibt länger", img: "20260711migrants.jpg", alt: "Migranten mit Gepaeck auf einem Bahnsteig, im Hintergrund Anzeigetafeln mit Zugzielen, einige heben die Hand zum Victory-Zeichen" },
     { file: "ein-drittel-das-nicht-sein-darf.html", kick: "EU", ttl: "Ein Drittel, das nicht sein darf", img: "20260708AFD.jpg", alt: "Satirische Studio-Grafik: Friedensdemonstranten mit der Einblendung Alles boese Nazis" },
     { file: "merz-gebrochene-versprechen.html", kick: "Durchschaut", ttl: "Der Wahrheitsfritz? Eine Analyse", img: "merz-gebrochene-versprechen.jpg", alt: "Satirische Fotomontage von Friedrich Merz am Rednerpult mit einem Reformkanzler-Schild und langer Pinocchio-Nase" },
-    { file: "das-letzte-wort-hat-der-richter.html", kick: "Ausland", ttl: "Das letzte Wort hat der Richter", img: "", alt: "" }
+    { file: "chatkontrolle-dritte-abstimmung.html", kick: "EU", ttl: "Abstimmen, bis es passt", img: "20260706_bigbrother.jpeg", alt: "Satirische Grafik: EU-Kommissionschefin am Rednerpult vor einem Big-Brother-Auge mit der Aufschrift Big Brother is watching you" }
   ];
 
   // Sport ist eine eigene Seite (kein Ressort auf der Startseite). Fuer Top Stories
