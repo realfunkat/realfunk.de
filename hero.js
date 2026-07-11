@@ -7,11 +7,11 @@
 
 (function () {
   var HERO_ITEMS = [
+    { file: "der-mann-der-nicht-geprueft-wird.html", kick: "Durchschaut", ttl: "Der Mann, der nicht geprüft wird", img: "20260711spahn.jpeg", alt: "Satirische Fotomontage: ein Politiker im dunklen Anzug schwaerzt mit einem dicken Filzstift ein Dokument, daneben ein Aktendeckel mit der Aufschrift AUFKLAERUNG" },
     { file: "tennistermin-terrorzelle.html", kick: "Durchschaut", ttl: "Der Tennistermin und die Terrorzelle", img: "20260711berlin.png", alt: "Satirische Fotomontage: ein Mann in Tenniskleidung spielt auf einem Platz, dahinter frierende Menschen in Wintermaenteln hinter einer Glaswand, im Hintergrund brennt eine Kabelbruecke" },
-    { file: "das-letzte-wort-hat-der-richter.html", kick: "Ausland", ttl: "Wer klagt, bleibt länger", img: "20260711migrants.jpg", alt: "Migranten mit Gepaeck auf einem Bahnsteig, im Hintergrund Anzeigetafeln mit Zugzielen, einige heben die Hand zum Victory-Zeichen" },
     { file: "ein-drittel-das-nicht-sein-darf.html", kick: "EU", ttl: "Ein Drittel, das nicht sein darf", img: "20260708AFD.jpg", alt: "Satirische Studio-Grafik: Friedensdemonstranten mit der Einblendung Alles boese Nazis" },
     { file: "merz-gebrochene-versprechen.html", kick: "Durchschaut", ttl: "Der Wahrheitsfritz? Eine Analyse", img: "merz-gebrochene-versprechen.jpg", alt: "Satirische Fotomontage von Friedrich Merz am Rednerpult mit einem Reformkanzler-Schild und langer Pinocchio-Nase" },
-    { file: "chatkontrolle-dritte-abstimmung.html", kick: "EU", ttl: "Abstimmen, bis es passt", img: "20260706_bigbrother.jpeg", alt: "Satirische Grafik: EU-Kommissionschefin am Rednerpult vor einem Big-Brother-Auge mit der Aufschrift Big Brother is watching you" }
+    { file: "das-letzte-wort-hat-der-richter.html", kick: "Ausland", ttl: "Wer klagt, bleibt länger", img: "20260711migrants.jpg", alt: "Migranten mit Gepaeck auf einem Bahnsteig, im Hintergrund Anzeigetafeln mit Zugzielen, einige heben die Hand zum Victory-Zeichen" }
   ];
 
   // Sport ist eine eigene Seite (kein Ressort auf der Startseite). Fuer Top Stories
