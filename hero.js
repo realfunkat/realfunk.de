@@ -11,7 +11,7 @@
     { file: "chatkontrolle-dritte-abstimmung.html", kick: "EU", ttl: "Abstimmen, bis es passt", img: "20260706_bigbrother.jpeg", alt: "Satirische Grafik: EU-Kommissionschefin am Rednerpult vor einem Big-Brother-Auge mit der Aufschrift Big Brother is watching you" },
     { file: "ein-drittel-das-nicht-sein-darf.html", kick: "EU", ttl: "Ein Drittel, das nicht sein darf", img: "20260708AFD.jpg", alt: "Satirische Studio-Grafik: Friedensdemonstranten mit der Einblendung Alles boese Nazis" },
     { file: "merz-gebrochene-versprechen.html", kick: "Durchschaut", ttl: "Der Wahrheitsfritz? Eine Analyse", img: "merz-gebrochene-versprechen.jpg", alt: "Satirische Fotomontage von Friedrich Merz am Rednerpult mit einem Reformkanzler-Schild und langer Pinocchio-Nase" },
-    { file: "dpa-ton-groenland.html", kick: "Gleichgeschaltet", ttl: "Der Ton kommt von der Agentur", img: "20260707_greenland.png", alt: "Satirisches Bild: ein Stapel deutscher Zeitungen, alle mit derselben Schlagzeile ueber Trump und Groenland" }
+    { file: "das-letzte-wort-hat-der-richter.html", kick: "Ausland", ttl: "Das letzte Wort hat der Richter", img: "", alt: "" }
   ];
 
   // Sport ist eine eigene Seite (kein Ressort auf der Startseite). Fuer Top Stories
