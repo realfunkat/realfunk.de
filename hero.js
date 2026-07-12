@@ -7,7 +7,7 @@
 
 (function () {
   var HERO_ITEMS = [
-    { file: "die-umfrage-die-er-bezahlt-hat.html", kick: "Medien", ttl: "Die Umfrage, die er bezahlt hat", img: "20260712beitrag03.png", alt: "Satirische Fotomontage: zwei Politiker drehen ein grosses Ventilrad zu, darueber eine Messingtafel mit der Aufschrift RUNDFUNKBEITRAG, dahinter ein Tresorfenster mit zwei stark uebergewichtigen Personen in Togen auf einem Berg von Goldmuenzen und panischen Mitarbeitern" },
+    { file: "die-umfrage-die-er-bezahlt-hat.html", kick: "Medien", ttl: "Das bevorstehende Aus des ÖRR?", img: "20260712beitrag03.png", alt: "Satirische Fotomontage: zwei Politiker drehen ein grosses Ventilrad zu, darueber eine Messingtafel mit der Aufschrift RUNDFUNKBEITRAG, dahinter ein Tresorfenster mit zwei stark uebergewichtigen Personen in Togen auf einem Berg von Goldmuenzen und panischen Mitarbeitern" },
     { file: "die-sekunde-davor.html", kick: "Durchschaut", ttl: "Die Sekunde davor", img: "20260712haaland2.png", alt: "Szene aus einem WM-Viertelfinale: ein grossgewachsener Spieler im roten Trikot steht aufrecht, ein kleinerer Spieler im weissen Trikot faellt vor ihm zu Boden" },
     { file: "tennistermin-terrorzelle.html", kick: "ÖRR zensiert", ttl: "Der Tennistermin und die Terrorzelle", img: "20260711berlin.png", alt: "Satirische Fotomontage: ein Mann in Tenniskleidung spielt auf einem Platz, dahinter frierende Menschen in Wintermaenteln hinter einer Glaswand, im Hintergrund brennt eine Kabelbruecke" },
     { file: "merz-gebrochene-versprechen.html", kick: "Deutschland", ttl: "Der Wahrheitsfritz? Eine Analyse", img: "merz-gebrochene-versprechen.jpg", alt: "Satirische Fotomontage von Friedrich Merz am Rednerpult mit einem Reformkanzler-Schild und langer Pinocchio-Nase" },
