@@ -7,10 +7,10 @@
 
 (function () {
   var HERO_ITEMS = [
-    { file: "die-sekunde-davor.html", kick: "Durchschaut", ttl: "Die Sekunde davor", img: "20260712haaland2.png", alt: "Szene aus einem WM-Viertelfinale: ein grossgewachsener Spieler im roten Trikot steht aufrecht, ein kleinerer Spieler im weissen Trikot faellt vor ihm zu Boden" },,
-    { file: "tennistermin-terrorzelle.html", kick: "Durchschaut", ttl: "Der Tennistermin und die Terrorzelle", img: "20260711berlin.png", alt: "Satirische Fotomontage: ein Mann in Tenniskleidung spielt auf einem Platz, dahinter frierende Menschen in Wintermaenteln hinter einer Glaswand, im Hintergrund brennt eine Kabelbruecke" },,
-    { file: "der-mann-der-nicht-geprueft-wird.html", kick: "Durchschaut", ttl: "Der Mann, der nicht geprüft wird", img: "20260711spahn.jpeg", alt: "Satirische Fotomontage: ein Politiker im dunklen Anzug schwaerzt mit einem dicken Filzstift ein Dokument, daneben ein Aktendeckel mit der Aufschrift AUFKLAERUNG" },,
-    { file: "merz-gebrochene-versprechen.html", kick: "Durchschaut", ttl: "Der Wahrheitsfritz? Eine Analyse", img: "merz-gebrochene-versprechen.jpg", alt: "Satirische Fotomontage von Friedrich Merz am Rednerpult mit einem Reformkanzler-Schild und langer Pinocchio-Nase" },,
+    { file: "die-sekunde-davor.html", kick: "Durchschaut", ttl: "Die Sekunde davor", img: "20260712haaland2.png", alt: "Szene aus einem WM-Viertelfinale: ein grossgewachsener Spieler im roten Trikot steht aufrecht, ein kleinerer Spieler im weissen Trikot faellt vor ihm zu Boden" },
+    { file: "tennistermin-terrorzelle.html", kick: "Durchschaut", ttl: "Der Tennistermin und die Terrorzelle", img: "20260711berlin.png", alt: "Satirische Fotomontage: ein Mann in Tenniskleidung spielt auf einem Platz, dahinter frierende Menschen in Wintermaenteln hinter einer Glaswand, im Hintergrund brennt eine Kabelbruecke" },
+    { file: "der-mann-der-nicht-geprueft-wird.html", kick: "Durchschaut", ttl: "Der Mann, der nicht geprüft wird", img: "20260711spahn.jpeg", alt: "Satirische Fotomontage: ein Politiker im dunklen Anzug schwaerzt mit einem dicken Filzstift ein Dokument, daneben ein Aktendeckel mit der Aufschrift AUFKLAERUNG" },
+    { file: "merz-gebrochene-versprechen.html", kick: "Durchschaut", ttl: "Der Wahrheitsfritz? Eine Analyse", img: "merz-gebrochene-versprechen.jpg", alt: "Satirische Fotomontage von Friedrich Merz am Rednerpult mit einem Reformkanzler-Schild und langer Pinocchio-Nase" },
     { file: "das-letzte-wort-hat-der-richter.html", kick: "Ausland", ttl: "Wer klagt, bleibt länger", img: "20260711migrants.jpg", alt: "Migranten mit Gepaeck auf einem Bahnsteig, im Hintergrund Anzeigetafeln mit Zugzielen, einige heben die Hand zum Victory-Zeichen" }
   ];
 
