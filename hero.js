@@ -7,11 +7,11 @@
 
 (function () {
   var HERO_ITEMS = [
+    { file: "alles-ausser-politik.html", kick: "Deutschland", ttl: "Alles außer Politik", img: "20260712brandmauer.webp", alt: "Leerer Plenarsaal: vier Menschen in dunklen Anzuegen mauern mit Ziegeln einen ganzen Sitzblock zu, oben auf der voll besetzten Zuschauertribuene sehen Buerger schweigend zu" },
     { file: "die-umfrage-die-er-bezahlt-hat.html", kick: "Medien", ttl: "Das bevorstehende Aus des ÖRR?", img: "20260712beitrag03.png", alt: "Satirische Fotomontage: zwei Politiker drehen ein grosses Ventilrad zu, darueber eine Messingtafel mit der Aufschrift RUNDFUNKBEITRAG, dahinter ein Tresorfenster mit zwei stark uebergewichtigen Personen in Togen auf einem Berg von Goldmuenzen und panischen Mitarbeitern" },
     { file: "die-sekunde-davor.html", kick: "Durchschaut", ttl: "Die Sekunde davor", img: "20260712haaland2.png", alt: "Szene aus einem WM-Viertelfinale: ein grossgewachsener Spieler im roten Trikot steht aufrecht, ein kleinerer Spieler im weissen Trikot faellt vor ihm zu Boden" },
     { file: "und-jetzt-haben-wir-den-salat.html", kick: "Durchschaut", ttl: "Und jetzt haben wir den Salat", img: "20260712_linksterror.webp", alt: "Aufgebrochener Kabelschacht an einem Bahngleis mit verbrannten Signalkabeln, dahinter eine neue Ueberwachungskamera, die nicht auf den Tatort, sondern auf wartende Fahrgaeste am Bahnsteig gerichtet ist" },
-    { file: "tennistermin-terrorzelle.html", kick: "ÖRR zensiert", ttl: "Der Tennistermin und die Terrorzelle", img: "20260711berlin.png", alt: "Satirische Fotomontage: ein Mann in Tenniskleidung spielt auf einem Platz, dahinter frierende Menschen in Wintermaenteln hinter einer Glaswand, im Hintergrund brennt eine Kabelbruecke" },
-    { file: "merz-gebrochene-versprechen.html", kick: "Deutschland", ttl: "Der Wahrheitsfritz? Eine Analyse", img: "merz-gebrochene-versprechen.jpg", alt: "Satirische Fotomontage von Friedrich Merz am Rednerpult mit einem Reformkanzler-Schild und langer Pinocchio-Nase" }
+    { file: "tennistermin-terrorzelle.html", kick: "ÖRR zensiert", ttl: "Der Tennistermin und die Terrorzelle", img: "20260711berlin.png", alt: "Satirische Fotomontage: ein Mann in Tenniskleidung spielt auf einem Platz, dahinter frierende Menschen in Wintermaenteln hinter einer Glaswand, im Hintergrund brennt eine Kabelbruecke" }
   ];
 
   // Sport ist eine eigene Seite (kein Ressort auf der Startseite). Fuer Top Stories
