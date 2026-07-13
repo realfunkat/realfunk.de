@@ -53,3 +53,7 @@ footer strong{color:var(--ink);}
 @media(max-width:680px){.figure.side{float:none;width:100%;max-width:none;margin:14px 0 6px;}.weather{display:none;}}
 
 .article .lead{width:100%;height:auto;display:block;border-radius:8px;margin:2px 0 22px}
+
+/* Interne Links im Artikeltext sichtbar machen (13.07.2026) */
+.article .body a,.redaktion a{color:var(--accent);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;}
+.article .body a:hover,.redaktion a:hover{color:var(--accent-dark);text-decoration-thickness:2px;}
