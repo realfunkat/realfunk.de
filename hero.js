@@ -7,7 +7,7 @@
 
 (function () {
   var HERO_ITEMS = [
-    { file: "verlogen-verlogener-eu.html", kick: "Durchschaut", ttl: "Verlogen, verlogener, EU", img: "20260713vdl.jpeg", alt: "Das Gesicht der EU-Kommissionspraesidentin auf einer grossen Leinwand ueber einer dunklen Menschenmenge, flankiert von zwei Europafahnen" },
+    { file: "verlogen-verlogener-eu.html", kick: "Durchschaut", ttl: "Ungarns Sünde, Brüssels Pflicht", img: "20260713vdl.jpeg", alt: "Das Gesicht der EU-Kommissionspraesidentin auf einer grossen Leinwand ueber einer dunklen Menschenmenge, flankiert von zwei Europafahnen" },
     { file: "die-untragbare-diplomatin.html", kick: "EU", ttl: "Die untragbare „Diplomatin“", img: "20260713kallas.jpeg", alt: "Ein Mann sitzt vor dem Fernseher und schlaegt die Haende ueber dem Kopf zusammen, waehrend darin die EU-Aussenbeauftragte an einem Rednerpult vor einem maerchenhaften Sternenhintergrund spricht" },
     { file: "dann-treten-sie-zurueck.html", kick: "Deutschland", ttl: "Dann treten Sie zurück", img: "20260713steinmeier.jpeg", alt: "Der Bundespraesident steigt vor Schloss Bellevue aus einer schwarzen Limousine, ein Mitarbeiter laedt eine Tasche in den geoeffneten Kofferraum" },
     { file: "alles-ausser-politik.html", kick: "Deutschland", ttl: "Alles außer bessere Politik", img: "20260712kloeck.png", alt: "Satirische Szene aus dem Bundestag: die Praesidentin steht erhoben am Praesidium und hebt mahnend den Zeigefinger, waehrend ein ganzer Block von Abgeordneten unter ihr in schallendes Gelaechter ausbricht" },
