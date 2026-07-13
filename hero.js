@@ -7,11 +7,11 @@
 
 (function () {
   var HERO_ITEMS = [
+    { file: "campact-im-glashaus.html", kick: "Durchschaut", ttl: "Campact im Glashaus", img: "20260713campact.webp", alt: "Freiwillige in einem hellen Buero ueberreichen drei Maennern in dunklen Anzuegen einen ueberdimensionalen Spendenscheck mit der Aufschrift 461.338 Euro" },
     { file: "dann-treten-sie-zurueck.html", kick: "Deutschland", ttl: "Dann treten Sie zurück", img: "20260713steinmeier.jpeg", alt: "Der Bundespraesident steigt vor Schloss Bellevue aus einer schwarzen Limousine, ein Mitarbeiter laedt eine Tasche in den geoeffneten Kofferraum" },
     { file: "alles-ausser-politik.html", kick: "Deutschland", ttl: "Alles außer bessere Politik", img: "20260712kloeck.png", alt: "Satirische Szene aus dem Bundestag: die Praesidentin steht erhoben am Praesidium und hebt mahnend den Zeigefinger, waehrend ein ganzer Block von Abgeordneten unter ihr in schallendes Gelaechter ausbricht" },
     { file: "die-umfrage-die-er-bezahlt-hat.html", kick: "Medien", ttl: "Das bevorstehende Aus des ÖRR?", img: "20260712beitrag03.png", alt: "Satirische Fotomontage: zwei Politiker drehen ein grosses Ventilrad zu, darueber eine Messingtafel mit der Aufschrift RUNDFUNKBEITRAG, dahinter ein Tresorfenster mit zwei stark uebergewichtigen Personen in Togen auf einem Berg von Goldmuenzen und panischen Mitarbeitern" },
-    { file: "und-jetzt-haben-wir-den-salat.html", kick: "Durchschaut", ttl: "Und jetzt haben wir den Salat", img: "20260712_linksterror.webp", alt: "Aufgebrochener Kabelschacht an einem Bahngleis mit verbrannten Signalkabeln, dahinter eine neue Ueberwachungskamera, die nicht auf den Tatort, sondern auf wartende Fahrgaeste am Bahnsteig gerichtet ist" },
-    { file: "tennistermin-terrorzelle.html", kick: "ÖRR zensiert", ttl: "Der Tennistermin und die Terrorzelle", img: "20260711berlin.png", alt: "Satirische Fotomontage: ein Mann in Tenniskleidung spielt auf einem Platz, dahinter frierende Menschen in Wintermaenteln hinter einer Glaswand, im Hintergrund brennt eine Kabelbruecke" }
+    { file: "und-jetzt-haben-wir-den-salat.html", kick: "Durchschaut", ttl: "Und jetzt haben wir den Salat", img: "20260712_linksterror.webp", alt: "Aufgebrochener Kabelschacht an einem Bahngleis mit verbrannten Signalkabeln, dahinter eine neue Ueberwachungskamera, die nicht auf den Tatort, sondern auf wartende Fahrgaeste am Bahnsteig gerichtet ist" }
   ];
 
   // Sport ist eine eigene Seite (kein Ressort auf der Startseite). Fuer Top Stories
