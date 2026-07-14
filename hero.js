@@ -15,31 +15,30 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "ein-echter-geheimdienst.html", kick: "Durchschaut", ttl: "Ein echter Geheimdienst", img: "2026071401.webp", alt: "Ein Mann im grauen Anzug tippt nachts im dunklen Wohnzimmer einer schlafenden Familie auf deren Laptop, hinter ihm steht die Wohnungstuer offen" },
-    { file: "der-staat-macht-zu.html", kick: "Durchschaut", ttl: "Der Staat macht zu", img: "20260714buerokratieabbau.webp", alt: "An einem Behoerdenschalter zieht ein Mitarbeiter ein schweres Rollgitter mit der Aufschrift BUEROKRATIEABBAU herunter, waehrend ein Buerger noch ein Formular hinhaelt" },
-    { file: "verlogen-verlogener-eu.html", kick: "Durchschaut", ttl: "Ungarns Sünde, Brüssels Pflicht", img: "20260713vdl.jpeg", alt: "Das Gesicht der EU-Kommissionspraesidentin auf einer grossen Leinwand ueber einer dunklen Menschenmenge, flankiert von zwei Europafahnen" },
+    { file: "ein-echter-geheimdienst.html", kick: "Deutschland", ttl: "Ein echter Geheimdienst", img: "2026071401.webp", alt: "Ein Mann im grauen Anzug tippt nachts im dunklen Wohnzimmer einer schlafenden Familie auf deren Laptop, hinter ihm steht die Wohnungstuer offen" },
+    { file: "der-staat-macht-zu.html", kick: "Deutschland", ttl: "Der Staat macht zu", img: "20260714buerokratieabbau.webp", alt: "An einem Behoerdenschalter zieht ein Mitarbeiter ein schweres Rollgitter mit der Aufschrift BUEROKRATIEABBAU herunter, waehrend ein Buerger noch ein Formular hinhaelt" },
+    { file: "verlogen-verlogener-eu.html", kick: "EU", ttl: "Ungarns Sünde, Brüssels Pflicht", img: "20260713vdl.jpeg", alt: "Das Gesicht der EU-Kommissionspraesidentin auf einer grossen Leinwand ueber einer dunklen Menschenmenge, flankiert von zwei Europafahnen" },
     { file: "die-untragbare-diplomatin.html", kick: "EU", ttl: "Die untragbare „Diplomatin“", img: "20260713kallas.jpeg", alt: "Ein Mann sitzt vor dem Fernseher und schlaegt die Haende ueber dem Kopf zusammen, waehrend darin die EU-Aussenbeauftragte an einem Rednerpult spricht" },
     { file: "dann-treten-sie-zurueck.html", kick: "Deutschland", ttl: "Dann treten Sie zurück", img: "20260713steinmeier.jpeg", alt: "Der Bundespraesident steigt vor Schloss Bellevue aus einer schwarzen Limousine, ein Mitarbeiter laedt eine Tasche in den geoeffneten Kofferraum" },
-    { file: "campact-im-glashaus.html", kick: "Durchschaut", ttl: "Campact im Glashaus", img: "20260713campact.webp", alt: "Freiwillige ueberreichen drei Maennern in dunklen Anzuegen einen ueberdimensionalen Spendenscheck mit der Aufschrift 461.338 Euro" },
-    { file: "dazu-keine-antwort.html", kick: "Durchschaut", ttl: "Dazu keine Antwort", img: "20260713_habeck.jpeg", alt: "Ein Mann im Nadelstreifenanzug sitzt in einem Eckbuero mit Skyline-Blick, neben ihm steht ein weisser Warmwasserspeicher mit einem Geschenkanhaenger" },
+    { file: "campact-im-glashaus.html", kick: "Deutschland", ttl: "Campact im Glashaus", img: "20260713campact.webp", alt: "Freiwillige ueberreichen drei Maennern in dunklen Anzuegen einen ueberdimensionalen Spendenscheck mit der Aufschrift 461.338 Euro" },
+    { file: "dazu-keine-antwort.html", kick: "Deutschland", ttl: "Dazu keine Antwort", img: "20260713_habeck.jpeg", alt: "Ein Mann im Nadelstreifenanzug sitzt in einem Eckbuero mit Skyline-Blick, neben ihm steht ein weisser Warmwasserspeicher mit einem Geschenkanhaenger" },
     { file: "alles-ausser-politik.html", kick: "Deutschland", ttl: "Alles außer bessere Politik", img: "20260712kloeck.png", alt: "Satirische Szene aus dem Bundestag: die Praesidentin hebt mahnend den Zeigefinger, waehrend ein Block von Abgeordneten in Gelaechter ausbricht" }
   ];
 
   /* ------------------------------------------------------------------ *
    * ROTATION
-   * HERO_MAX  : nur die ersten N Pool-Eintraege zaehlen. Neuen Artikel
-   *             VORNE einfuegen -> der aelteste faellt automatisch raus.
-   *             Kein manuelles Loeschen, kein stiller Pool-Wildwuchs.
-   * HERO_HOURS: alle wieviel Stunden das 5er-Fenster weiterwandert.
-   *             2 = zwoelfmal am Tag. 24 = einmal taeglich.
+   * HERO_PIN   : die ersten N Pool-Eintraege (= die NEUESTEN) stehen IMMER
+   *              in den zwei grossen Kacheln. Kein Karussell im Leitartikel.
+   * HERO_MAX   : nur die ersten N Pool-Eintraege zaehlen. Neuen Artikel
+   *              VORNE einfuegen -> der aelteste faellt automatisch raus.
+   * HERO_HOURS : alle wieviel Stunden die drei kleinen Kacheln wechseln.
+   * HERO_EPOCH : Nullpunkt. Bei jedem Push mit neuem Artikel neu setzen:
+   *              node -e 'console.log(Math.floor(Date.now()/(6*3600000)))'
    * Kein Push noetig — die Uhr macht das.
    * ------------------------------------------------------------------ */
+  var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  /* HERO_EPOCH: Nullpunkt der Rotation. Zu diesem Zeitpunkt steht HERO_POOL[0]
-     ganz oben links. Bei jedem Push mit einem NEUEN Artikel im Pool diesen Wert
-     neu setzen (node -e 'console.log(Math.floor(Date.now()/(6*3600000)))'),
-     dann startet der neue Artikel als Leitartikel und rotiert erst danach weg. */
   var HERO_EPOCH = 82593;
 
   var HERO_ITEMS = (function () {
@@ -47,10 +46,13 @@
       .filter(function (x) { return x && x.file && x.kick && x.ttl; })
       .slice(0, HERO_MAX);
     if (pool.length <= 5) return pool;
-    var step = Math.floor(Date.now() / (HERO_HOURS * 3600000)) - HERO_EPOCH;
-    var start = ((step % pool.length) + pool.length) % pool.length;
-    var out = [];
-    for (var i = 0; i < 5; i++) { out.push(pool[(start + i) % pool.length]); }
+    var pinned = pool.slice(0, HERO_PIN);          // die zwei neuesten, immer gross
+    var rest   = pool.slice(HERO_PIN);             // die uebrigen sechs
+    var slots  = 5 - HERO_PIN;                     // drei kleine Kacheln
+    var step   = Math.floor(Date.now() / (HERO_HOURS * 3600000)) - HERO_EPOCH;
+    var start  = ((step % rest.length) + rest.length) % rest.length;
+    var out = pinned.slice();
+    for (var i = 0; i < slots; i++) { out.push(rest[(start + i) % rest.length]); }
     return out;
   })();
 
