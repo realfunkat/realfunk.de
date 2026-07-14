@@ -50,8 +50,14 @@
     var rest   = pool.slice(HERO_PIN);             // die uebrigen sechs
     var slots  = 5 - HERO_PIN;                     // drei kleine Kacheln
     var step   = Math.floor(Date.now() / (HERO_HOURS * 3600000)) - HERO_EPOCH;
-    var start  = ((step % rest.length) + rest.length) % rest.length;
-    var out = pinned.slice();
+
+    // Die gepinnten Kacheln bleiben oben, tauschen aber bei jedem Wechsel
+    // die Seite (links <-> rechts). Bewegung oben, ohne die Hierarchie zu verlieren.
+    var swap = ((step % pinned.length) + pinned.length) % pinned.length;
+    var out = [];
+    for (var p = 0; p < pinned.length; p++) { out.push(pinned[(p + swap) % pinned.length]); }
+
+    var start = ((step % rest.length) + rest.length) % rest.length;
     for (var i = 0; i < slots; i++) { out.push(rest[(start + i) % rest.length]); }
     return out;
   })();
