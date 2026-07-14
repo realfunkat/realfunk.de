@@ -25,14 +25,25 @@
     { file: "alles-ausser-politik.html", kick: "Deutschland", ttl: "Alles außer bessere Politik", img: "20260712kloeck.png", alt: "Satirische Szene aus dem Bundestag: die Praesidentin hebt mahnend den Zeigefinger, waehrend ein Block von Abgeordneten in Gelaechter ausbricht" }
   ];
 
-  /* Taegliche Rotation: das 5er-Fenster wandert pro Tag um einen Platz weiter.
-     Wechsel um 00:00 UTC (= 02:00 Wien im Sommer), also vor den Morgenlesern.
-     Jeder Pool-Artikel kommt reihum auch in die zwei grossen Kacheln. */
+  /* ------------------------------------------------------------------ *
+   * ROTATION
+   * HERO_MAX  : nur die ersten N Pool-Eintraege zaehlen. Neuen Artikel
+   *             VORNE einfuegen -> der aelteste faellt automatisch raus.
+   *             Kein manuelles Loeschen, kein stiller Pool-Wildwuchs.
+   * HERO_HOURS: alle wieviel Stunden das 5er-Fenster weiterwandert.
+   *             2 = zwoelfmal am Tag. 24 = einmal taeglich.
+   * Kein Push noetig — die Uhr macht das.
+   * ------------------------------------------------------------------ */
+  var HERO_MAX   = 8;
+  var HERO_HOURS = 2;
+
   var HERO_ITEMS = (function () {
-    var pool = HERO_POOL.filter(function (x) { return x && x.file && x.kick && x.ttl; });
+    var pool = HERO_POOL
+      .filter(function (x) { return x && x.file && x.kick && x.ttl; })
+      .slice(0, HERO_MAX);
     if (pool.length <= 5) return pool;
-    var day = Math.floor(Date.now() / 86400000);
-    var start = ((day % pool.length) + pool.length) % pool.length;
+    var step = Math.floor(Date.now() / (HERO_HOURS * 3600000));
+    var start = ((step % pool.length) + pool.length) % pool.length;
     var out = [];
     for (var i = 0; i < 5; i++) { out.push(pool[(start + i) % pool.length]); }
     return out;
