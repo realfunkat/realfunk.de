@@ -6,14 +6,37 @@
    Bilder gibt es NUR hier im Hero – Artikelseiten selbst bekommen keine neuen Bilder. */
 
 (function () {
-  var HERO_ITEMS = [
+  /* ------------------------------------------------------------------ *
+   * HERO_POOL — der Vorrat, aus dem der Hero taeglich 5 Kacheln zieht.
+   * Neue Artikel kommen NACH VORNE. 6 bis 10 Eintraege sind gesund.
+   * Jeder Eintrag braucht file, kick, ttl, img, alt.
+   * Die Rotation unten waehlt daraus jeden Tag ein anderes 5er-Fenster,
+   * damit der Leser morgens nicht dasselbe sieht wie am Vorabend.
+   * KEIN taeglicher Push noetig — der Kalender macht das.
+   * ------------------------------------------------------------------ */
+  var HERO_POOL = [
     { file: "ein-echter-geheimdienst.html", kick: "Durchschaut", ttl: "Ein echter Geheimdienst", img: "2026071401.webp", alt: "Ein Mann im grauen Anzug tippt nachts im dunklen Wohnzimmer einer schlafenden Familie auf deren Laptop, hinter ihm steht die Wohnungstuer offen" },
     { file: "der-staat-macht-zu.html", kick: "Durchschaut", ttl: "Der Staat macht zu", img: "20260714buerokratieabbau.webp", alt: "An einem Behoerdenschalter zieht ein Mitarbeiter ein schweres Rollgitter mit der Aufschrift BUEROKRATIEABBAU herunter, waehrend ein Buerger noch ein Formular hinhaelt" },
     { file: "verlogen-verlogener-eu.html", kick: "Durchschaut", ttl: "Ungarns Sünde, Brüssels Pflicht", img: "20260713vdl.jpeg", alt: "Das Gesicht der EU-Kommissionspraesidentin auf einer grossen Leinwand ueber einer dunklen Menschenmenge, flankiert von zwei Europafahnen" },
-    { file: "die-untragbare-diplomatin.html", kick: "EU", ttl: "Die untragbare „Diplomatin“", img: "20260713kallas.jpeg", alt: "Ein Mann sitzt vor dem Fernseher und schlaegt die Haende ueber dem Kopf zusammen, waehrend darin die EU-Aussenbeauftragte an einem Rednerpult vor einem maerchenhaften Sternenhintergrund spricht" },
-    { file: "dann-treten-sie-zurueck.html", kick: "Deutschland", ttl: "Dann treten Sie zurück", img: "20260713steinmeier.jpeg", alt: "Der Bundespraesident steigt vor Schloss Bellevue aus einer schwarzen Limousine, ein Mitarbeiter laedt eine Tasche in den geoeffneten Kofferraum" }
-  
+    { file: "die-untragbare-diplomatin.html", kick: "EU", ttl: "Die untragbare „Diplomatin“", img: "20260713kallas.jpeg", alt: "Ein Mann sitzt vor dem Fernseher und schlaegt die Haende ueber dem Kopf zusammen, waehrend darin die EU-Aussenbeauftragte an einem Rednerpult spricht" },
+    { file: "dann-treten-sie-zurueck.html", kick: "Deutschland", ttl: "Dann treten Sie zurück", img: "20260713steinmeier.jpeg", alt: "Der Bundespraesident steigt vor Schloss Bellevue aus einer schwarzen Limousine, ein Mitarbeiter laedt eine Tasche in den geoeffneten Kofferraum" },
+    { file: "campact-im-glashaus.html", kick: "Durchschaut", ttl: "Campact im Glashaus", img: "20260713campact.webp", alt: "Freiwillige ueberreichen drei Maennern in dunklen Anzuegen einen ueberdimensionalen Spendenscheck mit der Aufschrift 461.338 Euro" },
+    { file: "dazu-keine-antwort.html", kick: "Durchschaut", ttl: "Dazu keine Antwort", img: "20260713_habeck.jpeg", alt: "Ein Mann im Nadelstreifenanzug sitzt in einem Eckbuero mit Skyline-Blick, neben ihm steht ein weisser Warmwasserspeicher mit einem Geschenkanhaenger" },
+    { file: "alles-ausser-politik.html", kick: "Deutschland", ttl: "Alles außer bessere Politik", img: "20260712kloeck.png", alt: "Satirische Szene aus dem Bundestag: die Praesidentin hebt mahnend den Zeigefinger, waehrend ein Block von Abgeordneten in Gelaechter ausbricht" }
   ];
+
+  /* Taegliche Rotation: das 5er-Fenster wandert pro Tag um einen Platz weiter.
+     Wechsel um 00:00 UTC (= 02:00 Wien im Sommer), also vor den Morgenlesern.
+     Jeder Pool-Artikel kommt reihum auch in die zwei grossen Kacheln. */
+  var HERO_ITEMS = (function () {
+    var pool = HERO_POOL.filter(function (x) { return x && x.file && x.kick && x.ttl; });
+    if (pool.length <= 5) return pool;
+    var day = Math.floor(Date.now() / 86400000);
+    var start = ((day % pool.length) + pool.length) % pool.length;
+    var out = [];
+    for (var i = 0; i < 5; i++) { out.push(pool[(start + i) % pool.length]); }
+    return out;
+  })();
 
   // Sport ist eine eigene Seite (kein Ressort auf der Startseite). Fuer Top Stories
   // hier den aktuellen Sport-Lead-Titel eintragen (bei jedem Sport-Lead-Update mitpflegen).
@@ -102,6 +125,20 @@
     var sub = document.querySelector(".subbar");
     if (sub) sub.insertAdjacentHTML("afterend", navHtml + ((noHero || inArtikel) ? "" : html));
 
+    // Was im Hero steht, erscheint nicht noch einmal in den Ressort-Listen
+    // (und damit auch nicht in den Top Stories, die darunter gebaut werden).
+    if (!inArtikel) {
+      var heroFiles = {};
+      for (var hf = 0; hf < HERO_ITEMS.length; hf++) {
+        heroFiles[HERO_ITEMS[hf].file.replace(/\.html?$/i, "").toLowerCase()] = 1;
+      }
+      var cards = document.querySelectorAll("main section.ressort .headline-list a");
+      for (var ci = 0; ci < cards.length; ci++) {
+        var cf = (cards[ci].getAttribute("href") || "").split("/").pop().split("#")[0].replace(/\.html?$/i, "").toLowerCase();
+        if (heroFiles[cf] && cards[ci].parentNode) { cards[ci].parentNode.removeChild(cards[ci]); }
+      }
+    }
+
     // Top Stories (nur Startseite): erster Artikel je Ressort, direkt über dem Leitartikel.
     if (!inArtikel) {
       var lead = document.querySelector("main section.ressort");
@@ -142,7 +179,7 @@
       for (var k = 0; k < HERO_ITEMS.length; k++) {
         if (HERO_ITEMS[k].file.replace(/\.html?$/i, "").toLowerCase() === current) { item = HERO_ITEMS[k]; break; }
       }
-      if (item && item.img && !document.querySelector(".article .figure")) {
+      if (item && item.img && !document.querySelector(".article .figure") && !document.querySelector(".article img.lead")) {
         var h1 = document.querySelector(".article h1");
         if (h1) {
           var fig = '<figure class="figure full" style="margin:14px 0 6px;">' +
