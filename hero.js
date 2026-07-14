@@ -35,7 +35,7 @@
    * Kein Push noetig — die Uhr macht das.
    * ------------------------------------------------------------------ */
   var HERO_MAX   = 8;
-  var HERO_HOURS = 2;
+  var HERO_HOURS = 6;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
