@@ -36,13 +36,18 @@
    * ------------------------------------------------------------------ */
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
+  /* HERO_EPOCH: Nullpunkt der Rotation. Zu diesem Zeitpunkt steht HERO_POOL[0]
+     ganz oben links. Bei jedem Push mit einem NEUEN Artikel im Pool diesen Wert
+     neu setzen (node -e 'console.log(Math.floor(Date.now()/(6*3600000)))'),
+     dann startet der neue Artikel als Leitartikel und rotiert erst danach weg. */
+  var HERO_EPOCH = 82593;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
       .filter(function (x) { return x && x.file && x.kick && x.ttl; })
       .slice(0, HERO_MAX);
     if (pool.length <= 5) return pool;
-    var step = Math.floor(Date.now() / (HERO_HOURS * 3600000));
+    var step = Math.floor(Date.now() / (HERO_HOURS * 3600000)) - HERO_EPOCH;
     var start = ((step % pool.length) + pool.length) % pool.length;
     var out = [];
     for (var i = 0; i < 5; i++) { out.push(pool[(start + i) % pool.length]); }
