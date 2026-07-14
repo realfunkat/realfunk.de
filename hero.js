@@ -56,9 +56,6 @@
     return out;
   })();
 
-  // Sport ist eine eigene Seite (kein Ressort auf der Startseite). Fuer Top Stories
-  // hier den aktuellen Sport-Lead-Titel eintragen (bei jedem Sport-Lead-Update mitpflegen).
-  var SPORT_TOP = "";
 
   var inArtikel = /\/artikel\//.test(location.pathname);
   var pagePrefix = inArtikel ? "" : "artikel/";
@@ -77,6 +74,7 @@
     ["Ausland", "index.html#ausland"],
     ["Klima", "index.html#klima"],
     ["Ukraine-Krieg", "index.html#ukraine-krieg"],
+    ["Sport", "index.html#sport"],
     ["Archiv", "archiv.html"]
   ];
   var navHtml = '<nav class="ornav"><div class="wrap">' +
@@ -173,9 +171,6 @@
           var tz = clone.querySelector(".teaser"); if (tz) tz.parentNode.removeChild(tz);
           var title = (clone.textContent || "").trim();
           rows += '<a href="' + link.getAttribute("href") + '"><span class="ts-kick">' + esc(lab.textContent) + '</span>' + title + '</a>';
-        }
-        if (SPORT_TOP) {
-          rows += '<a href="sport.html"><span class="ts-kick">Sport</span>' + esc(SPORT_TOP) + '</a>';
         }
         if (rows) {
           var ts = document.createElement("section");
