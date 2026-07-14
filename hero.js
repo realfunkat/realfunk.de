@@ -73,7 +73,7 @@
     ["Österreich", "index.html#oesterreich"],
     ["Ausland", "index.html#ausland"],
     ["Klima", "index.html#klima"],
-    ["Ukraine-Krieg", "index.html#ukraine-krieg"],
+    ["Ukraine", "index.html#ukraine-krieg"],
     ["Sport", "index.html#sport"],
     ["Archiv", "archiv.html"]
   ];
@@ -105,7 +105,7 @@
     ".ornav{background:#fff;border-bottom:1px solid var(--line,#e2e2e2);position:sticky;top:0;z-index:50;}" +
     ".ornav .wrap{display:flex;gap:0;max-width:1000px;margin:0 auto;overflow-x:auto;white-space:nowrap;padding:0 18px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}" +
     ".ornav .wrap::-webkit-scrollbar{display:none;}" +
-    ".ornav a{display:inline-block;padding:9px 11px;font-size:13px;font-weight:700;color:#20284A;border-bottom:3px solid transparent;}" +
+    ".ornav a{display:inline-block;padding:9px 8px;font-size:13px;font-weight:700;color:#20284A;border-bottom:3px solid transparent;}" +
     ".ornav a:hover{color:var(--accent-dark,#05112A);border-bottom-color:var(--accent,#20284A);}" +
     ".ornav a.home{color:var(--accent-dark,#05112A);}" +
     ".hero{padding:14px 0 4px;}" +
