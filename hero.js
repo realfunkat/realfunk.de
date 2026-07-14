@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "zwei-ueberschriften-ein-artikel.html", kick: "Durchschaut", ttl: "Zwei Überschriften, ein Artikel", img: "20260714grenzen.webp", alt: "Ein Zeitungskiosk in der Daemmerung: Auf dem Stapel zur Strasse hin steht 51 Prozent wollen Grenzen zu, das Blatt beim Verkaeufer drinnen zeigt 69 Prozent wollen Schutz geben" },
     { file: "ein-echter-geheimdienst.html", kick: "Deutschland", ttl: "Ein echter Geheimdienst", img: "2026071401.webp", alt: "Ein Mann im grauen Anzug tippt nachts im dunklen Wohnzimmer einer schlafenden Familie auf deren Laptop, hinter ihm steht die Wohnungstuer offen" },
     { file: "der-staat-macht-zu.html", kick: "Deutschland", ttl: "Der Staat macht zu", img: "20260714buerokratieabbau.webp", alt: "An einem Behoerdenschalter zieht ein Mitarbeiter ein schweres Rollgitter mit der Aufschrift BUEROKRATIEABBAU herunter, waehrend ein Buerger noch ein Formular hinhaelt" },
     { file: "verlogen-verlogener-eu.html", kick: "EU", ttl: "Ungarns Sünde, Brüssels Pflicht", img: "20260713vdl.jpeg", alt: "Das Gesicht der EU-Kommissionspraesidentin auf einer grossen Leinwand ueber einer dunklen Menschenmenge, flankiert von zwei Europafahnen" },
@@ -39,7 +40,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH = 82593;
+  var HERO_EPOCH = 82595;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
