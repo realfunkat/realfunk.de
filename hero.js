@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "totalueberwachung-frei-haus.html", kick: "EU", ttl: "Totalüberwachung, frei Haus", img: "20260715kinderschutz4.jpg", alt: "Ein Vater sitzt am Schreibtisch und haelt seinen Ausweis an ein EU-Formular mit der Aufschrift Kinderschutz Gesetz, waehrend hinter ihm zwei kleine Kinder vor dem Fernseher sitzen, in dem eine Person im Regenbogenkostuem ein Regenbogenherz hochhaelt" },
     { file: "zwei-ueberschriften-ein-artikel.html", kick: "Durchschaut", ttl: "Zwei Überschriften, ein Artikel", img: "20260714grenzen.webp", alt: "Ein Zeitungskiosk in der Daemmerung: Auf dem Stapel zur Strasse hin steht 51 Prozent wollen Grenzen zu, das Blatt beim Verkaeufer drinnen zeigt 69 Prozent wollen Schutz geben" },
     { file: "ein-echter-geheimdienst.html", kick: "Deutschland", ttl: "Ein echter Geheimdienst", img: "2026071401.webp", alt: "Ein Mann im grauen Anzug tippt nachts im dunklen Wohnzimmer einer schlafenden Familie auf deren Laptop, hinter ihm steht die Wohnungstuer offen" },
     { file: "der-staat-macht-zu.html", kick: "Deutschland", ttl: "Der Staat macht zu", img: "20260714buerokratieabbau.webp", alt: "An einem Behoerdenschalter zieht ein Mitarbeiter ein schweres Rollgitter mit der Aufschrift BUEROKRATIEABBAU herunter, waehrend ein Buerger noch ein Formular hinhaelt" },
@@ -40,7 +41,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH = 82595;
+  var HERO_EPOCH = 82597;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
