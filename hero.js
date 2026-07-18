@@ -16,6 +16,7 @@
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
     { file: "er-schwieg-sie-war-schon-schwanger.html", kick: "Deutschland", ttl: "Er schwieg, sie war schon schwanger", img: "20260716leihmutterschaft.jpg", alt: "Jens Spahn und sein Ehemann Daniel Funke bei einer Open-Air-Veranstaltung" },
+    { file: "verlust-ausgeschlossen-angeblich.html", kick: "Deutschland", ttl: "Verlust ausgeschlossen. Angeblich.", img: "20260718fonds.webp", alt: "Ein Mann im dunklen Anzug zuckt am Konferenztisch mit den Schultern, vor ihm eine Fondsbroschuere aus der Papierfetzen aufsteigen, im Hintergrund ein leerer Wartebereich" },
     { file: "die-grauzone-geschrammt.html", kick: "ÖRR", ttl: "Die Grauzone geschrammt", img: "20260717auftritt.webp", alt: "Leere Studiobuehne mit Fluegel und zwei Mikrofonen unter erloschenen Scheinwerfern, rechts baut ein Kameramann seine Kamera ab" },
     { file: "geladen-aber-wozu.html", kick: "Deutschland", ttl: "Geladen, aber wozu?", img: "260716schlaemmer.jpeg", alt: "Zwei Sachverstaendige an einem Tisch in einem Ausschusssaal, links ein Mann im Anzug am Mikrofon, rechts ein Mann mit Schnauzbart und verschraenkten Armen" },
     { file: "herzlichen-glueckwunsch-zum-16.html", kick: "Deutschland", ttl: "Herzlichen Glückwunsch zum 16.", img: "20260716AMT.webp", alt: "Eine Frau sitzt allein am Kuechentisch vor einem Geburtstagskuchen mit einer 16er-Kerze und liest einen Brief vom Amt" },
