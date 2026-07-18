@@ -57,3 +57,5 @@ footer strong{color:var(--ink);}
 /* Interne Links im Artikeltext sichtbar machen (13.07.2026) */
 .article .body a,.redaktion a{color:var(--accent);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;}
 .article .body a:hover,.redaktion a:hover{color:var(--accent-dark);text-decoration-thickness:2px;}
+
+.dateline{font-size:13px;color:#8a93b2;margin:2px 0 14px;letter-spacing:.02em;}

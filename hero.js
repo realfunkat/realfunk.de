@@ -15,20 +15,14 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "er-schwieg-sie-war-schon-schwanger.html", kick: "Deutschland", ttl: "Er schwieg, sie war schon schwanger", img: "20260716leihmutterschaft.jpg", alt: "Jens Spahn und sein Ehemann Daniel Funke bei einer Open-Air-Veranstaltung" },
     { file: "die-grauzone-geschrammt.html", kick: "ÖRR", ttl: "Die Grauzone geschrammt", img: "20260717auftritt.webp", alt: "Leere Studiobuehne mit Fluegel und zwei Mikrofonen unter erloschenen Scheinwerfern, rechts baut ein Kameramann seine Kamera ab" },
-    { file: "verboten-ausser-fuer-ihn.html", kick: "Deutschland", ttl: "Verboten. Außer für ihn.", img: "20260716leihmutterschaft.jpg", alt: "Jens Spahn und sein Ehemann Daniel Funke bei einer Open-Air-Veranstaltung" },
     { file: "geladen-aber-wozu.html", kick: "Deutschland", ttl: "Geladen, aber wozu?", img: "260716schlaemmer.jpeg", alt: "Zwei Sachverstaendige an einem Tisch in einem Ausschusssaal, links ein Mann im Anzug am Mikrofon, rechts ein Mann mit Schnauzbart und verschraenkten Armen" },
     { file: "herzlichen-glueckwunsch-zum-16.html", kick: "Deutschland", ttl: "Herzlichen Glückwunsch zum 16.", img: "20260716AMT.webp", alt: "Eine Frau sitzt allein am Kuechentisch vor einem Geburtstagskuchen mit einer 16er-Kerze und liest einen Brief vom Amt" },
-    { file: "totalueberwachung-frei-haus.html", kick: "EU", ttl: "Totalüberwachung, frei Haus", img: "20260715kinderschutz4.jpg", alt: "Ein Vater sitzt am Schreibtisch und haelt seinen Ausweis an ein EU-Formular mit der Aufschrift Kinderschutz Gesetz, waehrend hinter ihm zwei kleine Kinder vor dem Fernseher sitzen, in dem eine Person im Regenbogenkostuem ein Regenbogenherz hochhaelt" },
-    { file: "zwei-ueberschriften-ein-artikel.html", kick: "Durchschaut", ttl: "Zwei Überschriften, ein Artikel", img: "20260714grenzen.webp", alt: "Ein Zeitungskiosk in der Daemmerung: Auf dem Stapel zur Strasse hin steht 51 Prozent wollen Grenzen zu, das Blatt beim Verkaeufer drinnen zeigt 69 Prozent wollen Schutz geben" },
+    { file: "totalueberwachung-frei-haus.html", kick: "EU", ttl: "Totalüberwachung, frei Haus", img: "20260715kinderschutz4.jpg", alt: "Ein Vater sitzt am Schreibtisch und haelt seinen Ausweis an ein EU-Formular mit der Aufschrift Kinderschutz Gesetz, waehrend hinter ihm zwei kleine Kinder vor dem Fernseher sitzen" },
+    { file: "zwei-ueberschriften-ein-artikel.html", kick: "Durchschaut", ttl: "Zwei Überschriften, ein Artikel", img: "20260714grenzen.webp", alt: "Ein Zeitungskiosk in der Daemmerung mit zwei widerspruechlichen Schlagzeilen zum selben Thema" },
     { file: "ein-echter-geheimdienst.html", kick: "Deutschland", ttl: "Ein echter Geheimdienst", img: "2026071401.webp", alt: "Ein Mann im grauen Anzug tippt nachts im dunklen Wohnzimmer einer schlafenden Familie auf deren Laptop, hinter ihm steht die Wohnungstuer offen" },
-    { file: "der-staat-macht-zu.html", kick: "Deutschland", ttl: "Der Staat macht zu", img: "20260714buerokratieabbau.webp", alt: "An einem Behoerdenschalter zieht ein Mitarbeiter ein schweres Rollgitter mit der Aufschrift BUEROKRATIEABBAU herunter, waehrend ein Buerger noch ein Formular hinhaelt" },
-    { file: "verlogen-verlogener-eu.html", kick: "EU", ttl: "Ungarns Sünde, Brüssels Pflicht", img: "20260713vdl.jpeg", alt: "Das Gesicht der EU-Kommissionspraesidentin auf einer grossen Leinwand ueber einer dunklen Menschenmenge, flankiert von zwei Europafahnen" },
-    { file: "die-untragbare-diplomatin.html", kick: "EU", ttl: "Die untragbare „Diplomatin“", img: "20260713kallas.jpeg", alt: "Ein Mann sitzt vor dem Fernseher und schlaegt die Haende ueber dem Kopf zusammen, waehrend darin die EU-Aussenbeauftragte an einem Rednerpult spricht" },
-    { file: "dann-treten-sie-zurueck.html", kick: "Deutschland", ttl: "Dann treten Sie zurück", img: "20260713steinmeier.jpeg", alt: "Der Bundespraesident steigt vor Schloss Bellevue aus einer schwarzen Limousine, ein Mitarbeiter laedt eine Tasche in den geoeffneten Kofferraum" },
-    { file: "campact-im-glashaus.html", kick: "Deutschland", ttl: "Campact im Glashaus", img: "20260713campact.webp", alt: "Freiwillige ueberreichen drei Maennern in dunklen Anzuegen einen ueberdimensionalen Spendenscheck mit der Aufschrift 461.338 Euro" },
-    { file: "dazu-keine-antwort.html", kick: "Deutschland", ttl: "Dazu keine Antwort", img: "20260713_habeck.jpeg", alt: "Ein Mann im Nadelstreifenanzug sitzt in einem Eckbuero mit Skyline-Blick, neben ihm steht ein weisser Warmwasserspeicher mit einem Geschenkanhaenger" },
-    { file: "alles-ausser-politik.html", kick: "Deutschland", ttl: "Alles außer bessere Politik", img: "20260712kloeck.png", alt: "Satirische Szene aus dem Bundestag: die Praesidentin hebt mahnend den Zeigefinger, waehrend ein Block von Abgeordneten in Gelaechter ausbricht" }
+    { file: "der-staat-macht-zu.html", kick: "Deutschland", ttl: "Der Staat macht zu", img: "20260714buerokratieabbau.webp", alt: "An einem Behoerdenschalter zieht ein Mitarbeiter ein schweres Rollgitter mit der Aufschrift BUEROKRATIEABBAU herunter" }
   ];
 
   /* ------------------------------------------------------------------ *
@@ -45,7 +39,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH = 82605;
+  var HERO_EPOCH = 82609;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
