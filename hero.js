@@ -16,6 +16,7 @@
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
     { file: "er-schwieg-sie-war-schon-schwanger.html", kick: "Deutschland", ttl: "Er schwieg, sie war schon schwanger", img: "20260716leihmutterschaft.jpg", alt: "Jens Spahn und sein Ehemann Daniel Funke bei einer Open-Air-Veranstaltung" },
+    { file: "so-hart-wie-totschlag.html", kick: "Deutschland", ttl: "So hart wie Totschlag", img: "20260718klingbeil.jpg", alt: "Finanzminister Klingbeil prueft mit einer Lupe eine Kassenbon-Rolle am Tresen eines kleinen Imbisses, dahinter ein hoher Aktenstapel" },
     { file: "verlust-ausgeschlossen-angeblich.html", kick: "Deutschland", ttl: "Verlust ausgeschlossen. Angeblich.", img: "20260718fonds.webp", alt: "Ein Mann im dunklen Anzug zuckt am Konferenztisch mit den Schultern, vor ihm eine Fondsbroschuere aus der Papierfetzen aufsteigen, im Hintergrund ein leerer Wartebereich" },
     { file: "die-grauzone-geschrammt.html", kick: "ÖRR", ttl: "Die Grauzone geschrammt", img: "20260717auftritt.webp", alt: "Leere Studiobuehne mit Fluegel und zwei Mikrofonen unter erloschenen Scheinwerfern, rechts baut ein Kameramann seine Kamera ab" },
     { file: "geladen-aber-wozu.html", kick: "Deutschland", ttl: "Geladen, aber wozu?", img: "260716schlaemmer.jpeg", alt: "Zwei Sachverstaendige an einem Tisch in einem Ausschusssaal, links ein Mann im Anzug am Mikrofon, rechts ein Mann mit Schnauzbart und verschraenkten Armen" },
