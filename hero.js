@@ -15,7 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "er-schwieg-sie-war-schon-schwanger.html", kick: "Deutschland", ttl: "Er schwieg, sie war schon schwanger", img: "20260716leihmutterschaft.jpg", alt: "Jens Spahn und sein Ehemann Daniel Funke bei einer Open-Air-Veranstaltung" },
+    { file: "die-kohle-fliesst-weiter.html", kick: "Deutschland", ttl: "Die Kohle fließt weiter", img: "20260719spahn.jpg", alt: "Jens Spahn am Rednerpult des Bundestags mit der Aufschrift Fraktionsvorsitzender, dahinter der Bundesadler" },
     { file: "so-hart-wie-totschlag.html", kick: "Deutschland", ttl: "So hart wie Totschlag", img: "20260718klingbeil.jpg", alt: "Finanzminister Klingbeil prueft mit einer Lupe eine Kassenbon-Rolle am Tresen eines kleinen Imbisses, dahinter ein hoher Aktenstapel" },
     { file: "verlust-ausgeschlossen-angeblich.html", kick: "Deutschland", ttl: "Verlust ausgeschlossen. Angeblich.", img: "20260718fonds.webp", alt: "Ein Mann im dunklen Anzug zuckt am Konferenztisch mit den Schultern, vor ihm eine Fondsbroschuere aus der Papierfetzen aufsteigen, im Hintergrund ein leerer Wartebereich" },
     { file: "die-grauzone-geschrammt.html", kick: "ÖRR", ttl: "Die Grauzone geschrammt", img: "20260717auftritt.webp", alt: "Leere Studiobuehne mit Fluegel und zwei Mikrofonen unter erloschenen Scheinwerfern, rechts baut ein Kameramann seine Kamera ab" },
@@ -41,7 +41,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH = 82609;
+  var HERO_EPOCH = 82613;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
