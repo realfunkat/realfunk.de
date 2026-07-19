@@ -16,6 +16,7 @@
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
     { file: "nur-manche-sind-gleicher.html", kick: "Deutschland", ttl: "Nur manche sind gleicher", img: "20260719spahn2.jpg", alt: "Jens Spahn und sein Ehemann mit Kinderwagen vor einer herrschaftlichen Villa, davor Kartons mit der Aufschrift FFP2 Masken" },
+    { file: "ein-schelm-wer-boeses-denkt.html", kick: "Deutschland", ttl: "Ein Schelm, wer Böses denkt", img: "20260719merz02.jpg", alt: "Bundeskanzler Merz gestikulierend bei einem sommerlichen Fernsehinterview auf einer Dachterrasse ueber Berlin" },
     { file: "so-hart-wie-totschlag.html", kick: "Deutschland", ttl: "So hart wie Totschlag", img: "20260718klingbeil.jpg", alt: "Finanzminister Klingbeil prueft mit einer Lupe eine Kassenbon-Rolle am Tresen eines kleinen Imbisses, dahinter ein hoher Aktenstapel" },
     { file: "auf-freiem-fuss.html", kick: "Deutschland", ttl: "Auf freiem Fuß", img: "20260719bahn.webp", alt: "Beschaedigte Zugtuer und eine DB-Sicherheit-Warnweste auf dem Boden eines leeren Regionalzugs" },
     { file: "die-kohle-fliesst-weiter.html", kick: "Deutschland", ttl: "Die Kohle fließt weiter", img: "20260719spahn.jpg", alt: "Jens Spahn am Rednerpult des Bundestags mit der Aufschrift Fraktionsvorsitzender, dahinter der Bundesadler" },
@@ -23,8 +24,7 @@
     { file: "geladen-aber-wozu.html", kick: "Deutschland", ttl: "Geladen, aber wozu?", img: "260716schlaemmer.jpeg", alt: "Zwei Sachverstaendige an einem Tisch in einem Ausschusssaal, links ein Mann im Anzug am Mikrofon, rechts ein Mann mit Schnauzbart und verschraenkten Armen" },
     { file: "herzlichen-glueckwunsch-zum-16.html", kick: "Deutschland", ttl: "Herzlichen Glückwunsch zum 16.", img: "20260716AMT.webp", alt: "Eine Frau sitzt allein am Kuechentisch vor einem Geburtstagskuchen mit einer 16er-Kerze und liest einen Brief vom Amt" },
     { file: "totalueberwachung-frei-haus.html", kick: "EU", ttl: "Totalüberwachung, frei Haus", img: "20260715kinderschutz4.jpg", alt: "Ein Vater sitzt am Schreibtisch und haelt seinen Ausweis an ein EU-Formular mit der Aufschrift Kinderschutz Gesetz, waehrend hinter ihm zwei kleine Kinder vor dem Fernseher sitzen" },
-    { file: "zwei-ueberschriften-ein-artikel.html", kick: "Durchschaut", ttl: "Zwei Überschriften, ein Artikel", img: "20260714grenzen.webp", alt: "Ein Zeitungskiosk in der Daemmerung mit zwei widerspruechlichen Schlagzeilen zum selben Thema" },
-    { file: "ein-echter-geheimdienst.html", kick: "Deutschland", ttl: "Ein echter Geheimdienst", img: "2026071401.webp", alt: "Ein Mann im grauen Anzug tippt nachts im dunklen Wohnzimmer einer schlafenden Familie auf deren Laptop, hinter ihm steht die Wohnungstuer offen" }
+    { file: "zwei-ueberschriften-ein-artikel.html", kick: "Durchschaut", ttl: "Zwei Überschriften, ein Artikel", img: "20260714grenzen.webp", alt: "Ein Zeitungskiosk in der Daemmerung mit zwei widerspruechlichen Schlagzeilen zum selben Thema" }
   ];
 
   /* ------------------------------------------------------------------ *
@@ -41,7 +41,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH = 82613;
+  var HERO_EPOCH = 82615;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
