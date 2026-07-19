@@ -15,16 +15,16 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "die-kohle-fliesst-weiter.html", kick: "Deutschland", ttl: "Die Kohle fließt weiter", img: "20260719spahn.jpg", alt: "Jens Spahn am Rednerpult des Bundestags mit der Aufschrift Fraktionsvorsitzender, dahinter der Bundesadler" },
+    { file: "nur-manche-sind-gleicher.html", kick: "Deutschland", ttl: "Nur manche sind gleicher", img: "20260719spahn2.jpg", alt: "Jens Spahn und sein Ehemann mit Kinderwagen vor einer herrschaftlichen Villa, davor Kartons mit der Aufschrift FFP2 Masken" },
     { file: "so-hart-wie-totschlag.html", kick: "Deutschland", ttl: "So hart wie Totschlag", img: "20260718klingbeil.jpg", alt: "Finanzminister Klingbeil prueft mit einer Lupe eine Kassenbon-Rolle am Tresen eines kleinen Imbisses, dahinter ein hoher Aktenstapel" },
+    { file: "die-kohle-fliesst-weiter.html", kick: "Deutschland", ttl: "Die Kohle fließt weiter", img: "20260719spahn.jpg", alt: "Jens Spahn am Rednerpult des Bundestags mit der Aufschrift Fraktionsvorsitzender, dahinter der Bundesadler" },
     { file: "verlust-ausgeschlossen-angeblich.html", kick: "Deutschland", ttl: "Verlust ausgeschlossen. Angeblich.", img: "20260718fonds.webp", alt: "Ein Mann im dunklen Anzug zuckt am Konferenztisch mit den Schultern, vor ihm eine Fondsbroschuere aus der Papierfetzen aufsteigen, im Hintergrund ein leerer Wartebereich" },
     { file: "die-grauzone-geschrammt.html", kick: "ÖRR", ttl: "Die Grauzone geschrammt", img: "20260717auftritt.webp", alt: "Leere Studiobuehne mit Fluegel und zwei Mikrofonen unter erloschenen Scheinwerfern, rechts baut ein Kameramann seine Kamera ab" },
     { file: "geladen-aber-wozu.html", kick: "Deutschland", ttl: "Geladen, aber wozu?", img: "260716schlaemmer.jpeg", alt: "Zwei Sachverstaendige an einem Tisch in einem Ausschusssaal, links ein Mann im Anzug am Mikrofon, rechts ein Mann mit Schnauzbart und verschraenkten Armen" },
     { file: "herzlichen-glueckwunsch-zum-16.html", kick: "Deutschland", ttl: "Herzlichen Glückwunsch zum 16.", img: "20260716AMT.webp", alt: "Eine Frau sitzt allein am Kuechentisch vor einem Geburtstagskuchen mit einer 16er-Kerze und liest einen Brief vom Amt" },
     { file: "totalueberwachung-frei-haus.html", kick: "EU", ttl: "Totalüberwachung, frei Haus", img: "20260715kinderschutz4.jpg", alt: "Ein Vater sitzt am Schreibtisch und haelt seinen Ausweis an ein EU-Formular mit der Aufschrift Kinderschutz Gesetz, waehrend hinter ihm zwei kleine Kinder vor dem Fernseher sitzen" },
     { file: "zwei-ueberschriften-ein-artikel.html", kick: "Durchschaut", ttl: "Zwei Überschriften, ein Artikel", img: "20260714grenzen.webp", alt: "Ein Zeitungskiosk in der Daemmerung mit zwei widerspruechlichen Schlagzeilen zum selben Thema" },
-    { file: "ein-echter-geheimdienst.html", kick: "Deutschland", ttl: "Ein echter Geheimdienst", img: "2026071401.webp", alt: "Ein Mann im grauen Anzug tippt nachts im dunklen Wohnzimmer einer schlafenden Familie auf deren Laptop, hinter ihm steht die Wohnungstuer offen" },
-    { file: "der-staat-macht-zu.html", kick: "Deutschland", ttl: "Der Staat macht zu", img: "20260714buerokratieabbau.webp", alt: "An einem Behoerdenschalter zieht ein Mitarbeiter ein schweres Rollgitter mit der Aufschrift BUEROKRATIEABBAU herunter" }
+    { file: "ein-echter-geheimdienst.html", kick: "Deutschland", ttl: "Ein echter Geheimdienst", img: "2026071401.webp", alt: "Ein Mann im grauen Anzug tippt nachts im dunklen Wohnzimmer einer schlafenden Familie auf deren Laptop, hinter ihm steht die Wohnungstuer offen" }
   ];
 
   /* ------------------------------------------------------------------ *
