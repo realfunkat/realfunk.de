@@ -15,7 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "alle-boese-zu-fritz.html", kick: "Deutschland", ttl: "Alle böse zu Fritz", img: "20260720fritz.jpeg", alt: "Bundeskanzler Friedrich Merz sitzt im sommerlichen ZDF-Interview am Tisch, mit Traenen auf den Wangen, ihm gegenueber eine Interviewerin von hinten" },
+    { file: "alle-boese-zu-fritz.html", kick: "Deutschland", ttl: "Alle böse zu Fritz", img: "20260720fritz02.jpeg", alt: "Bundeskanzler Friedrich Merz sitzt im sommerlichen ZDF-Interview am Tisch und spielt eine winzige Geige, ihm gegenueber eine Interviewerin von hinten" },
     { file: "datenkauf-in-der-grauzone.html", kick: "Deutschland", ttl: "Der Staat kauft dich", img: "20260720ueberwachung.webp", alt: "Ein Mitarbeiter sitzt mit einer Rechnung in der Hand vor einer Wand aus Bildschirmen, die zahlreiche Menschen an Schreibtischen sowie Stadtkarten mit Standort-Markierungen und der Aufschrift AD-ID zeigen" },
     { file: "qualitaet-auf-staatskosten.html", kick: "Österreich", ttl: "Qualität auf Staatskosten", img: "20260720babler-w.jpg", alt: "Ein Mann im dunklen Anzug reicht einer Nachrichtensprecherin am Studiopult ein dickes Buendel Euro-Geldscheine, im Vordergrund eine Fernsehkamera, im Hintergrund ein rotes ON-AIR-Schild" },
     { file: "zweimal-um-die-welt.html", kick: "Klima", ttl: "Nachhaltig, im Privatjet", img: "20260720infantinobb.jpg", alt: "Ein Mann und eine Frau in T-Shirts mit der Aufschrift Save the Planet zeigen den Daumen hoch vor einem Privatjet mit FIFA-Schriftzug, davor ein Fußball" },
