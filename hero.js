@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "stromnetz-anschlag-verdaechtige.html", kick: "Deutschland", ttl: "Namen bekannt, Zugriff vertagt", img: "20260720linksterror.webp", alt: "Eine Ermittlungstafel mit Berlin-Stadtplan, Verdaechtigenfotos und roten Verbindungsfaeden, im Vordergrund auf dem Tisch eine geschlossene Akte und ungenutzte Handschellen" },
     { file: "alle-boese-zu-fritz.html", kick: "Deutschland", ttl: "Alle böse zu Fritz", img: "20260720fritz02.jpeg", alt: "Bundeskanzler Friedrich Merz sitzt im sommerlichen ZDF-Interview am Tisch und spielt eine winzige Geige, ihm gegenueber eine Interviewerin von hinten" },
     { file: "datenkauf-in-der-grauzone.html", kick: "Deutschland", ttl: "Der Staat kauft dich", img: "20260720ueberwachung.webp", alt: "Ein Mitarbeiter sitzt mit einer Rechnung in der Hand vor einer Wand aus Bildschirmen, die zahlreiche Menschen an Schreibtischen sowie Stadtkarten mit Standort-Markierungen und der Aufschrift AD-ID zeigen" },
     { file: "qualitaet-auf-staatskosten.html", kick: "Österreich", ttl: "Qualität auf Staatskosten", img: "20260720babler-w.jpg", alt: "Ein Mann im dunklen Anzug reicht einer Nachrichtensprecherin am Studiopult ein dickes Buendel Euro-Geldscheine, im Vordergrund eine Fernsehkamera, im Hintergrund ein rotes ON-AIR-Schild" },
