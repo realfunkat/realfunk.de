@@ -15,9 +15,10 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "zweimal-um-die-welt.html", kick: "Klima", ttl: "Nachhaltig, im Privatjet", img: "20260720infantinobb.jpg", alt: "Ein Mann und eine Frau in T-Shirts mit der Aufschrift Save the Planet zeigen den Daumen hoch vor einem Privatjet mit FIFA-Schriftzug, davor ein Fußball" },
+    { file: "alle-boese-zu-fritz.html", kick: "Deutschland", ttl: "Alle böse zu Fritz", img: "20260720fritz.jpeg", alt: "Bundeskanzler Friedrich Merz sitzt im sommerlichen ZDF-Interview am Tisch, mit Traenen auf den Wangen, ihm gegenueber eine Interviewerin von hinten" },
     { file: "datenkauf-in-der-grauzone.html", kick: "Deutschland", ttl: "Der Staat kauft dich", img: "20260720ueberwachung.webp", alt: "Ein Mitarbeiter sitzt mit einer Rechnung in der Hand vor einer Wand aus Bildschirmen, die zahlreiche Menschen an Schreibtischen sowie Stadtkarten mit Standort-Markierungen und der Aufschrift AD-ID zeigen" },
     { file: "qualitaet-auf-staatskosten.html", kick: "Österreich", ttl: "Qualität auf Staatskosten", img: "20260720babler-w.jpg", alt: "Ein Mann im dunklen Anzug reicht einer Nachrichtensprecherin am Studiopult ein dickes Buendel Euro-Geldscheine, im Vordergrund eine Fernsehkamera, im Hintergrund ein rotes ON-AIR-Schild" },
+    { file: "zweimal-um-die-welt.html", kick: "Klima", ttl: "Nachhaltig, im Privatjet", img: "20260720infantinobb.jpg", alt: "Ein Mann und eine Frau in T-Shirts mit der Aufschrift Save the Planet zeigen den Daumen hoch vor einem Privatjet mit FIFA-Schriftzug, davor ein Fußball" },
     { file: "ein-schelm-wer-boeses-denkt.html", kick: "Deutschland", ttl: "Ein Schelm, wer Böses denkt", img: "20260719merz02.jpg", alt: "Bundeskanzler Merz gestikulierend bei einem sommerlichen Fernsehinterview auf einer Dachterrasse ueber Berlin" },
     { file: "nur-manche-sind-gleicher.html", kick: "Deutschland", ttl: "Nur manche sind gleicher", img: "20260719spahn2.jpg", alt: "Jens Spahn und sein Ehemann mit Kinderwagen vor einer herrschaftlichen Villa, davor Kartons mit der Aufschrift FFP2 Masken" },
     { file: "so-hart-wie-totschlag.html", kick: "Deutschland", ttl: "So hart wie Totschlag", img: "20260718klingbeil.jpg", alt: "Finanzminister Klingbeil prueft mit einer Lupe eine Kassenbon-Rolle am Tresen eines kleinen Imbisses, dahinter ein hoher Aktenstapel" },
@@ -44,7 +45,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH = 82617;
+  var HERO_EPOCH = 82618;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
