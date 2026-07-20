@@ -15,7 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "zweimal-um-die-welt.html", kick: "Klima", ttl: "Nachhaltig, im Privatjet", img: "20260720infantino.jpg", alt: "Ein Mann im T-Shirt mit der Aufschrift Save the Planet steht auf dem Rollfeld vor einem Privatjet mit FIFA-Schriftzug, vor ihm ein Fußball auf dem Asphalt" },
+    { file: "zweimal-um-die-welt.html", kick: "Klima", ttl: "Nachhaltig, im Privatjet", img: "20260720infantinobb.jpg", alt: "Ein Mann und eine Frau in T-Shirts mit der Aufschrift Save the Planet zeigen den Daumen hoch vor einem Privatjet mit FIFA-Schriftzug, davor ein Fußball" },
     { file: "ein-schelm-wer-boeses-denkt.html", kick: "Deutschland", ttl: "Ein Schelm, wer Böses denkt", img: "20260719merz02.jpg", alt: "Bundeskanzler Merz gestikulierend bei einem sommerlichen Fernsehinterview auf einer Dachterrasse ueber Berlin" },
     { file: "nur-manche-sind-gleicher.html", kick: "Deutschland", ttl: "Nur manche sind gleicher", img: "20260719spahn2.jpg", alt: "Jens Spahn und sein Ehemann mit Kinderwagen vor einer herrschaftlichen Villa, davor Kartons mit der Aufschrift FFP2 Masken" },
     { file: "so-hart-wie-totschlag.html", kick: "Deutschland", ttl: "So hart wie Totschlag", img: "20260718klingbeil.jpg", alt: "Finanzminister Klingbeil prueft mit einer Lupe eine Kassenbon-Rolle am Tresen eines kleinen Imbisses, dahinter ein hoher Aktenstapel" },
