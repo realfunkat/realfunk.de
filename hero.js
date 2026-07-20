@@ -15,8 +15,9 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "nur-manche-sind-gleicher.html", kick: "Deutschland", ttl: "Nur manche sind gleicher", img: "20260719spahn2.jpg", alt: "Jens Spahn und sein Ehemann mit Kinderwagen vor einer herrschaftlichen Villa, davor Kartons mit der Aufschrift FFP2 Masken" },
+    { file: "zweimal-um-die-welt.html", kick: "Klima", ttl: "Nachhaltig, im Privatjet", img: "20260720infantino.jpg", alt: "Ein Mann im T-Shirt mit der Aufschrift Save the Planet steht auf dem Rollfeld vor einem Privatjet mit FIFA-Schriftzug, vor ihm ein Fußball auf dem Asphalt" },
     { file: "ein-schelm-wer-boeses-denkt.html", kick: "Deutschland", ttl: "Ein Schelm, wer Böses denkt", img: "20260719merz02.jpg", alt: "Bundeskanzler Merz gestikulierend bei einem sommerlichen Fernsehinterview auf einer Dachterrasse ueber Berlin" },
+    { file: "nur-manche-sind-gleicher.html", kick: "Deutschland", ttl: "Nur manche sind gleicher", img: "20260719spahn2.jpg", alt: "Jens Spahn und sein Ehemann mit Kinderwagen vor einer herrschaftlichen Villa, davor Kartons mit der Aufschrift FFP2 Masken" },
     { file: "so-hart-wie-totschlag.html", kick: "Deutschland", ttl: "So hart wie Totschlag", img: "20260718klingbeil.jpg", alt: "Finanzminister Klingbeil prueft mit einer Lupe eine Kassenbon-Rolle am Tresen eines kleinen Imbisses, dahinter ein hoher Aktenstapel" },
     { file: "auf-freiem-fuss.html", kick: "Deutschland", ttl: "Auf freiem Fuß", img: "20260719bahn.webp", alt: "Beschaedigte Zugtuer und eine DB-Sicherheit-Warnweste auf dem Boden eines leeren Regionalzugs" },
     { file: "die-kohle-fliesst-weiter.html", kick: "Deutschland", ttl: "Die Kohle fließt weiter", img: "20260719spahn.jpg", alt: "Jens Spahn am Rednerpult des Bundestags mit der Aufschrift Fraktionsvorsitzender, dahinter der Bundesadler" },
@@ -41,7 +42,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH = 82615;
+  var HERO_EPOCH = 82617;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
