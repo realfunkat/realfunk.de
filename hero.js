@@ -17,6 +17,7 @@
   var HERO_POOL = [
     { file: "neid-als-staatskunst.html", kick: "Deutschland", ttl: "Neid als Staatskunst", img: "20260721klingbeilporsche.jpg", alt: "Ein Mann im dunklen Anzug mit roter Krawatte steht mit dem Autoschluessel neben einem grauen Porsche in der Abenddaemmerung" },
     { file: "deutschland-schaltet-sich-ab.html", kick: "Deutschland", ttl: "Deutschland schaltet sich ab", img: "20260721sprit.webp", alt: "Eine Preistafel an einer Autobahn-Tankstelle zeigt Super E10 2,08 und Diesel 2,13 Euro, im Hintergrund ein Kombi an der Zapfsaeule und ein Mann, der zu den Preisen aufblickt" },
+    { file: "wer-bleibt-draussen.html", kick: "Deutschland", ttl: "Wer bleibt draußen?", img: "20260721toilets.webp", alt: "Ein heller gefliester Waschraum mit einer Reihe Männer am Smartphone und einer Frau an der Kabinentür" },
     { file: "der-taegliche-einzelfall.html", kick: "Deutschland", ttl: "Der tägliche Einzelfall", img: "20260720messer.webp", alt: "Rot-weisses Absperrband der Polizei quer ueber eine sonnige Einkaufsstrasse, im unscharfen Hintergrund einzelne Passanten" },
     { file: "stromnetz-anschlag-verdaechtige.html", kick: "Deutschland", ttl: "Namen bekannt, Zugriff vertagt", img: "20260720linksterror.webp", alt: "Eine Ermittlungstafel mit Berlin-Stadtplan, Verdaechtigenfotos und roten Verbindungsfaeden, im Vordergrund auf dem Tisch eine geschlossene Akte und ungenutzte Handschellen" },
     { file: "alle-boese-zu-fritz.html", kick: "Deutschland", ttl: "Alle böse zu Fritz", img: "20260720fritz02.jpeg", alt: "Bundeskanzler Friedrich Merz sitzt im sommerlichen ZDF-Interview am Tisch und spielt eine winzige Geige, ihm gegenueber eine Interviewerin von hinten" },
@@ -49,7 +50,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH = 82621;
+  var HERO_EPOCH = 82622;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
