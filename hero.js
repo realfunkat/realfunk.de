@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "sogar-die-un-sagt-es.html", kick: "Deutschland", ttl: "Sogar die UN sagt es", img: "20260721UN.webp", alt: "Eine graue Behoerdenakte mit rotem Stempel EXTREMISMUS und Fragezeichen liegt auf einem Schreibtisch neben einem blauen Heft mit der Aufschrift United Nations Report" },
     { file: "wie-die-eu-uns-schuetzen-will.html", kick: "Deutschland", ttl: "Wie die EU uns schützen will", img: "20260722grenze.webp", alt: "Ein Bundespolizist steht an einer rot-weissen Schranke an einem sonnigen Autobahn-Grenzuebergang, auf der Gegenspur eine lange Schlange von Urlauberautos mit Dachboxen Richtung Sueden" },
     { file: "wem-gehoert-der-buerger.html", kick: "EU", ttl: "Wem gehört der Bürger?", img: "20260721kinderschutz-clean.jpg", alt: "Ursula von der Leyen und Emmanuel Macron greifen nebeneinander nach einer Wand voller Bildschirme mit den Gesichtern vieler Buerger, in einem dunklen Ueberwachungsraum" },
     { file: "der-kranz-war-schuld.html", kick: "Durchschaut", ttl: "Der Kranz war schuld", img: "2026072kranz.webp", alt: "Ein umgestuerzter Trauerkranz mit einer zerrissenen schwarz-rot-goldenen Schleife liegt auf den Steinstufen eines Gedenkorts, ringsum verstreute Bluetenblaetter" },
