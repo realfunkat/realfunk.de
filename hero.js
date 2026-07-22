@@ -16,6 +16,7 @@
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
     { file: "wie-die-eu-uns-schuetzen-will.html", kick: "Deutschland", ttl: "Wie die EU uns schützen will", img: "20260722grenze.webp", alt: "Ein Bundespolizist steht an einer rot-weissen Schranke an einem sonnigen Autobahn-Grenzuebergang, auf der Gegenspur eine lange Schlange von Urlauberautos mit Dachboxen Richtung Sueden" },
+    { file: "wem-gehoert-der-buerger.html", kick: "EU", ttl: "Wem gehört der Bürger?", img: "20260721kinderschutz-clean.jpg", alt: "Ursula von der Leyen und Emmanuel Macron greifen nebeneinander nach einer Wand voller Bildschirme mit den Gesichtern vieler Buerger, in einem dunklen Ueberwachungsraum" },
     { file: "neid-als-staatskunst.html", kick: "Deutschland", ttl: "Neid als Staatskunst", img: "20260721klingbeilporsche.jpg", alt: "Ein Mann im dunklen Anzug mit roter Krawatte steht mit dem Autoschluessel neben einem grauen Porsche in der Abenddaemmerung" },
     { file: "deutschland-schaltet-sich-ab.html", kick: "Deutschland", ttl: "Deutschland schaltet sich ab", img: "20260721sprit.webp", alt: "Eine Preistafel an einer Autobahn-Tankstelle zeigt Super E10 2,08 und Diesel 2,13 Euro, im Hintergrund ein Kombi an der Zapfsaeule und ein Mann, der zu den Preisen aufblickt" },
     { file: "der-fall-endet-in-der-zelle.html", kick: "Deutschland", ttl: "Der Fall endet in der Zelle", img: "20260721stade.webp", alt: "Ein Stapel abgehefteter Akten in einer Kiste in einem hellen leeren Büro, dahinter ein leerer Schreibtischstuhl" },
