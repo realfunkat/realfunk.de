@@ -4,7 +4,7 @@
   <link>https://realfunk.de/</link>
   <description>ORF-Watch. Wie der Staatsfunk Nachrichten rahmt und was er weglaesst.</description>
   <language>de-at</language>
-  <lastBuildDate>Wed, 22 Jul 2026 07:59:34 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 22 Jul 2026 08:27:52 +0000</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://realfunk.de/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Wie die EU uns schützen will</title>
@@ -18,6 +18,13 @@
     <link>https://realfunk.de/artikel/wem-gehoert-der-buerger.html</link>
     <guid>https://realfunk.de/artikel/wem-gehoert-der-buerger.html</guid>
     <description>Frankreich verbietet als erstes EU-Land Kindern unter 15 die sozialen Medien, im Namen des Kinderschutzes. Doch Bruessel ruegt Paris, weil nur die EU die Plattformen regulieren darf. Es geht nicht um Schutz, sondern um Kontrolle.</description>
+    <pubDate>Wed, 22 Jul 2026 06:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Der Kranz war schuld</title>
+    <link>https://realfunk.de/artikel/der-kranz-war-schuld.html</link>
+    <guid>https://realfunk.de/artikel/der-kranz-war-schuld.html</guid>
+    <description>Am 20. Juli beschaedigt ein Bonhoeffer-Grossneffe den Kranz der AfD am Gedenkort im Bendlerblock. Ein Gedenkstaettenleiter lobt es als Zivilcourage, die taz ruft zum Mitmachen auf, der Gebuehrenfunk macht den Kranz zum Taeter.</description>
     <pubDate>Wed, 22 Jul 2026 06:00:00 +0000</pubDate>
   </item>
   <item>
