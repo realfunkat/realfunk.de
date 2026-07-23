@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "ein-wort-sieben-razzien.html", kick: "Deutschland", ttl: "Ein Wort, sieben Razzien", img: "20260723holzkirchen.webp", alt: "Eine Hand im blauen Einweghandschuh haelt einen durchsichtigen Asservatenbeutel mit einem beschlagnahmten Smartphone, im unscharfen Hintergrund drei Einsatzkraefte in dunkler Uniform in einem Wohnungsflur" },
     { file: "wer-verliert-sortiert-aus.html", kick: "Deutschland", ttl: "Wer verliert, sortiert aus", img: "20260722abgelehnt.webp", alt: "Ein grosser roter Stempel mit der Aufschrift ABGELEHNT senkt sich auf ein Blatt Papier, auf dem bereits der rote Abdruck ABGELEHNT steht, auf einem Tisch in einem abgedunkelten Sitzungssaal" },
     { file: "gewaehlt-aber-nicht-waehlbar.html", kick: "Deutschland", ttl: "Gewählt, aber nicht wählbar", img: "20260721AFD.jpg", alt: "Eine Litfasssaeule an einer sonnigen deutschen Strasse mit einem AfD-Wahlplakat, ueber das Gesicht des Kandidaten ein roter Balken mit der Aufschrift Nicht zugelassen" },
     { file: "wer-mit-gazprom-zu-abend-isst.html", kick: "Deutschland", ttl: "Wer mit Gazprom zu Abend isst", img: "20260723russland.webp", alt: "Eine deutsche und eine russische Tischfahne stehen gekreuzt auf einem polierten Konferenztisch in einem noblen Hotel-Sitzungssaal, dahinter zwei leere Ledersessel, Aktenmappen und Wassergläser" },
