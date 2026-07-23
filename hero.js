@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "wer-verliert-sortiert-aus.html", kick: "Deutschland", ttl: "Wer verliert, sortiert aus", img: "20260722abgelehnt.webp", alt: "Ein grosser roter Stempel mit der Aufschrift ABGELEHNT senkt sich auf ein Blatt Papier, auf dem bereits der rote Abdruck ABGELEHNT steht, auf einem Tisch in einem abgedunkelten Sitzungssaal" },
     { file: "gewaehlt-aber-nicht-waehlbar.html", kick: "Deutschland", ttl: "Gewählt, aber nicht wählbar", img: "20260721AFD.jpg", alt: "Eine Litfasssaeule an einer sonnigen deutschen Strasse mit einem AfD-Wahlplakat, ueber das Gesicht des Kandidaten ein roter Balken mit der Aufschrift Nicht zugelassen" },
     { file: "sogar-die-un-sagt-es.html", kick: "Deutschland", ttl: "Sogar die UN sagt es", img: "20260721UN.webp", alt: "Eine graue Behoerdenakte mit rotem Stempel EXTREMISMUS und Fragezeichen liegt auf einem Schreibtisch neben einem blauen Heft mit der Aufschrift United Nations Report" },
     { file: "wie-die-eu-uns-schuetzen-will.html", kick: "EU", ttl: "Wie die EU uns schützen will", img: "20260722grenze.webp", alt: "Ein Bundespolizist steht an einer rot-weissen Schranke an einem sonnigen Autobahn-Grenzuebergang, auf der Gegenspur eine lange Schlange von Urlauberautos mit Dachboxen Richtung Sueden" },
@@ -56,7 +57,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH = 82625;
+  var HERO_EPOCH = 82629;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
