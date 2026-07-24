@@ -17,6 +17,7 @@
   var HERO_POOL = [
     { file: "ein-wort-sieben-razzien.html", kick: "Deutschland", ttl: "Ein Wort, sieben Razzien", img: "20260723holzkirchen.webp", alt: "Eine Hand im blauen Einweghandschuh haelt einen durchsichtigen Asservatenbeutel mit einem beschlagnahmten Smartphone, im unscharfen Hintergrund drei Einsatzkraefte in dunkler Uniform in einem Wohnungsflur" },
     { file: "wer-verliert-sortiert-aus.html", kick: "Deutschland", ttl: "Wer verliert, sortiert aus", img: "20260722abgelehnt.webp", alt: "Ein grosser roter Stempel mit der Aufschrift ABGELEHNT senkt sich auf ein Blatt Papier, auf dem bereits der rote Abdruck ABGELEHNT steht, auf einem Tisch in einem abgedunkelten Sitzungssaal" },
+    { file: "vorn-und-schon-zu-verbieten.html", kick: "Deutschland", ttl: "Vorn, und schon zu verbieten", img: "20240724insa.png", alt: "Ein Balkendiagramm einer Berliner Sonntagsfrage mit der AfD bei 19 Prozent als hoechstem Balken vor CDU und Linke bei je 18 Prozent, Quelle INSA" },
     { file: "zwei-drittel-sind-der-erfolg.html", kick: "Österreich", ttl: "Zwei Drittel sind der Erfolg", img: "20260723migranten.webp", alt: "Zwei Monitore in einem Buero: der linke zeigt die Schlagzeile Beschaeftigung von Migranten steigt stetig, der rechte Ein Drittel der Migranten nach 10 Jahren immer noch arbeitslos; ein Mann deutet lachend auf die positive Schlagzeile, ein zweiter sitzt am Schreibtisch" },
     { file: "gewaehlt-aber-nicht-waehlbar.html", kick: "Deutschland", ttl: "Gewählt, aber nicht wählbar", img: "20260721AFD.jpg", alt: "Eine Litfasssaeule an einer sonnigen deutschen Strasse mit einem AfD-Wahlplakat, ueber das Gesicht des Kandidaten ein roter Balken mit der Aufschrift Nicht zugelassen" },
     { file: "wer-mit-gazprom-zu-abend-isst.html", kick: "Deutschland", ttl: "Wer mit Gazprom zu Abend isst", img: "20260723russland.webp", alt: "Eine deutsche und eine russische Tischfahne stehen gekreuzt auf einem polierten Konferenztisch in einem noblen Hotel-Sitzungssaal, dahinter zwei leere Ledersessel, Aktenmappen und Wassergläser" },
@@ -60,7 +61,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH = 82630;
+  var HERO_EPOCH   = 82632;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
