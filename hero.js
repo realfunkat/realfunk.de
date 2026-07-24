@@ -16,6 +16,7 @@
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
     { file: "ein-schnitt-ins-gesicht.html", kick: "Deutschland", ttl: "Ein Schnitt ins Gesicht", img: "20260724messer-clean.webp", alt: "Ein blutverschmiertes Cuttermesser liegt auf einem aufgeschlagenen Gesetzbuch neben einem Richterhammer auf einem dunklen Gerichtstisch" },
+    { file: "wahlkampf-auf-gebuehrenkosten.html", kick: "ÖRR", ttl: "Wahlkampf auf Gebührenkosten", img: "20260724afdverbot.jpeg", alt: "Eine Demonstration auf einer sonnigen Strasse hinter einem grossen weissen Transparent mit der Aufschrift AfD-Verbot Jetzt" },
     { file: "ein-wort-sieben-razzien.html", kick: "Deutschland", ttl: "Ein Wort, sieben Razzien", img: "20260723holzkirchen.webp", alt: "Eine Hand im blauen Einweghandschuh haelt einen durchsichtigen Asservatenbeutel mit einem beschlagnahmten Smartphone, im unscharfen Hintergrund drei Einsatzkraefte in dunkler Uniform in einem Wohnungsflur" },
     { file: "wer-verliert-sortiert-aus.html", kick: "Deutschland", ttl: "Wer verliert, sortiert aus", img: "20260722abgelehnt.webp", alt: "Ein grosser roter Stempel mit der Aufschrift ABGELEHNT senkt sich auf ein Blatt Papier, auf dem bereits der rote Abdruck ABGELEHNT steht, auf einem Tisch in einem abgedunkelten Sitzungssaal" },
     { file: "vorn-und-schon-zu-verbieten.html", kick: "Deutschland", ttl: "Vorn, und schon zu verbieten", img: "20240724insa.png", alt: "Ein Balkendiagramm einer Berliner Sonntagsfrage mit der AfD bei 19 Prozent als hoechstem Balken vor CDU und Linke bei je 18 Prozent, Quelle INSA" },
@@ -62,7 +63,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82632;
+  var HERO_EPOCH   = 82633;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL

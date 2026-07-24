@@ -4,8 +4,15 @@
   <link>https://realfunk.de/</link>
   <description>ORF-Watch. Wie der Staatsfunk Nachrichten rahmt und was er weglaesst.</description>
   <language>de-at</language>
-  <lastBuildDate>Fri, 24 Jul 2026 05:50:12 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 24 Jul 2026 07:21:48 +0000</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://realfunk.de/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Wahlkampf auf Gebührenkosten</title>
+    <link>https://realfunk.de/artikel/wahlkampf-auf-gebuehrenkosten.html</link>
+    <guid>https://realfunk.de/artikel/wahlkampf-auf-gebuehrenkosten.html</guid>
+    <description>Die Netiquette der Tagesschau verbietet Wahlwerbung und Petitionen. Unter einem Beitrag des Senders steht ein Verbotsaufruf der Gruenen mit Spendenlink, tagelang, tausendfach beklatscht. Bezahlt wird die Buehne von jedem Haushalt.</description>
+    <pubDate>Fri, 24 Jul 2026 06:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Vorn, und schon zu verbieten</title>
     <link>https://realfunk.de/artikel/vorn-und-schon-zu-verbieten.html</link>
