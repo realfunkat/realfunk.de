@@ -4,8 +4,15 @@
   <link>https://realfunk.de/</link>
   <description>ORF-Watch. Wie der Staatsfunk Nachrichten rahmt und was er weglaesst.</description>
   <language>de-at</language>
-  <lastBuildDate>Sat, 25 Jul 2026 09:43:24 +0000</lastBuildDate>
+  <lastBuildDate>Sat, 25 Jul 2026 10:38:19 +0000</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://realfunk.de/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Uninformiert, ungeprüft, aber laut</title>
+    <link>https://realfunk.de/artikel/uninformiert-ungeprueft-aber-laut.html</link>
+    <guid>https://realfunk.de/artikel/uninformiert-ungeprueft-aber-laut.html</guid>
+    <description>Eine ZDF-Doku ueber die marode Bahn, und die Deutsche Bahn nennt sie ein Zerrbild mit methodischen Fehlern. Zwei Grafiken hat das ZDF selbst korrigiert. Haltung ersetzt eben keine Recherche.</description>
+    <pubDate>Sat, 25 Jul 2026 06:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Neuer Minister, alte Gleise</title>
     <link>https://realfunk.de/artikel/neuer-minister-alte-gleise.html</link>

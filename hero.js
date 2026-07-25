@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "uninformiert-ungeprueft-aber-laut.html", kick: "ÖRR", ttl: "Uninformiert, ungeprüft, aber laut", img: "og/uninformiert-ungeprueft-aber-laut.png", alt: "RealFunk-Karte mit dem Titel Uninformiert, ungeprueft, aber laut" },
     { file: "die-toleranz-die-niederbruellt.html", kick: "Deutschland", ttl: "Die Toleranz, die niederbrüllt", img: "20260725trans.png", alt: "Eine Gruppe protestierender Menschen mit erhobenen Haenden und aufgerissenen Muendern, gesehen durch das Fenster eines Hoersaals, einige mit gefaerbten Haaren und Protest-Shirts" },
     { file: "neuer-minister-alte-gleise.html", kick: "Deutschland", ttl: "Neuer Minister, alte Gleise", img: "20260725bahn.webp", alt: "Ein menschenleerer nebliger Bahnsteig unter einer grossen Bahnhofsuhr, leere Baenke, ein ICE wartet weit hinten im grauen Dunst" },
     { file: "wahlkampf-auf-gebuehrenkosten.html", kick: "ÖRR", ttl: "Wahlkampf auf Gebührenkosten", img: "20260724afdverbot.jpeg", alt: "Eine Demonstration auf einer sonnigen Strasse hinter einem grossen weissen Transparent mit der Aufschrift AfD-Verbot Jetzt" },
