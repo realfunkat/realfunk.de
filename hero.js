@@ -15,8 +15,9 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "ein-schnitt-ins-gesicht.html", kick: "Deutschland", ttl: "Ein Schnitt ins Gesicht", img: "20260724messer-clean.webp", alt: "Ein blutverschmiertes Cuttermesser liegt auf einem aufgeschlagenen Gesetzbuch neben einem Richterhammer auf einem dunklen Gerichtstisch" },
+    { file: "neuer-minister-alte-gleise.html", kick: "Deutschland", ttl: "Neuer Minister, alte Gleise", img: "20260725bahn.webp", alt: "Ein menschenleerer nebliger Bahnsteig unter einer grossen Bahnhofsuhr, leere Baenke, ein ICE wartet weit hinten im grauen Dunst" },
     { file: "wahlkampf-auf-gebuehrenkosten.html", kick: "ÖRR", ttl: "Wahlkampf auf Gebührenkosten", img: "20260724afdverbot.jpeg", alt: "Eine Demonstration auf einer sonnigen Strasse hinter einem grossen weissen Transparent mit der Aufschrift AfD-Verbot Jetzt" },
+    { file: "ein-schnitt-ins-gesicht.html", kick: "Deutschland", ttl: "Ein Schnitt ins Gesicht", img: "20260724messer-clean.webp", alt: "Ein blutverschmiertes Cuttermesser liegt auf einem aufgeschlagenen Gesetzbuch neben einem Richterhammer auf einem dunklen Gerichtstisch" },
     { file: "fast-jeder-zweite-ohne-pass.html", kick: "Deutschland", ttl: "Fast die Hälfte ohne deutschen Pass", img: "20260724knast.webp", alt: "Ein dunkler Gefaengnis-Zellentrakt mit langen Reihen vergitterter Zellentueren, die sich im kalten Licht in die Dunkelheit verlieren" },
     { file: "ein-wort-sieben-razzien.html", kick: "Deutschland", ttl: "Ein Wort, sieben Razzien", img: "20260723holzkirchen.webp", alt: "Eine Hand im blauen Einweghandschuh haelt einen durchsichtigen Asservatenbeutel mit einem beschlagnahmten Smartphone, im unscharfen Hintergrund drei Einsatzkraefte in dunkler Uniform in einem Wohnungsflur" },
     { file: "wer-verliert-sortiert-aus.html", kick: "Deutschland", ttl: "Wer verliert, sortiert aus", img: "20260722abgelehnt.webp", alt: "Ein grosser roter Stempel mit der Aufschrift ABGELEHNT senkt sich auf ein Blatt Papier, auf dem bereits der rote Abdruck ABGELEHNT steht, auf einem Tisch in einem abgedunkelten Sitzungssaal" },
@@ -64,7 +65,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82633;
+  var HERO_EPOCH   = 82637;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
