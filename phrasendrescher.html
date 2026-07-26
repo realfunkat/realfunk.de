@@ -141,7 +141,8 @@
     var grp=byType[x.t];
     if(grp.length>1){
       var orte=grp.map(function(g){return g.e.split(',')[0];});
-      ct.textContent='Dieselbe Floskel-Sorte, belegt bei '+grp.length+' Anlässen: '+orte.join(' · ');
+      var uniq=orte.filter(function(v,i){return orte.indexOf(v)===i;});
+      ct.textContent=grp.length+'-mal belegt, u. a.: '+uniq.join(' · ');
     } else {
       ct.textContent='Belegte Fundstelle in unserer Datenbank: 1';
     }
