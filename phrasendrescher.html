@@ -84,19 +84,28 @@
 <script>
 (function(){
   var DB=[
-    {f:"Meine Gedanken sind bei den Opfern und ihren Angehörigen.",w:"Olaf Scholz (SPD)",e:"Magdeburg, Weihnachtsmarkt",d:"20.12.2024",q:"X @KanzlerScholz / t-online",t:"Gedanken bei den Opfern"},
+    {f:"Meine Gedanken sind bei den Opfern und ihren Angehörigen.",w:"Olaf Scholz (SPD)",e:"Magdeburg, Weihnachtsmarkt",d:"20.12.2024",q:"X @KanzlerScholz",t:"Gedanken bei den Opfern"},
+    {f:"Unsere Gedanken sind bei den Opfern und ihren Angehörigen.",w:"Markus Söder (CSU)",e:"CSD Berlin",d:"26.07.2026",q:"X @Markus_Soeder",t:"Gedanken bei den Opfern"},
     {f:"Wir fühlen mit allen Opfern und beten für die Verletzten.",w:"Markus Söder (CSU)",e:"München, Auto in ver.di-Demo",d:"13.02.2025",q:"X @Markus_Soeder",t:"Gedanken bei den Opfern"},
-    {f:"In Trauer sind meine Gedanken bei den Angehörigen.",w:"Katrin Göring-Eckardt (Grüne)",e:"CSD Berlin",d:"26.07.2026",q:"NIUS-Screenshot",t:"Gedanken bei den Opfern"},
-    {f:"Das ist ein Angriff auf unsere Gesellschaft.",w:"Friedrich Merz (CDU)",e:"CSD Berlin",d:"26.07.2026",q:"X @bundeskanzler",t:"Angriff auf unsere Gesellschaft"},
-    {f:"Ein friedlicher CSD ist Ziel einer brutalen Tat geworden.",w:"Lars Klingbeil (SPD)",e:"CSD Berlin",d:"26.07.2026",q:"NIUS-Screenshot",t:"Angriff auf unsere Gesellschaft"},
-    {f:"Wir trauern um die Opfer einer feigen und niederträchtigen Tat.",w:"Markus Söder (CSU)",e:"Aschaffenburg, Messerangriff",d:"22.01.2025",q:"t-online",t:"feige, niederträchtige Tat"},
-    {f:"Unsere Offenheit lassen wir uns von feigen Gewalttätern nicht nehmen.",w:"Sven Schulze (CDU)",e:"CSD Berlin",d:"26.07.2026",q:"Screenshot",t:"feige, niederträchtige Tat"},
-    {f:"Wir lassen uns nicht spalten, wir lassen uns nicht gegeneinander aufbringen.",w:"André Kuper (CDU, LT-Präs. NRW)",e:"Solingen, Messeranschlag",d:"August 2024",q:"dpa",t:"nicht spalten lassen"},
+    {f:"Das ist ein Angriff auf unsere Gesellschaft.",w:"Friedrich Merz (CDU)",e:"CSD Berlin",d:"26.07.2026",q:"X @bundeskanzler",t:"Angriff auf unsere Gesellschaft / Freiheit"},
+    {f:"Ein friedlicher CSD ist Ziel einer brutalen Tat geworden.",w:"Lars Klingbeil (SPD)",e:"CSD Berlin",d:"26.07.2026",q:"NIUS-Screenshot",t:"Angriff auf unsere Gesellschaft / Freiheit"},
+    {f:"Wir werden entschlossen handeln, um unsere Freiheit zu schützen.",w:"Markus Söder (CSU)",e:"CSD Berlin",d:"26.07.2026",q:"X @Markus_Soeder",t:"Angriff auf unsere Gesellschaft / Freiheit"},
+    {f:"Wir trauern um die Opfer einer feigen und niederträchtigen Tat.",w:"Markus Söder (CSU)",e:"Aschaffenburg, Messerangriff",d:"22.01.2025",q:"t-online",t:"feige, furchtbare Tat"},
+    {f:"Der feige Anschlag auf den CSD in Berlin ist eine furchtbare Tat.",w:"Markus Söder (CSU)",e:"CSD Berlin",d:"26.07.2026",q:"X @Markus_Soeder",t:"feige, furchtbare Tat"},
+    {f:"Unsere Offenheit lassen wir uns von feigen Gewalttätern nicht nehmen.",w:"Sven Schulze (CDU)",e:"CSD Berlin",d:"26.07.2026",q:"Screenshot",t:"feige, furchtbare Tat"},
     {f:"Der Messerangriff erschüttert mich zutiefst.",w:"Friedrich Merz (CDU)",e:"Aschaffenburg, Messerangriff",d:"22.01.2025",q:"Hersfelder Zeitung",t:"erschüttert / fassungslos"},
     {f:"Wir sind tief erschüttert von dem furchtbaren Anschlag.",w:"Olaf Scholz (SPD)",e:"München, Auto in ver.di-Demo",d:"13.02.2025",q:"bundesregierung.de",t:"erschüttert / fassungslos"},
-    {f:"Das ist Terrorismus gegen uns alle.",w:"Olaf Scholz (SPD)",e:"Solingen, Messeranschlag",d:"August 2024",q:"ZDF / Euronews",t:"Terror / Härte des Rechtsstaats"},
+    {f:"Es macht fassungslos, dass friedlich feiernde Menschen angegriffen werden.",w:"Markus Söder (CSU)",e:"CSD Berlin",d:"26.07.2026",q:"X @Markus_Soeder",t:"erschüttert / fassungslos"},
+    {f:"Wir lassen uns nicht spalten, wir lassen uns nicht gegeneinander aufbringen.",w:"André Kuper (CDU, LT-Präs. NRW)",e:"Solingen, Messeranschlag",d:"August 2024",q:"dpa",t:"nicht spalten / Zusammenhalt"},
+    {f:"Hass und Gewalt dürfen nicht das letzte Wort haben. Stehen wir zusammen.",w:"Frank-Walter Steinmeier",e:"Magdeburg (Weihnachtsansprache)",d:"25.12.2024",q:"ZDF / evangelisch.de",t:"nicht spalten / Zusammenhalt"},
+    {f:"Gerade in diesen schweren Stunden braucht es Zusammenhalt.",w:"Katrin Göring-Eckardt (Grüne)",e:"CSD Berlin",d:"26.07.2026",q:"NIUS-Screenshot",t:"nicht spalten / Zusammenhalt"},
+    {f:"Sie werden keine Angst ernten, sondern mehr Zusammenhalt, mehr Vielfalt und mehr Sichtbarkeit.",w:"Sophie Koch (SPD)",e:"CSD Berlin",d:"26.07.2026",q:"Tagesspiegel",t:"nicht spalten / Zusammenhalt"},
     {f:"Wir werden uns dem Terror nicht beugen.",w:"Markus Söder (CSU)",e:"CSD Berlin",d:"26.07.2026",q:"X @Markus_Soeder",t:"Terror / Härte des Rechtsstaats"},
-    {f:"Rassismus ist ein Gift, Hass ist ein Gift.",w:"Angela Merkel (CDU)",e:"Hanau, rechtsextremer Anschlag",d:"20.02.2020",q:"hessenschau",t:"Gift / Hass"}
+    {f:"Das ist Terrorismus gegen uns alle.",w:"Olaf Scholz (SPD)",e:"Solingen, Messeranschlag",d:"August 2024",q:"ZDF / Euronews",t:"Terror / Härte des Rechtsstaats"},
+    {f:"Dieser Täter kann nicht auf Nachsicht hoffen. Er muss das Land verlassen.",w:"Olaf Scholz (SPD)",e:"München, Auto in ver.di-Demo",d:"13.02.2025",q:"Reuters",t:"Terror / Härte des Rechtsstaats"},
+    {f:"Der Terror darf nie gewinnen.",w:"Stephan Weh (GdP)",e:"CSD Berlin",d:"26.07.2026",q:"Tagesspiegel",t:"Terror / Härte des Rechtsstaats"},
+    {f:"Rassismus ist ein Gift, Hass ist ein Gift.",w:"Angela Merkel (CDU)",e:"Hanau, rechtsextremer Anschlag",d:"20.02.2020",q:"hessenschau",t:"Hass ist das Gift"},
+    {f:"Der gestrige Tag hätte ein Tag der Freude, der Sichtbarkeit und der Freiheit sein sollen.",w:"Alfonso Pantisano (SPD)",e:"CSD Berlin",d:"26.07.2026",q:"Tagesspiegel",t:"Trotz-Formel: mehr Sichtbarkeit"}
   ];
   var byType={};
   DB.forEach(function(x){(byType[x.t]=byType[x.t]||[]).push(x);});
