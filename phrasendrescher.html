@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Der Phrasendrescher: Hebel ziehen und sehen, welche Politiker-Floskel nach dem naechsten Anschlag faellt. Alle Zitate belegt, mit Name, Anlass und Quelle.">
+<link rel="canonical" href="https://realfunk.de/phrasendrescher.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RealFunk">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Der Phrasendrescher">
+<meta property="og:description" content="Hebel ziehen. Dieselben Floskeln nach jedem Anschlag, egal welcher Taeter. Alle Zitate belegt.">
+<meta property="og:url" content="https://realfunk.de/phrasendrescher.html">
+<meta property="og:image" content="https://realfunk.de/images/phrasendrescher-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Der Phrasendrescher">
+<meta name="twitter:description" content="Hebel ziehen. Dieselben Floskeln nach jedem Anschlag, egal welcher Taeter. Alle Zitate belegt.">
+<meta name="twitter:image" content="https://realfunk.de/images/phrasendrescher-og.jpg">
+<title>Der Phrasendrescher — RealFunk</title>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a017662ec0e94031a498c6b772dc7271"}'></script><!-- End Cloudflare Web Analytics -->
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#05112A;color:#f3f5fa;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;}
+  .top{max-width:560px;margin:0 auto;padding:18px 18px 0;display:flex;align-items:center;justify-content:space-between;}
+  .logo{font-weight:800;font-size:18px;letter-spacing:.3px;color:#fff;text-decoration:none;}
+  .logo .t{display:inline-block;width:12px;height:12px;border:2px solid #6f8bd6;border-radius:50%;position:relative;margin:0 2px;vertical-align:middle;}
+  .logo .t::after{content:"";position:absolute;inset:3px;background:#6f8bd6;border-radius:50%;}
+  .back{font-size:12px;color:#9fb0d8;text-decoration:none;}
+  .wrap{max-width:560px;margin:0 auto;padding:14px 18px 40px;}
+  h1{font-size:30px;line-height:1.1;margin:14px 0 6px;color:#fff;}
+  .sub{color:#9fb0d8;font-size:15px;margin:0 0 18px;line-height:1.5;}
+  .machine{background:#0c1c3d;border:1px solid #24345f;border-radius:16px;padding:18px;}
+  .win{background:#06122b;border:1px solid #24345f;border-radius:12px;padding:20px;min-height:210px;display:flex;flex-direction:column;justify-content:center;gap:14px;overflow:hidden;}
+  .floskel{font-size:24px;line-height:1.3;font-weight:700;color:#fff;min-height:64px;}
+  .meta{font-size:15px;color:#cfd8ee;}
+  .meta b{color:#fff;}
+  .src{font-size:12px;color:#7d8fbc;}
+  .badge{display:inline-block;font-size:12px;font-weight:700;padding:4px 10px;border-radius:6px;background:#1c2c52;color:#9fb8ee;}
+  .count{font-size:13px;color:#e7b04a;margin-top:2px;line-height:1.45;}
+  .lever{width:100%;margin-top:16px;height:56px;border:none;border-radius:12px;background:#e7b04a;color:#1a1204;font-size:18px;font-weight:800;letter-spacing:.3px;cursor:pointer;}
+  .lever:active{transform:scale(.985);}
+  .lever[disabled]{opacity:.6;cursor:default;}
+  .share{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;}
+  .sb{flex:1;min-width:120px;text-align:center;padding:11px 8px;border:1px solid #2b3c66;border-radius:10px;background:transparent;color:#cfd8ee;font-size:13px;font-weight:700;cursor:pointer;text-decoration:none;}
+  .note{font-size:12px;color:#7d8fbc;margin-top:16px;line-height:1.5;}
+  footer{max-width:560px;margin:0 auto;padding:22px 18px 40px;font-size:12px;color:#6a7cab;line-height:1.6;border-top:1px solid #1a2a4d;}
+  .spin .floskel{opacity:.55;}
+  @media(max-width:430px){h1{font-size:26px;}.floskel{font-size:21px;}}
+</style>
+</head>
+<body>
+<div class="top">
+  <a class="logo" href="index.html">Real<span class="t"></span>Funk</a>
+  <a class="back" href="index.html">&larr; Startseite</a>
+</div>
+<div class="wrap">
+  <h1>Der Phrasendrescher</h1>
+  <p class="sub">Ein Anschlag, und die immer gleichen Sätze fallen. Hebel ziehen — und sehen, welche Floskel als Nächstes dran ist. Jedes Zitat belegt, mit Name, Anlass und Quelle.</p>
+
+  <div class="machine" id="machine">
+    <div class="win" id="win">
+      <div class="floskel" id="floskel">Hebel ziehen.</div>
+      <div class="meta" id="meta">Und schauen, was die Politik parat hat.</div>
+      <div class="src" id="src">&nbsp;</div>
+      <div><span class="badge" id="badge">bereit</span></div>
+      <div class="count" id="count">&nbsp;</div>
+    </div>
+    <button class="lever" id="lever">▼ &nbsp;HEBEL ZIEHEN&nbsp; ▼</button>
+    <div class="share">
+      <button class="sb" id="again">Nochmal</button>
+      <a class="sb" id="wa" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="sb" id="tw" target="_blank" rel="noopener">Auf X teilen</a>
+      <button class="sb" id="cp">Link kopieren</button>
+    </div>
+    <p class="note">Alle Zitate sind belegt (Name, Anlass, Datum, Quelle). Der Zähler zählt nur die in unserer Datenbank dokumentierten Fundstellen derselben Floskel-Sorte — keine Hochrechnung. Hanau ist bewusst dabei: die Floskel kommt bei jedem Täter.</p>
+  </div>
+</div>
+<footer>
+  Nicht mit ARD, ZDF, Deutschlandradio oder dem ORF verbunden.<br>
+  RealFunk · realfunk.de
+</footer>
+
+<script>
+(function(){
+  var DB=[
+    {f:"Meine Gedanken sind bei den Opfern und ihren Angehörigen.",w:"Olaf Scholz (SPD)",e:"Magdeburg, Weihnachtsmarkt",d:"20.12.2024",q:"X @KanzlerScholz / t-online",t:"Gedanken bei den Opfern"},
+    {f:"Wir fühlen mit allen Opfern und beten für die Verletzten.",w:"Markus Söder (CSU)",e:"München, Auto in ver.di-Demo",d:"13.02.2025",q:"X @Markus_Soeder",t:"Gedanken bei den Opfern"},
+    {f:"In Trauer sind meine Gedanken bei den Angehörigen.",w:"Katrin Göring-Eckardt (Grüne)",e:"CSD Berlin",d:"26.07.2026",q:"NIUS-Screenshot",t:"Gedanken bei den Opfern"},
+    {f:"Das ist ein Angriff auf unsere Gesellschaft.",w:"Friedrich Merz (CDU)",e:"CSD Berlin",d:"26.07.2026",q:"X @bundeskanzler",t:"Angriff auf unsere Gesellschaft"},
+    {f:"Ein friedlicher CSD ist Ziel einer brutalen Tat geworden.",w:"Lars Klingbeil (SPD)",e:"CSD Berlin",d:"26.07.2026",q:"NIUS-Screenshot",t:"Angriff auf unsere Gesellschaft"},
+    {f:"Wir trauern um die Opfer einer feigen und niederträchtigen Tat.",w:"Markus Söder (CSU)",e:"Aschaffenburg, Messerangriff",d:"22.01.2025",q:"t-online",t:"feige, niederträchtige Tat"},
+    {f:"Unsere Offenheit lassen wir uns von feigen Gewalttätern nicht nehmen.",w:"Sven Schulze (CDU)",e:"CSD Berlin",d:"26.07.2026",q:"Screenshot",t:"feige, niederträchtige Tat"},
+    {f:"Wir lassen uns nicht spalten, wir lassen uns nicht gegeneinander aufbringen.",w:"André Kuper (CDU, LT-Präs. NRW)",e:"Solingen, Messeranschlag",d:"August 2024",q:"dpa",t:"nicht spalten lassen"},
+    {f:"Der Messerangriff erschüttert mich zutiefst.",w:"Friedrich Merz (CDU)",e:"Aschaffenburg, Messerangriff",d:"22.01.2025",q:"Hersfelder Zeitung",t:"erschüttert / fassungslos"},
+    {f:"Wir sind tief erschüttert von dem furchtbaren Anschlag.",w:"Olaf Scholz (SPD)",e:"München, Auto in ver.di-Demo",d:"13.02.2025",q:"bundesregierung.de",t:"erschüttert / fassungslos"},
+    {f:"Das ist Terrorismus gegen uns alle.",w:"Olaf Scholz (SPD)",e:"Solingen, Messeranschlag",d:"August 2024",q:"ZDF / Euronews",t:"Terror / Härte des Rechtsstaats"},
+    {f:"Wir werden uns dem Terror nicht beugen.",w:"Markus Söder (CSU)",e:"CSD Berlin",d:"26.07.2026",q:"X @Markus_Soeder",t:"Terror / Härte des Rechtsstaats"},
+    {f:"Rassismus ist ein Gift, Hass ist ein Gift.",w:"Angela Merkel (CDU)",e:"Hanau, rechtsextremer Anschlag",d:"20.02.2020",q:"hessenschau",t:"Gift / Hass"}
+  ];
+  var byType={};
+  DB.forEach(function(x){(byType[x.t]=byType[x.t]||[]).push(x);});
+
+  var fl=document.getElementById('floskel'),me=document.getElementById('meta'),sr=document.getElementById('src'),bd=document.getElementById('badge'),ct=document.getElementById('count'),lever=document.getElementById('lever'),machine=document.getElementById('machine');
+  function rnd(a){return a[Math.floor(Math.random()*a.length)];}
+  function render(x){
+    fl.textContent='„'+x.f+'“';
+    me.innerHTML='— <b>'+x.w+'</b> · '+x.e;
+    sr.textContent='belegt · '+x.d+' · '+x.q;
+    bd.textContent='Sorte: '+x.t;
+    var grp=byType[x.t];
+    if(grp.length>1){
+      var orte=grp.map(function(g){return g.e.split(',')[0];});
+      ct.textContent='Dieselbe Floskel-Sorte, belegt bei '+grp.length+' Anlässen: '+orte.join(' · ');
+    } else {
+      ct.textContent='Belegte Fundstelle in unserer Datenbank: 1';
+    }
+  }
+  var spinning=false;
+  function spin(){
+    if(spinning)return;spinning=true;lever.disabled=true;machine.classList.add('spin');
+    var n=0,total=20,delay=45;
+    (function step(){
+      render(rnd(DB));n++;
+      delay=n<11?45:delay*1.26;
+      if(n<total){setTimeout(step,delay);}
+      else{render(rnd(DB));spinning=false;lever.disabled=false;machine.classList.remove('spin');updateShare();}
+    })();
+  }
+  function updateShare(){
+    var url='https://realfunk.de/phrasendrescher.html';
+    var txt=(fl.textContent+' '+me.textContent.replace('— ','')).replace(/\s+/g,' ').trim();
+    document.getElementById('wa').href='https://api.whatsapp.com/send?text='+encodeURIComponent(txt+' — Der Phrasendrescher: '+url);
+    document.getElementById('tw').href='https://twitter.com/intent/tweet?text='+encodeURIComponent(txt)+'&url='+encodeURIComponent(url);
+  }
+  lever.addEventListener('click',spin);
+  document.getElementById('again').addEventListener('click',spin);
+  document.getElementById('cp').addEventListener('click',function(){
+    var b=this;navigator.clipboard&&navigator.clipboard.writeText('https://realfunk.de/phrasendrescher.html').then(function(){b.textContent='Kopiert!';setTimeout(function(){b.textContent='Link kopieren';},1500);});
+  });
+  updateShare();
+
+  // Auto-Modus fuer Screen-Recording (9:16): ?auto=1 spinnt in Schleife
+  if(/[?&]auto=1/.test(location.search)){
+    document.querySelector('.share').style.display='none';
+    lever.style.display='none';
+    var loop=function(){spin();setTimeout(loop,3400);};
+    setTimeout(loop,700);
+  }
+})();
+</script>
+</body>
+</html>
