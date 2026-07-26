@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "wenn-der-taeter-nicht-passt.html", kick: "Durchschaut", ttl: "Wenn der Täter nicht passt", img: "20260726wirschaffendas.png", alt: "Eine Demonstration auf einer sonnigen Strasse hinter einem grossen weissen Transparent mit der Aufschrift wir schaffen das" },
     { file: "uninformiert-ungeprueft-aber-laut.html", kick: "ÖRR", ttl: "Uninformiert, ungeprüft, aber laut", img: "20260725hayali.jpeg", alt: "Dunja Hayali sitzt gelassen im Zug, waehrend auf dem Bahnsteig Menschen mit einem Transparent Deine Meinung unsere Gebuehren protestieren" },
     { file: "die-toleranz-die-niederbruellt.html", kick: "Deutschland", ttl: "Die Toleranz, die niederbrüllt", img: "20260725trans.png", alt: "Eine Gruppe protestierender Menschen mit erhobenen Haenden und aufgerissenen Muendern, gesehen durch das Fenster eines Hoersaals, einige mit gefaerbten Haaren und Protest-Shirts" },
     { file: "neuer-minister-alte-gleise.html", kick: "Deutschland", ttl: "Neuer Minister, alte Gleise", img: "20260725bahn.webp", alt: "Ein menschenleerer nebliger Bahnsteig unter einer grossen Bahnhofsuhr, leere Baenke, ein ICE wartet weit hinten im grauen Dunst" },
@@ -67,7 +68,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82637;
+  var HERO_EPOCH   = 82641;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
