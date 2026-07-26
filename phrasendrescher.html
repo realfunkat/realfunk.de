@@ -61,10 +61,12 @@
   body.clip .count{font-size:17px;}
   body.clip #cliptag{display:block;text-align:center;color:#e7b04a;font-weight:800;font-size:18px;margin-top:16px;}
 
-  #stamp{display:none;}
-  body.clip .win{position:relative;}
-  body.clip #stamp{display:block;position:absolute;top:14px;right:12px;transform:rotate(-9deg) scale(.6);opacity:0;color:#ff5a5a;border:3px solid #ff5a5a;border-radius:8px;padding:6px 12px;font-size:22px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;transition:transform .18s ease,opacity .18s ease;pointer-events:none;}
-  body.clip #stamp.show{opacity:1;transform:rotate(-9deg) scale(1);}
+  #stamp,#closer{display:none;}
+  body.clip #stamp{display:block;width:max-content;max-width:100%;margin:12px auto 0;transform:rotate(-5deg) scale(.6);opacity:0;color:#ff5a5a;border:3px solid #ff5a5a;border-radius:8px;padding:6px 14px;font-size:22px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;transition:transform .18s ease,opacity .18s ease;}
+  body.clip #stamp.show{opacity:1;transform:rotate(-5deg) scale(1);}
+  body.clip #closer.show{display:flex;flex-direction:column;gap:16px;align-items:center;justify-content:center;min-height:380px;text-align:center;}
+  body.clip #closer .cl-big{font-size:33px;font-weight:800;color:#fff;line-height:1.2;}
+  body.clip #closer .cl-url{font-size:20px;font-weight:800;color:#e7b04a;}
 </style>
 </head>
 <body>
@@ -96,6 +98,7 @@
     <p class="note">Alle Zitate sind belegt (Name, Anlass, Datum, Quelle). Der Zähler zählt nur die in unserer Datenbank dokumentierten Fundstellen derselben Floskel-Sorte — keine Hochrechnung. Hanau ist bewusst dabei: die Floskel kommt bei jedem Täter.</p>
     <div id="cliptag">realfunk.de/phrasendrescher</div>
   </div>
+  <div id="closer"><span class="cl-big">Probier den Polit-Phrasendrescher JETZT aus!</span><span class="cl-url">realfunk.de/phrasendrescher</span></div>
 </div>
 <footer>
   Nicht mit ARD, ZDF, Deutschlandradio oder dem ORF verbunden.<br>
@@ -176,6 +179,7 @@
     document.body.classList.add('clip');
     var snark=["Schon gehört.","Wie originell.","Copy und Paste.","Seit Jahren dasselbe."];
     var stamp=document.getElementById('stamp');
+    var closer=document.getElementById('closer');
     var cr=0,cmax=4;
     var crun=function(){
       var idx=cr;
@@ -183,7 +187,8 @@
       spin();
       setTimeout(function(){ if(stamp){ stamp.textContent=snark[Math.min(idx,snark.length-1)]; stamp.classList.remove('show'); void stamp.offsetWidth; stamp.classList.add('show'); } },1900);
       cr++;
-      if(cr<cmax) setTimeout(crun,4500);
+      if(cr<cmax){ setTimeout(crun,4500); }
+      else { setTimeout(function(){ var m=document.getElementById('machine'); if(m)m.style.display='none'; var h=document.getElementById('hook'); if(h)h.style.display='none'; if(closer)closer.classList.add('show'); },2900); }
     };
     setTimeout(crun,900);
   }
