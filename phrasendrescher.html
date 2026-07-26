@@ -141,6 +141,7 @@
   ];
   var byType={};DB.forEach(function(x){(byType[x.t]=byType[x.t]||[]).push(x);});
   var snark=["Schon gehört.","Wie originell.","Copy und Paste.","Seit Jahren dasselbe."];
+  function sn(w){return w.replace(/\s*\(.*\)$/,'').trim().split(' ').pop();}
   function party(w){ if(/CSU/.test(w))return'#0a3d91'; if(/SPD/.test(w))return'#e3000f'; if(/Grüne/.test(w))return'#46962b'; if(/CDU/.test(w))return'#111111'; return'#7a7a7a'; }
   function rnd(a){return a[Math.floor(Math.random()*a.length)];}
   var r0t=document.getElementById('r0t'),r1t=document.getElementById('r1t'),r2t=document.getElementById('r2t'),dot=document.getElementById('dot');
@@ -174,8 +175,9 @@
         if(i===2){r2t.textContent=chosen.e.split(',')[0];
           src.textContent='belegt · '+chosen.d+' · '+chosen.q;
           var grp=byType[chosen.t];
-          if(grp.length>1){var o=grp.map(function(g){return g.e.split(',')[0];});var u=o.filter(function(v,k){return o.indexOf(v)===k;});count.textContent=grp.length+'-mal belegt, u. a.: '+u.join(' · ');}
-          else{count.textContent='Belegte Fundstelle in unserer Datenbank: 1';}
+          var others=grp.filter(function(g){return !(g.w===chosen.w && g.f===chosen.f);});
+          if(others.length){count.textContent='Dieselbe Floskel — auch von: '+others.map(function(g){return sn(g.w)+' ('+g.e.split(',')[0]+')';}).join(', ');}
+          else{count.textContent='Einzelfund in unserer Datenbank.';}
           stampi.textContent=snark[round%snark.length];round++;
           stampi.style.transform='rotate(-6deg) scale(1)';stampi.style.opacity=1;
           updateShare(chosen);busy=false;
