@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Das Satirevideo der Woche auf RealFunk: KI-generierte Satire, klar gekennzeichnet. Diese Woche: der anonyme Insider aus dem Kanzleramt.">
+<link rel="canonical" href="https://realfunk.de/satirevideo.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RealFunk">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Satirevideo der Woche">
+<meta property="og:description" content="KI-generierte Satire, klar gekennzeichnet. Diese Woche: der anonyme Insider aus dem Kanzleramt.">
+<meta property="og:url" content="https://realfunk.de/satirevideo.html">
+<meta property="og:image" content="https://realfunk.de/images/satirevideo-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Satirevideo der Woche">
+<meta name="twitter:description" content="KI-generierte Satire, klar gekennzeichnet. Diese Woche: der anonyme Insider aus dem Kanzleramt.">
+<meta name="twitter:image" content="https://realfunk.de/images/satirevideo-og.jpg">
+<title>Satirevideo der Woche — RealFunk</title>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a017662ec0e94031a498c6b772dc7271"}'></script><!-- End Cloudflare Web Analytics -->
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#05112A;color:#f3f5fa;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;}
+  .top{max-width:760px;margin:0 auto;padding:18px 18px 0;display:flex;align-items:center;justify-content:space-between;}
+  .logo{font-weight:800;font-size:18px;color:#fff;text-decoration:none;}
+  .logo .t{display:inline-block;width:12px;height:12px;border:2px solid #6f8bd6;border-radius:50%;position:relative;margin:0 2px;vertical-align:middle;}
+  .logo .t::after{content:"";position:absolute;inset:3px;background:#6f8bd6;border-radius:50%;}
+  .back{font-size:12px;color:#9fb0d8;text-decoration:none;}
+  .wrap{max-width:760px;margin:0 auto;padding:14px 18px 40px;}
+  .badge{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;background:#e7b04a;color:#1a1204;padding:4px 10px;border-radius:6px;margin-bottom:10px;}
+  h1{font-size:30px;line-height:1.1;margin:2px 0 8px;color:#fff;}
+  .sub{color:#9fb0d8;font-size:15px;margin:0 0 18px;line-height:1.5;}
+  .player{background:#0c1c3d;border:1px solid #24345f;border-radius:14px;padding:12px;}
+  video{display:block;width:100%;height:auto;border-radius:8px;background:#000;}
+  .kennz{font-size:12px;color:#aeb9d6;margin-top:10px;line-height:1.5;}
+  .share{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;}
+  .sb{flex:1;min-width:120px;text-align:center;padding:11px 8px;border:1px solid #2b3c66;border-radius:10px;background:transparent;color:#cfd8ee;font-size:13px;font-weight:700;cursor:pointer;text-decoration:none;}
+  footer{max-width:760px;margin:0 auto;padding:22px 18px 40px;font-size:12px;color:#6a7cab;line-height:1.6;border-top:1px solid #1a2a4d;}
+</style>
+</head>
+<body>
+<div class="top">
+  <a class="logo" href="index.html">Real<span class="t"></span>Funk</a>
+  <a class="back" href="index.html">&larr; Startseite</a>
+</div>
+<div class="wrap">
+  <span class="badge">Satire &middot; KI-generiert</span>
+  <h1>Satirevideo der Woche</h1>
+  <p class="sub">Diese Woche: Ein „anonymer Insider" aus dem Kanzleramt packt aus. Gesicht und Stimme sind zu seinem Schutz selbstverständlich verfremdet.</p>
+
+  <div class="player">
+    <video controls playsinline preload="metadata" poster="images/satirevideo-poster.jpg">
+      <source src="videos/satirevideo-20260727.mp4" type="video/mp4">
+      Ihr Browser kann dieses Video nicht abspielen.
+    </video>
+    <p class="kennz">Kennzeichnung: Dieses Video ist Satire und wurde mit Hilfe künstlicher Intelligenz erstellt. Die dargestellte Szene ist frei erfunden; die gezeigte Person ist eine satirische Kunstfigur. Es handelt sich nicht um eine echte Aufnahme.</p>
+  </div>
+
+  <div class="share">
+    <a class="sb" id="wa" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="sb" id="tw" target="_blank" rel="noopener">Auf X teilen</a>
+    <button class="sb" id="cp">Link kopieren</button>
+    <a class="sb" href="phrasendrescher.html">Zum Phrasendrescher</a>
+  </div>
+</div>
+<footer>
+  Nicht mit ARD, ZDF, Deutschlandradio oder dem ORF verbunden.<br>
+  RealFunk · realfunk.de
+</footer>
+<script>
+(function(){
+  var url='https://realfunk.de/satirevideo.html';
+  var txt='Satirevideo der Woche: Ein anonymer Insider aus dem Kanzleramt packt aus.';
+  document.getElementById('wa').href='https://api.whatsapp.com/send?text='+encodeURIComponent(txt+' '+url);
+  document.getElementById('tw').href='https://twitter.com/intent/tweet?text='+encodeURIComponent(txt)+'&url='+encodeURIComponent(url);
+  document.getElementById('cp').addEventListener('click',function(){var b=this;navigator.clipboard&&navigator.clipboard.writeText(url).then(function(){b.textContent='Kopiert!';setTimeout(function(){b.textContent='Link kopieren';},1500);});});
+})();
+</script>
+</body>
+</html>
