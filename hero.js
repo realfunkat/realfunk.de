@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "deutscher-sagt-der-pass.html", kick: "Deutschland", ttl: "Deutscher, sagt der Pass", img: "20260727ballout.webp", alt: "Eine Menschenmenge beim Berliner CSD mit Regenbogenfahnen, im Kreis das Polizei-Fahndungsfoto des Verdaechtigen" },
     { file: "die-toedlichste-kategorie.html", kick: "Deutschland", ttl: "Die tödlichste Kategorie", img: "20260726terror.webp", alt: "Eine geoeffnete Ermittlungsakte auf einem Tisch mit zwei roten Stempeln BEKANNT und FREIGELASSEN und einem angeklammerten geschwaerzten Passfoto" },
     { file: "wenn-der-taeter-nicht-passt.html", kick: "Durchschaut", ttl: "Wenn der Täter nicht passt", img: "20260726wirschaffendas.png", alt: "Eine Demonstration auf einer sonnigen Strasse hinter einem grossen weissen Transparent mit der Aufschrift wir schaffen das" },
     { file: "uninformiert-ungeprueft-aber-laut.html", kick: "ÖRR", ttl: "Uninformiert, ungeprüft, aber laut", img: "20260725hayali.jpeg", alt: "Dunja Hayali sitzt gelassen im Zug, waehrend auf dem Bahnsteig Menschen mit einem Transparent Deine Meinung unsere Gebuehren protestieren" },
@@ -68,7 +69,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82641;
+  var HERO_EPOCH   = 82645;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
