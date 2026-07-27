@@ -15,7 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "wir-schafften-es-nicht.html", kick: "Deutschland", ttl: "Wir schafften es nicht", img: "20260727wirschaffendas.webp", alt: "Ein zerrissenes verwittertes Plakat mit der Aufschrift Wir schaffen das an einer Betonwand, davor Grabkerzen, Blumen und eine Regenbogenfahne hinter Polizei-Absperrband im Abendlicht" },
+    { file: "wir-schafften-es-nicht.html", kick: "Deutschland", ttl: "Tolerant bis zum Anschlag", img: "20260727wirschaffendas.webp", alt: "Ein zerrissenes verwittertes Plakat mit der Aufschrift Wir schaffen das an einer Betonwand, davor Grabkerzen, Blumen und eine Regenbogenfahne hinter Polizei-Absperrband im Abendlicht" },
     { file: "deutscher-sagt-der-pass.html", kick: "Deutschland", ttl: "Deutscher, sagt der Pass", img: "20260727ballout.webp", alt: "Eine Menschenmenge beim Berliner CSD mit Regenbogenfahnen, im Kreis das Polizei-Fahndungsfoto des Verdaechtigen" },
     { file: "die-toedlichste-kategorie.html", kick: "Deutschland", ttl: "Die tödlichste Kategorie", img: "20260726terror.webp", alt: "Eine geoeffnete Ermittlungsakte auf einem Tisch mit zwei roten Stempeln BEKANNT und FREIGELASSEN und einem angeklammerten geschwaerzten Passfoto" },
     { file: "wenn-der-taeter-nicht-passt.html", kick: "Durchschaut", ttl: "Wenn der Täter nicht passt", img: "20260726wirschaffendas.png", alt: "Eine Demonstration auf einer sonnigen Strasse hinter einem grossen weissen Transparent mit der Aufschrift wir schaffen das" },
