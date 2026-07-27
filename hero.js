@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "die-afd-wars.html", kick: "Deutschland", ttl: "Die AfD war's", img: "20260727diekranke.webp", alt: "Satirische Fotomontage: Politikerin am Rednerpult vor roter Parteiwand, auf der statt des Parteinamens ueberall Die Kranke steht" },
     { file: "der-witze-fritze.html", kick: "Durchschaut", ttl: "Der Witze-Fritze", img: "20260727merz.webp", alt: "Satirische Fotomontage: Friedrich Merz sitzt traurig und verschmutzt in einem grossen Muellcontainer in einer Gasse und haelt ein zerfleddertes Buch mit dem Titel schlechte Witze" },
     { file: "wir-schafften-es-nicht.html", kick: "Deutschland", ttl: "Tolerant bis zum Anschlag", img: "20260727wirschaffendas.webp", alt: "Ein zerrissenes verwittertes Plakat mit der Aufschrift Wir schaffen das an einer Betonwand, davor Grabkerzen, Blumen und eine Regenbogenfahne hinter Polizei-Absperrband im Abendlicht" },
     { file: "deutscher-sagt-der-pass.html", kick: "Deutschland", ttl: "Deutscher, sagt der Pass", img: "20260727ballout.webp", alt: "Eine Menschenmenge beim Berliner CSD mit Regenbogenfahnen, im Kreis das Polizei-Fahndungsfoto des Verdaechtigen" },
