@@ -17,6 +17,7 @@
   var HERO_POOL = [
     { file: "nicht-nur-bekannt.html", kick: "Deutschland", ttl: "Nicht nur bekannt. Gefolgt.", img: "20270628islamist2.jpeg", alt: "Eine anonymisierte Person mit dunkler Gesichtsverhüllung blickt in die Kamera" },
     { file: "die-debatte-nach-den-toten.html", kick: "Deutschland", ttl: "Die Debatte nach den Toten", img: "20260728fussfessel.webp", alt: "Eine schwarze elektronische Fußfessel liegt auf einer grauen Akte in einem dunklen Behördenflur" },
+    { file: "nur-fuer-frauen-aber-bitte-mit-regeln.html", kick: "Deutschland", ttl: "Nur für Frauen. Aber bitte mit Regeln.", img: "20260729schwimmbad.webp", alt: "Ein nasses Alltagsgewand schwimmt in einem leeren Schwimmbecken, daneben liegt ein Badeanzug" },
     { file: "die-afd-wars.html", kick: "Deutschland", ttl: "Die AfD war's", img: "20260727diekranke.webp", alt: "Satirische Fotomontage: Politikerin am Rednerpult vor roter Parteiwand, auf der statt des Parteinamens ueberall Die Kranke steht" },
     { file: "der-witze-fritze.html", kick: "Durchschaut", ttl: "Der Witze-Fritze", img: "20260727merz.webp", alt: "Satirische Fotomontage: Friedrich Merz sitzt traurig und verschmutzt in einem grossen Muellcontainer in einer Gasse und haelt ein zerfleddertes Buch mit dem Titel schlechte Witze" },
     { file: "wir-schafften-es-nicht.html", kick: "Deutschland", ttl: "Tolerant bis zum Anschlag", img: "20260727wirschaffendas.webp", alt: "Ein zerrissenes verwittertes Plakat mit der Aufschrift Wir schaffen das an einer Betonwand, davor Grabkerzen, Blumen und eine Regenbogenfahne hinter Polizei-Absperrband im Abendlicht" },
@@ -74,7 +75,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82650;
+  var HERO_EPOCH   = 82654;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
