@@ -140,6 +140,16 @@
       '<div class="row">' + restTiles + '</div>' +
     '</div></div>';
 
+  // Leser- und Markenfunktionen sind bewusst keine Nachrichtsressorts.
+  // Sie stehen als kompakte eigene Leiste unter dem Hero.
+  var readerHub =
+    '<aside class="readerhub"><div class="wrap"><div class="readerhub-inner">' +
+      '<div class="readerhub-label">RealFunk</div>' +
+      '<a href="' + homePrefix + 'newsletter.html"><strong>Die Woche ohne Filter</strong><span>Newsletter · sonntags</span></a>' +
+      '<a href="' + homePrefix + 'ueber-realfunk.html"><strong>Über RealFunk</strong><span>Unser Maßstab</span></a>' +
+      '<a href="' + homePrefix + 'unterstuetzen.html"><strong>Unterstützen</strong><span>Hält die Seite frei</span></a>' +
+    '</div></div></aside>';
+
   var css =
     ".ornav{background:#fff;border-bottom:1px solid var(--line,#e2e2e2);position:sticky;top:0;z-index:50;}" +
     ".ornav .wrap{display:flex;gap:0;max-width:1000px;margin:0 auto;overflow-x:auto;white-space:nowrap;padding:0 18px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}" +
@@ -161,6 +171,14 @@
     ".hero .tile .kick{display:inline-block;background:var(--accent,#20284A);color:#fff;font-size:10px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:2px 6px;border-radius:2px;margin-bottom:6px;}" +
     ".hero .tile .ttl{color:#fff;font-weight:800;line-height:1.18;font-size:16px;}" +
     ".hero .tile.big .ttl{font-size:21px;}" +
+    ".readerhub{margin:4px 0 18px;border-bottom:1px solid var(--line,#e2e2e2);}" +
+    ".readerhub .wrap{max-width:1000px;margin:0 auto;padding:0 18px;}" +
+    ".readerhub-inner{display:grid;grid-template-columns:150px repeat(3,1fr);gap:0;border-top:1px solid var(--line,#e2e2e2);}" +
+    ".readerhub-label{display:flex;align-items:center;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:var(--accent-dark,#05112A);padding:12px 10px 12px 0;}" +
+    ".readerhub a{padding:10px 12px;border-left:1px solid var(--line,#e2e2e2);color:var(--accent-dark,#05112A);}" +
+    ".readerhub a:hover{background:var(--accent-tint,#eaecf3);}" +
+    ".readerhub a strong{display:block;font-size:13px;line-height:1.2;}" +
+    ".readerhub a span{display:block;font-size:11px;color:#6f7480;margin-top:2px;}" +
     ".sharebar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 2px;}" +
     ".sharebar .sb-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#7a7a7a;}" +
     ".sharebar .sb-btn{display:inline-block;cursor:pointer;border:1px solid var(--line,#e2e2e2);background:#fff;color:var(--accent-dark,#05112A);font:inherit;font-size:13px;font-weight:700;padding:6px 11px;border-radius:4px;line-height:1;}" +
@@ -168,7 +186,7 @@
     ".sharebar .sb-native{background:var(--accent,#20284A);color:#fff;border-color:var(--accent,#20284A);}" +
     "#topstories .ts-kick{display:inline-block;min-width:150px;color:var(--accent-dark,#05112A);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;}" +
     "@media(max-width:680px){#topstories .ts-kick{display:block;min-width:0;margin-bottom:1px;}}" +
-    "@media(max-width:680px){.hero .row{grid-template-columns:1fr;}.hero .lead{grid-template-columns:1fr;}" +
+    "@media(max-width:680px){.hero .row{grid-template-columns:1fr;}.hero .lead{grid-template-columns:1fr;}.readerhub-inner{grid-template-columns:1fr;}.readerhub-label{padding:10px 0 4px;}.readerhub a{border-left:0;border-top:1px solid var(--line,#e2e2e2);padding:10px 0;}" +
     ".topbar .wrap{flex-wrap:wrap;height:auto;padding-top:8px;padding-bottom:8px;}" +
     "";
 
@@ -178,7 +196,7 @@
     document.head.appendChild(style);
     var noHero = document.body && document.body.classList.contains("no-hero");
     var sub = document.querySelector(".subbar");
-    if (sub) sub.insertAdjacentHTML("afterend", navHtml + ((noHero || inArtikel) ? "" : html));
+    if (sub) sub.insertAdjacentHTML("afterend", navHtml + ((noHero || inArtikel) ? "" : html + readerHub));
 
     // Was im Hero steht, erscheint nicht noch einmal in den Ressort-Listen
     // (und damit auch nicht in den Top Stories, die darunter gebaut werden).
@@ -258,7 +276,8 @@
           '<a class="sb-btn" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=' + e(shareTitle) + '&url=' + e(shareUrl) + '">X</a>' +
           '<a class="sb-btn" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + e(shareUrl) + '">Facebook</a>' +
           '<a class="sb-btn" href="mailto:?subject=' + e(shareTitle) + '&body=' + e(shareUrl) + '">E-Mail</a>' +
-          '<button type="button" class="sb-btn sb-copy">Link kopieren</button>';
+          '<button type="button" class="sb-btn sb-copy">Link kopieren</button>' +
+          '<a class="sb-btn" href="mailto:editorial@realfunk.at?subject=' + e('Hinweis zu: ' + shareTitle) + '&body=' + e('Artikel: ' + shareUrl + '\n\nMein Hinweis: ') + '">Hinweis zur Story</a>';
         var figNode = document.querySelector(".article .figure");
         (figNode || shH1).insertAdjacentElement("afterend", bar);
         var nativeBtn = bar.querySelector(".sb-native");
