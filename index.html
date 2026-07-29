@@ -45,6 +45,20 @@ footer{background:#f4f4f4;border-top:4px solid var(--accent);margin-top:30px;}
 footer .wrap{padding:22px 18px 30px;font-size:13px;color:var(--muted);}
 .disclaimer{background:#fff;border:1px dashed var(--line);border-radius:4px;padding:14px 16px;margin-bottom:14px;line-height:1.5;color:#333;}
 footer strong{color:var(--ink);}
+.formats{display:grid;grid-template-columns:180px 1fr;gap:22px;border-top:1px solid var(--line);padding:18px 0 20px;}
+.formats-label{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#444;font-weight:700;}
+.formats-label span{display:block;margin-top:4px;font-size:12px;line-height:1.35;letter-spacing:0;text-transform:none;color:var(--muted);font-weight:400;}
+.formats-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.format-card{display:grid;grid-template-columns:104px 1fr;gap:13px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:4px;background:#f7f8fb;transition:background .18s ease,border-color .18s ease,transform .18s ease;}
+.format-card:hover{background:#fff;border-color:#9ba7c5;transform:translateY(-1px);}
+.format-thumb{position:relative;display:block;align-self:stretch;min-height:76px;overflow:hidden;border-radius:3px;background:var(--accent-dark);}
+.format-thumb img{display:block;width:100%;height:100%;object-fit:cover;}
+.format-thumb.play:after{content:'';position:absolute;left:50%;top:50%;width:0;height:0;transform:translate(-40%,-50%);border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;filter:drop-shadow(0 1px 3px rgba(0,0,0,.65));}
+.format-copy{min-width:0;padding:2px 4px 2px 0;}
+.format-type{display:block;margin-bottom:4px;color:#6f7480;font-size:10px;font-weight:900;letter-spacing:1px;text-transform:uppercase;}
+.format-card strong{display:block;color:var(--accent-dark);font-size:16px;line-height:1.2;}
+.format-card p{margin:4px 0 8px;color:#59606f;font-size:12px;line-height:1.35;}
+.format-card .format-cta{color:var(--accent);font-size:12px;font-weight:900;}
 
 
 
@@ -52,7 +66,7 @@ footer strong{color:var(--ink);}
 
 
 main{padding-bottom:140px;}
-@media(max-width:680px){section.ressort{grid-template-columns:1fr;gap:8px;}.weather{display:none;}}
+@media(max-width:680px){section.ressort,.formats{grid-template-columns:1fr;gap:8px;}.formats-grid{grid-template-columns:1fr;}.format-card{grid-template-columns:96px 1fr;}.weather{display:none;}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"RealFunk","url":"https://realfunk.de/","inLanguage":"de-DE","description":"ÖRR-Watch: die Nachrichten, bevor sie durch den Filter gehen.","publisher":{"@id":"https://realfunk.de/#org"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://realfunk.de/archiv.html?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"Organization","@id":"https://realfunk.de/#org","name":"RealFunk","url":"https://realfunk.de/","logo":{"@type":"ImageObject","url":"https://realfunk.de/images/og-cover-v3.png"}}]}</script>
 <link rel="alternate" type="application/rss+xml" title="RealFunk" href="https://realfunk.de/feed.xml">
@@ -73,29 +87,6 @@ main{padding-bottom:140px;}
 
 <main>
   <div class="wrap">
-    <a href="phrasendrescher.html" style="display:block;margin:2px 0 16px;padding:14px 16px;border:1px solid #e7b04a;border-radius:12px;background:#0c1c3d;text-decoration:none;">
-      <span style="display:block;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:#e7b04a;margin-bottom:5px;">Interaktiv &middot; zum Mitmachen</span>
-      <span style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
-        <span style="font-size:19px;font-weight:800;color:#fff;">Der Betroffenheits-Phrasendrescher</span>
-        <span style="font-size:15px;font-weight:800;color:#e7b04a;white-space:nowrap;">Hebel ziehen &rarr;</span>
-      </span>
-      <span style="display:block;font-size:13px;color:#9fb0d8;margin-top:5px;">Nach jedem Anschlag dieselben S&auml;tze. Zieh den Hebel &mdash; jedes Zitat belegt.</span>
-    </a>
-    <a href="satirevideo.html" style="display:flex;align-items:center;gap:14px;margin:0 0 16px;padding:12px 16px 12px 12px;border:1px solid #6f8bd6;border-radius:12px;background:#0c1c3d;text-decoration:none;">
-      <span style="position:relative;flex:none;width:118px;border-radius:8px;overflow:hidden;display:block;">
-        <img src="images/satirevideo-poster.jpg" alt="Standbild aus dem Satirevideo: verfremdeter Insider im Interview" style="display:block;width:100%;height:auto;" loading="lazy">
-        <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(5,17,42,.25);">
-          <span style="width:0;height:0;border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px;filter:drop-shadow(0 1px 3px rgba(0,0,0,.6));"></span>
-        </span>
-      </span>
-      <span style="display:block;min-width:0;">
-        <span style="display:block;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:#6f8bd6;margin-bottom:4px;">Satire &middot; KI-generiert</span>
-        <span style="display:block;font-size:19px;font-weight:800;color:#fff;">Satirevideo der Woche <span style="color:#6f8bd6;">&rarr;</span></span>
-        <span style="display:block;font-size:13px;color:#9fb0d8;margin-top:4px;">Ein &bdquo;anonymer Insider&ldquo; aus dem Kanzleramt packt aus. Nat&uuml;rlich verfremdet.</span>
-      </span>
-    </a>
-
-
         <section class="ressort" id="durchschaut">
       <div class="label">Durchschaut</div>
       <div class="headline-list">
@@ -132,6 +123,20 @@ main{padding-bottom:140px;}
 
 
 
+      </div>
+    </section>
+
+    <section class="formats" aria-label="Mehr RealFunk">
+      <div class="formats-label">Mehr RealFunk<span>Formate abseits der täglichen Nachrichten.</span></div>
+      <div class="formats-grid">
+        <a class="format-card" href="phrasendrescher.html">
+          <span class="format-thumb"><img src="images/phrasendrescher-mikrofon.jpeg" alt="Mikrofon mit dem Schriftzug Bla Bla Bla und Phrasendrescher" loading="lazy"></span>
+          <span class="format-copy"><span class="format-type">Interaktiv</span><strong>Der Betroffenheits-Phrasendrescher</strong><p>Politiksprech übersetzen. Hebel ziehen. Zitate prüfen.</p><span class="format-cta">Ausprobieren →</span></span>
+        </a>
+        <a class="format-card" href="satirevideo.html">
+          <span class="format-thumb play"><img src="images/satirevideo-poster.jpg" alt="Standbild aus dem Satirevideo: verfremdeter Insider im Interview" loading="lazy"></span>
+          <span class="format-copy"><span class="format-type">Satire · KI-generiert</span><strong>Satirevideo der Woche</strong><p>Der „anonyme Insider“ aus dem Kanzleramt. Natürlich verfremdet.</p><span class="format-cta">Ansehen →</span></span>
+        </a>
       </div>
     </section>
 
@@ -252,7 +257,7 @@ main{padding-bottom:140px;}
   </div>
 </footer>
 
-<script src="hero.js?v=20260718de89"></script>
+<script src="hero.js?v=20260718de90"></script>
 <script>(function(){var m=["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"];var d=new Date();var el=document.getElementById("ausgabe-datum");if(el)el.textContent=d.getDate()+". "+m[d.getMonth()]+" "+d.getFullYear();})();</script>
 </body>
 </html>

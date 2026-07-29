@@ -134,20 +134,31 @@
   }
 
   var restTiles = HERO_ITEMS.slice(2).map(function (it) { return tile(it, false); }).join("");
+  var newsletterCard =
+    '<a class="reader-card newsletter-card" href="' + homePrefix + 'newsletter.html">' +
+      '<strong>Newsletter <small>· sonntags</small></strong>' +
+      '<span class="reader-card-copy">Die Woche ohne Filter.</span>' +
+      '<span class="reader-card-cta">Kostenlos anmelden <b>→</b></span>' +
+    '</a>';
+  var supportCard =
+    '<a class="reader-card support-card" href="' + homePrefix + 'unterstuetzen.html">' +
+      '<span class="reader-card-eyebrow">RealFunk ermöglichen</span>' +
+      '<strong>Unterstützen</strong>' +
+      '<span class="reader-card-copy">Hält RealFunk unabhängig.</span>' +
+      '<span class="reader-card-cta">Mehr erfahren <b>→</b></span>' +
+    '</a>';
   var html =
     '<div class="hero"><div class="wrap">' +
       '<div class="lead">' + tile(HERO_ITEMS[0], true) + tile(HERO_ITEMS[1], true) + '</div>' +
+      '<div class="mobile-newsletter">' + newsletterCard + '</div>' +
       '<div class="row">' + restTiles + '</div>' +
     '</div></div>';
 
-  // Leser- und Markenfunktionen sind bewusst keine Nachrichtsressorts.
-  // Sie stehen als kompakte eigene Leiste unter dem Hero.
+  // Die CTA-Kacheln folgen der Nachrichtenauswahl: erst Inhalt, dann Bindung.
+  // Auf Mobil erscheint Newsletter früher, damit er nicht hinter der Hero-Reihe verschwindet.
   var readerHub =
     '<aside class="readerhub"><div class="wrap"><div class="readerhub-inner">' +
-      '<div class="readerhub-label">RealFunk</div>' +
-      '<a href="' + homePrefix + 'newsletter.html"><strong>Die Woche ohne Filter</strong><span>Newsletter · sonntags</span></a>' +
-      '<a href="' + homePrefix + 'ueber-realfunk.html"><strong>Über RealFunk</strong><span>Unser Maßstab</span></a>' +
-      '<a href="' + homePrefix + 'unterstuetzen.html"><strong>Unterstützen</strong><span>Hält die Seite frei</span></a>' +
+      newsletterCard + supportCard +
     '</div></div></aside>';
 
   var css =
@@ -161,6 +172,7 @@
     ".hero .wrap{max-width:1000px;margin:0 auto;padding:0 18px;}" +
     ".hero .lead{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;}" +
     ".hero .row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}" +
+    ".mobile-newsletter{display:none;}" +
     ".hero .tile{position:relative;border-radius:4px;overflow:hidden;background:linear-gradient(135deg,#05112A,#20284A);display:flex;align-items:flex-end;}" +
     ".hero .row .tile{aspect-ratio:16/10;}" +
     ".hero .tile.big{width:100%;aspect-ratio:16/10;}" +
@@ -171,14 +183,29 @@
     ".hero .tile .kick{display:inline-block;background:var(--accent,#20284A);color:#fff;font-size:10px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:2px 6px;border-radius:2px;margin-bottom:6px;}" +
     ".hero .tile .ttl{color:#fff;font-weight:800;line-height:1.18;font-size:16px;}" +
     ".hero .tile.big .ttl{font-size:21px;}" +
-    ".readerhub{margin:4px 0 18px;border-bottom:1px solid var(--line,#e2e2e2);}" +
+    ".readerhub{margin:18px 0 28px;}" +
     ".readerhub .wrap{max-width:1000px;margin:0 auto;padding:0 18px;}" +
-    ".readerhub-inner{display:grid;grid-template-columns:150px repeat(3,1fr);gap:0;border-top:1px solid var(--line,#e2e2e2);}" +
-    ".readerhub-label{display:flex;align-items:center;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:var(--accent-dark,#05112A);padding:12px 10px 12px 0;}" +
-    ".readerhub a{padding:10px 12px;border-left:1px solid var(--line,#e2e2e2);color:var(--accent-dark,#05112A);}" +
-    ".readerhub a:hover{background:var(--accent-tint,#eaecf3);}" +
-    ".readerhub a strong{display:block;font-size:13px;line-height:1.2;}" +
-    ".readerhub a span{display:block;font-size:11px;color:#6f7480;margin-top:2px;}" +
+    ".readerhub-inner{display:grid;grid-template-columns:1fr 1fr;gap:10px;}" +
+    ".reader-card{position:relative;display:flex;min-height:108px;flex-direction:column;align-items:flex-start;justify-content:center;padding:16px 22px;border-radius:4px;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease;}" +
+    ".reader-card:hover{transform:translateY(-2px);box-shadow:0 7px 16px rgba(5,17,42,.18);}" +
+    ".reader-card-eyebrow{font-size:10px;font-weight:900;letter-spacing:1px;text-transform:uppercase;margin-bottom:5px;}" +
+    ".reader-card strong{font-size:23px;line-height:1.05;letter-spacing:-.5px;}" +
+    ".reader-card strong small{font-size:13px;font-weight:800;letter-spacing:0;}" +
+    ".reader-card-copy{font-size:14px;line-height:1.35;margin:4px 0 7px;max-width:none;}" +
+    ".reader-card-copy em{font-style:normal;font-weight:800;}" +
+    ".reader-card-cta{font-size:13px;font-weight:900;}" +
+    ".reader-card-cta b{font-size:17px;margin-left:4px;}" +
+    ".newsletter-card{background:#b82035;color:#fff;border:1px solid #9c1829;}" +
+    ".newsletter-card:hover{background:#a71d30;}" +
+    ".newsletter-card .reader-card-cta{color:#fff;}" +
+    ".support-card{background:#20284A;color:#fff;border:1px solid #20284A;}" +
+    ".support-card:after{content:'';position:absolute;inset:10px;border:1px solid rgba(230,168,58,.72);pointer-events:none;}" +
+    ".support-card>*{position:relative;z-index:1;}" +
+    ".support-card .reader-card-copy{color:#dde2f2;}" +
+    ".support-card .reader-card-eyebrow,.support-card .reader-card-cta{color:#e6a83a;}" +
+    ".aboutlink{margin-left:auto;display:inline-flex;align-items:center;gap:7px;color:#fff;font-size:13px;font-weight:800;padding:7px 0;border-bottom:1px solid rgba(230,168,58,.85);}" +
+    ".aboutlink span{color:#e6a83a;font-size:17px;line-height:.7;}" +
+    ".aboutlink:hover{color:#e6a83a;}" +
     ".sharebar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 2px;}" +
     ".sharebar .sb-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#7a7a7a;}" +
     ".sharebar .sb-btn{display:inline-block;cursor:pointer;border:1px solid var(--line,#e2e2e2);background:#fff;color:var(--accent-dark,#05112A);font:inherit;font-size:13px;font-weight:700;padding:6px 11px;border-radius:4px;line-height:1;}" +
@@ -186,7 +213,7 @@
     ".sharebar .sb-native{background:var(--accent,#20284A);color:#fff;border-color:var(--accent,#20284A);}" +
     "#topstories .ts-kick{display:inline-block;min-width:150px;color:var(--accent-dark,#05112A);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;}" +
     "@media(max-width:680px){#topstories .ts-kick{display:block;min-width:0;margin-bottom:1px;}}" +
-    "@media(max-width:680px){.hero .row{grid-template-columns:1fr;}.hero .lead{grid-template-columns:1fr;}.readerhub-inner{grid-template-columns:1fr;}.readerhub-label{padding:10px 0 4px;}.readerhub a{border-left:0;border-top:1px solid var(--line,#e2e2e2);padding:10px 0;}" +
+    "@media(max-width:680px){.hero .row{grid-template-columns:1fr;}.hero .lead{grid-template-columns:1fr;}.mobile-newsletter{display:block;margin:0 0 10px;}.mobile-newsletter .reader-card{display:grid;grid-template-columns:1fr auto;gap:0 14px;align-items:center;min-height:0;padding:16px 18px;}.mobile-newsletter .reader-card strong{grid-column:1;grid-row:1;}.mobile-newsletter .reader-card-copy{grid-column:1 / 3;grid-row:2;margin:3px 0 0;font-size:13px;}.mobile-newsletter .reader-card-cta{grid-column:2;grid-row:1;white-space:nowrap;}.mobile-newsletter .reader-card-cta b{display:none;}.readerhub{margin-top:14px;}.readerhub-inner{grid-template-columns:1fr;}.readerhub .newsletter-card{display:none;}.reader-card{min-height:0;padding:18px;}.reader-card strong{font-size:22px;}" +
     ".topbar .wrap{flex-wrap:wrap;height:auto;padding-top:8px;padding-bottom:8px;}" +
     "";
 
@@ -194,6 +221,8 @@
     var style = document.createElement("style");
     style.textContent = css;
     document.head.appendChild(style);
+    var badge = document.querySelector(".topbar .badge");
+    if (badge) badge.outerHTML = '<a class="aboutlink" href="' + homePrefix + 'ueber-realfunk.html">Über RealFunk <span>→</span></a>';
     var noHero = document.body && document.body.classList.contains("no-hero");
     var sub = document.querySelector(".subbar");
     if (sub) sub.insertAdjacentHTML("afterend", navHtml + ((noHero || inArtikel) ? "" : html + readerHub));
@@ -235,6 +264,10 @@
           ts.id = "topstories";
           ts.innerHTML = '<div class="label">Top Stories</div><div class="headline-list">' + rows + '</div>';
           lead.parentNode.insertBefore(ts, lead);
+
+          // Eigenformate erst nach der täglichen Auswahl: sichtbar, aber nie vor den Nachrichten.
+          var formats = document.querySelector("main .formats");
+          if (formats) ts.insertAdjacentElement("afterend", formats);
         }
       }
     }
