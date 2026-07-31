@@ -15,7 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "ceuta-rechnung-fuer-europa.html", kick: "EU", ttl: "Ceuta: Die Rechnung für Europa", img: "20270731spain.png", alt: "Menschen versuchen an der spanisch-marokkanischen Grenze bei Ceuta über Felsen und durch das Wasser zu gelangen, während Einsatzkräfte am Ufer stehen" },
+    { file: "ceuta-rechnung-fuer-europa.html", kick: "EU", ttl: "Ceuta: Die Rechnung für Europa", img: "20260731spain.jpeg", alt: "Menschen versuchen an der spanisch-marokkanischen Grenze bei Ceuta über Felsen und durch das Wasser zu gelangen, während Einsatzkräfte am Ufer stehen" },
     { file: "die-huerde-die-ploetzlich-stoert.html", kick: "Deutschland", ttl: "Die Hürde, die plötzlich stört", img: "20260730fuenfprozent.jpg", alt: "Satirische Darstellung eines Politikers vor einer Präsentation über schlechte Umfragewerte und politische Gegenmaßnahmen" },
     { file: "nicht-nur-bekannt.html", kick: "Deutschland", ttl: "Nicht nur bekannt. Gefolgt.", img: "20270628islamist2.jpeg", alt: "Eine anonymisierte Person mit dunkler Gesichtsverhüllung blickt in die Kamera" },
     { file: "nur-fuer-frauen-aber-bitte-mit-regeln.html", kick: "Deutschland", ttl: "Wenn Badekleidung zur Gesinnungsfrage wird", img: "20260729schwimmbad.webp", alt: "Ein nasses Alltagsgewand schwimmt in einem leeren Schwimmbecken, daneben liegt ein Badeanzug" },
