@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "zehn-milliarden-gegen-eine-billion.html", kick: "EU", ttl: "Zehn Milliarden gegen eine Billion", img: "20260801datacenter.png", alt: "Satirische Darstellung von Ursula von der Leyen vor einem kleinen EU-Rechenzentrum" },
     { file: "die-maer-von-der-grenze.html", kick: "EU", ttl: "Die Mär von der Grenze", img: "20260801grenzen.png", alt: "Blumen, Kerzen und Gedenkzeichen vor dem Brandenburger Tor in Berlin" },
     { file: "acht-jahre-dann-verschwunden.html", kick: "Österreich", ttl: "Acht Jahre. Dann verschwunden.", img: "20260801geflohen.png", alt: "Ein Mann läuft unbeobachtet in Richtung eines bereitstehenden Flugzeugs, während Justizwachebeamte zurückbleiben" },
     { file: "ceuta-rechnung-fuer-europa.html", kick: "EU", ttl: "Ceuta: Die Rechnung für Europa", img: "20260731spain.jpeg", alt: "Menschen versuchen an der spanisch-marokkanischen Grenze bei Ceuta über Felsen und durch das Wasser zu gelangen, während Einsatzkräfte am Ufer stehen" },
