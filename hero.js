@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "acht-jahre-dann-verschwunden.html", kick: "Österreich", ttl: "Acht Jahre. Dann verschwunden.", img: "20260801geflohen.png", alt: "Ein Mann läuft unbeobachtet in Richtung eines bereitstehenden Flugzeugs, während Justizwachebeamte zurückbleiben" },
     { file: "ceuta-rechnung-fuer-europa.html", kick: "EU", ttl: "Ceuta: Die Rechnung für Europa", img: "20260731spain.jpeg", alt: "Menschen versuchen an der spanisch-marokkanischen Grenze bei Ceuta über Felsen und durch das Wasser zu gelangen, während Einsatzkräfte am Ufer stehen" },
     { file: "abschieben-rueckwaertsgang.html", kick: "Deutschland", ttl: "Abschieben? Rückwärtsgang.", img: "20260731merz.png", alt: "Satirische Darstellung von Friedrich Merz im Cockpit eines Flugzeugs auf einer nassen Startbahn bei Nacht" },
     { file: "die-huerde-die-ploetzlich-stoert.html", kick: "Deutschland", ttl: "Die Hürde, die plötzlich stört", img: "20260730fuenfprozent.jpg", alt: "Satirische Darstellung eines Politikers vor einer Präsentation über schlechte Umfragewerte und politische Gegenmaßnahmen" },
@@ -77,7 +78,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82661;
+  var HERO_EPOCH   = 82665;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
