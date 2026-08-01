@@ -17,6 +17,7 @@
   var HERO_POOL = [
     { file: "zehn-milliarden-gegen-eine-billion.html", kick: "EU", ttl: "Zehn Milliarden gegen eine Billion", img: "20260801datacenter.png", alt: "Satirische Darstellung von Ursula von der Leyen vor einem kleinen EU-Rechenzentrum" },
     { file: "die-maer-von-der-grenze.html", kick: "EU", ttl: "Die Mär von der Grenze", img: "20260801grenzen.png", alt: "Blumen, Kerzen und Gedenkzeichen vor dem Brandenburger Tor in Berlin" },
+    { file: "71-prozent-bei-christen-526.html", kick: "Durchschaut", ttl: "71 Prozent. Bei Christen: 52,6.", img: "20260801kirche.webp", alt: "Zerbrochenes Glas liegt vor dem Eingang einer Kirche, im Hintergrund leuchtet ein Polizeifahrzeug" },
     { file: "acht-jahre-dann-verschwunden.html", kick: "Österreich", ttl: "Acht Jahre. Dann verschwunden.", img: "20260801geflohen.png", alt: "Ein Mann läuft unbeobachtet in Richtung eines bereitstehenden Flugzeugs, während Justizwachebeamte zurückbleiben" },
     { file: "ceuta-rechnung-fuer-europa.html", kick: "EU", ttl: "Ceuta: Die Rechnung für Europa", img: "20260731spain.jpeg", alt: "Menschen versuchen an der spanisch-marokkanischen Grenze bei Ceuta über Felsen und durch das Wasser zu gelangen, während Einsatzkräfte am Ufer stehen" },
     { file: "abschieben-rueckwaertsgang.html", kick: "Deutschland", ttl: "Abschieben? Rückwärtsgang.", img: "20260731merz.png", alt: "Satirische Darstellung von Friedrich Merz im Cockpit eines Flugzeugs auf einer nassen Startbahn bei Nacht" },
