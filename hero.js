@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "nur-wer-einzahlt-kriegt-nix.html", kick: "Deutschland", ttl: "Nur wer einzahlt kriegt nix", img: "20260802rente.png", alt: "Eine Reihe älterer Männer steht in einer prunkvollen Halle hinter einer Absperrung, während im Vordergrund Männer Geldscheine aus einer geöffneten Truhe nehmen" },
     { file: "zehn-milliarden-gegen-eine-billion.html", kick: "EU", ttl: "Zehn Milliarden gegen eine Billion", img: "20260801datacenter.png", alt: "Satirische Darstellung von Ursula von der Leyen vor einem kleinen EU-Rechenzentrum" },
     { file: "die-maer-von-der-grenze.html", kick: "EU", ttl: "Die Mär von der Grenze", img: "20260801grenzen.png", alt: "Blumen, Kerzen und Gedenkzeichen vor dem Brandenburger Tor in Berlin" },
     { file: "71-prozent-bei-christen-526.html", kick: "Durchschaut", ttl: "Wenn Christen die Opfer sind", img: "20260801kirche.webp", alt: "Zerbrochenes Glas liegt vor dem Eingang einer Kirche, im Hintergrund leuchtet ein Polizeifahrzeug" },
@@ -81,7 +82,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82665;
+  var HERO_EPOCH   = 82669;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
