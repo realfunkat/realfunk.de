@@ -296,8 +296,9 @@
       if (!item) {
         var ogImage = document.querySelector('meta[property="og:image"]');
         var ogSrc = ogImage ? ogImage.getAttribute("content") : "";
-        // Allgemeine Social-Karten sind kein Artikelbild.
-        if (ogSrc && !/\/images\/(?:og-default|og-cover)/i.test(ogSrc)) {
+        // Reine Social- und Vorschaukacheln sind kein Artikelbild.
+        // Nur direkt abgelegte Bilddateien stammen aus einer echten Bebilderung.
+        if (ogSrc && !/\/images\/(?:og-default|og-cover|og\/|share\/)/i.test(ogSrc)) {
           var ogTitle = document.querySelector('meta[property="og:title"]');
           item = { img: ogSrc, alt: ogTitle ? ogTitle.getAttribute("content") : "" };
         }
