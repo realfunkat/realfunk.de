@@ -283,20 +283,31 @@
     }
 
 
-    // Auf einer Hero-Artikelseite das zugehörige Bild oben im Artikel voll anzeigen
-    // (unter den Hero-Tiles, direkt unter der Überschrift). Nur wenn die Seite ein
-    // Hero-Artikel ist UND noch kein eigenes Bild im Artikel steht.
-    if (inArtikel) {
+  // Auf Artikelseiten bleibt ein einmal gesetztes Bild dauerhaft sichtbar:
+  // Solange der Artikel im Hero-Pool steht, wird das dort hinterlegte Original
+  // verwendet. Faellt er spaeter aus dem Pool, dient sein og:image als dauerhafte
+  // Bildquelle. Eigene statische Artikelbilder werden nie doppelt eingefuegt.
+  if (inArtikel) {
       var current = location.pathname.split("/").pop().replace(/\.html?$/i, "").toLowerCase();
       var item = null;
       for (var k = 0; k < HERO_ITEMS.length; k++) {
         if (HERO_ITEMS[k].file.replace(/\.html?$/i, "").toLowerCase() === current) { item = HERO_ITEMS[k]; break; }
       }
+      if (!item) {
+        var ogImage = document.querySelector('meta[property="og:image"]');
+        var ogSrc = ogImage ? ogImage.getAttribute("content") : "";
+        // Allgemeine Social-Karten sind kein Artikelbild.
+        if (ogSrc && !/\/images\/(?:og-default|og-cover)/i.test(ogSrc)) {
+          var ogTitle = document.querySelector('meta[property="og:title"]');
+          item = { img: ogSrc, alt: ogTitle ? ogTitle.getAttribute("content") : "" };
+        }
+      }
       if (item && item.img && !document.querySelector(".article .figure") && !document.querySelector(".article img.lead")) {
         var h1 = document.querySelector(".article h1");
         if (h1) {
+          var articleImg = /^(?:https?:)?\/\//i.test(item.img) ? item.img : imgPrefix + item.img;
           var fig = '<figure class="figure full" style="margin:14px 0 6px;">' +
-            '<img loading="lazy" decoding="async" src="' + imgPrefix + esc(item.img) + '" alt="' + esc(item.alt || "") +
+            '<img loading="lazy" decoding="async" src="' + esc(articleImg) + '" alt="' + esc(item.alt || "") +
             '" style="display:block;width:100%;height:auto;border-radius:4px;"' +
             ' onerror="this.parentNode.style.display=\'none\'">' +
             '</figure>';
