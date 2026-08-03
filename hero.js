@@ -15,7 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "der-fluchtpass-fuer-den-heimaturlaub.html", kick: "Durchschaut", ttl: "Der Fluchtpass für den Heimaturlaub", img: "20260702reise02.webp", alt: "Mehrere Reisende mit Gepäck stehen auf einer Flugzeugtreppe vor einem Passagierflugzeug" },
+    { file: "ceuta-erst-die-luege-dann-bilder.html", kick: "EU", ttl: "Ceuta: Erst die Lüge, dann Bilder", img: "20260803ceuta.webp", alt: "Eine große Menschenmenge bewegt sich in Ceuta unter Polizeibegleitung entlang einer Straße Richtung Stadtzentrum" },
     { file: "nur-wer-einzahlt-kriegt-nix.html", kick: "Deutschland", ttl: "Nur wer einzahlt kriegt nix", img: "20260802rente.png", alt: "Eine Reihe älterer Männer steht in einer prunkvollen Halle hinter einer Absperrung, während im Vordergrund Männer Geldscheine aus einer geöffneten Truhe nehmen" },
     { file: "zehn-milliarden-gegen-eine-billion.html", kick: "EU", ttl: "Zehn Milliarden gegen eine Billion", img: "20260801datacenter.png", alt: "Satirische Darstellung von Ursula von der Leyen vor einem kleinen EU-Rechenzentrum" },
     { file: "die-maer-von-der-grenze.html", kick: "EU", ttl: "Die Mär von der Grenze", img: "20260801grenzen.png", alt: "Blumen, Kerzen und Gedenkzeichen vor dem Brandenburger Tor in Berlin" },
@@ -83,7 +83,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82670;
+  var HERO_EPOCH   = 82673;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
