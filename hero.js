@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "der-linke-verbotsbrief.html", kick: "Durchschaut", ttl: "Der linke Verbotsbrief", img: "20260804spd-satire.jpeg", alt: "KI-Satire: Marius Heetfeld vor einer SPD-Zentrale; das Bild ist deutlich als KI-Satire markiert" },
     { file: "die-eu-regelt-bis-zum-deckel.html", kick: "EU", ttl: "Wie Brüssel die Wirtschaft erstickt", img: "20260803_EU.webp", alt: "Ein mit Ketten und Schloss gesicherter Koffer mit EU-Sternen steht in einer Halle mit hohen Säulen" },
     { file: "ceuta-erst-die-luege-dann-bilder.html", kick: "EU", ttl: "Ceuta: Erst die Lüge, dann Bilder", img: "20260803ceuta.webp", alt: "Eine große Menschenmenge bewegt sich in Ceuta unter Polizeibegleitung entlang einer Straße Richtung Stadtzentrum" },
     { file: "nur-wer-einzahlt-kriegt-nix.html", kick: "Deutschland", ttl: "Nur wer einzahlt kriegt nix", img: "20260802rente.png", alt: "Eine Reihe älterer Männer steht in einer prunkvollen Halle hinter einer Absperrung, während im Vordergrund Männer Geldscheine aus einer geöffneten Truhe nehmen" },
@@ -84,7 +85,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82673;
+  var HERO_EPOCH   = 82677;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
