@@ -16,6 +16,7 @@
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
     { file: "berlin-waehlt-die-enteignung-mit.html", kick: "Deutschland", ttl: "Berlin wählt die Enteignung mit", img: "20260806linke.png", alt: "KI-Satire: Ines Schwerdtner, Elif Eralp und Heidi Reichinnek marschieren in einer erfundenen militärischen Formation vor dem Brandenburger Tor" },
+    { file: "sprengstoff-auf-der-suedpiste.html", kick: "Deutschland", ttl: "Sprengstoff auf der Südpiste", img: "20260806drone.webp", alt: "KI-Illustration: Ein Sprengstoffexperte untersucht eine beschädigte Drohne auf dem Rollfeld vor einer Antonow-Frachtmaschine" },
     { file: "heiss-ist-klima-kalt-ist-wetter.html", kick: "Durchschaut", ttl: "Heiß ist Klima. Kalt ist Wetter.", img: "20260805klima.webp", alt: "Satirische Wetterstudioszene: Eine Nachrichtensprecherin sitzt vor zwei Europakarten, links blau mit der Aufschrift Wetter, rechts rot mit der Aufschrift Klimakrise" },
     { file: "der-linke-verbotsbrief.html", kick: "Durchschaut", ttl: "Der linke Verbotsbrief", img: "20260804spd-satire.jpeg", alt: "KI-Satire: Marius Heetfeld vor einer SPD-Zentrale; das Bild ist deutlich als KI-Satire markiert" },
     { file: "die-eu-regelt-bis-zum-deckel.html", kick: "EU", ttl: "Wie Brüssel die Wirtschaft erstickt", img: "20260803_EU.webp", alt: "Ein mit Ketten und Schloss gesicherter Koffer mit EU-Sternen steht in einer Halle mit hohen Säulen" },
