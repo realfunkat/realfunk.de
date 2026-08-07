@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "die-brandmauer-gegen-59-prozent.html", kick: "Deutschland", ttl: "Die Brandmauer gegen 59 Prozent", img: "20260807brandmauer.webp", alt: "KI-Satire: Politiker errichten mitten in einem Parlament eine Ziegelmauer, während Bürger von der Zuschauergalerie zusehen" },
     { file: "berlin-waehlt-die-enteignung-mit.html", kick: "Deutschland", ttl: "Berlin wählt die Enteignung mit", img: "20260806linke.png", alt: "KI-Satire: Ines Schwerdtner, Elif Eralp und Heidi Reichinnek marschieren in einer erfundenen militärischen Formation vor dem Brandenburger Tor" },
     { file: "sprengstoff-auf-der-suedpiste.html", kick: "Deutschland", ttl: "Sprengstoff auf der Südpiste", img: "20260806drone.webp", alt: "KI-Illustration: Ein Sprengstoffexperte untersucht eine beschädigte Drohne auf dem Rollfeld vor einer Antonow-Frachtmaschine" },
     { file: "heiss-ist-klima-kalt-ist-wetter.html", kick: "Durchschaut", ttl: "Heiß ist Klima. Kalt ist Wetter.", img: "20260805klima.webp", alt: "Satirische Wetterstudioszene: Eine Nachrichtensprecherin sitzt vor zwei Europakarten, links blau mit der Aufschrift Wetter, rechts rot mit der Aufschrift Klimakrise" },
@@ -88,7 +89,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82685;
+  var HERO_EPOCH   = 82689;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
