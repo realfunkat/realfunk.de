@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "zehntausend-zuerst-das-etikett.html", kick: "Durchschaut", ttl: "10.000 – zuerst das Etikett", img: "20260809protest.jpg", alt: "KI-Satire: Ein Nachrichtensprecher sitzt vor einer gebogenen Studiowand, auf der eine friedliche Demonstration als rechtsextrem und gewaltsame Ausschreitungen als friedlicher Protest bezeichnet werden" },
     { file: "restle-hat-schuldige-keine-belege.html", kick: "ÖRR", ttl: "Restle hat Schuldige. Keine Belege.", img: "20260808restle.png", alt: "KI-Satire: Georg Restle präsentiert in einem erfundenen Fernsehstudio vor Bildern aus Ceuta die Einblendung Israel und USA sind schuld" },
     { file: "klingbeil-kassiert-das-lebenswerk.html", kick: "Deutschland", ttl: "Klingbeil kassiert das Lebenswerk", img: "20260808klingbeil.png", alt: "KI-Satire: Lars Klingbeil zählt Euro-Geldscheine, während ein alter Handwerker ihm in einer Werkstatt einen offenen leeren Koffer hinhält" },
     { file: "die-brandmauer-gegen-59-prozent.html", kick: "Deutschland", ttl: "Die Brandmauer gegen 59 Prozent", img: "20260807brandmauer.webp", alt: "KI-Satire: Politiker errichten mitten in einem Parlament eine Ziegelmauer, während Bürger von der Zuschauergalerie zusehen" },
@@ -91,7 +92,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82694;
+  var HERO_EPOCH   = 82697;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
