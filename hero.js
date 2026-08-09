@@ -123,6 +123,7 @@
 
   // Horizontale Menüleiste (ORF-Optik) – erscheint auf jeder Seite.
   var NAV = [
+    ["Kurz", "index.html#kurzartikel"],
     ["Durchschaut", "index.html#durchschaut"],
     ["Deutschland", "index.html#deutschland"],
     ["EU", "index.html#eu"],
