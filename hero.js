@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "nicht-protest-kompetenz.html", kick: "Kurzartikel", ttl: "Nicht Protest. Kompetenz.", img: "20260810Siegmund.png", alt: "Ulrich Siegmund vor den Flaggen Deutschlands und Sachsen-Anhalts" },
     { file: "die-antwort-auf-den-ansturm.html", kick: "Kurzartikel", ttl: "Die Antwort auf den Ansturm", img: "20260810ceuta.webp", alt: "Das geöffnete Grenztor von Ceuta, dahinter bewegt sich eine große Menschenmenge auf die spanische Seite" },
     { file: "keine-straftat-trotzdem-weg.html", kick: "Deutschland", ttl: "Keine Straftat. Trotzdem weg.", img: "20260810klingbeil.png", alt: "KI-Satire: Lars Klingbeil fährt mit Goldketten und Luxusuhr in einem Porsche-Cabrio aus einem eingezäunten Zollgelände; zerrissenes Absperrband liegt auf dem Auto" },
     { file: "zehntausend-zuerst-das-etikett.html", kick: "Durchschaut", ttl: "10.000 – zuerst das Etikett", img: "20260809protest.jpg", alt: "KI-Satire: Ein Nachrichtensprecher sitzt vor einer gebogenen Studiowand, auf der eine friedliche Demonstration als rechtsextrem und gewaltsame Ausschreitungen als friedlicher Protest bezeichnet werden" },
@@ -95,7 +96,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82702;
+  var HERO_EPOCH   = 82704;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
