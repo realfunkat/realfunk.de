@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "erst-der-queer-workshop-dann-das-bussgeld.html", kick: "Kurzartikel", ttl: "Erst der Queer-Workshop. Dann das Bußgeld.", img: "20260810lgbtq.png", alt: "Volle Schulklasse bei einem LGBTQ-Workshop; auf einem leeren Tisch liegt ein Bußgeldbescheid" },
     { file: "nicht-protest-kompetenz.html", kick: "Kurzartikel", ttl: "Nicht Protest. Kompetenz.", img: "20260810Siegmund.png", alt: "Ulrich Siegmund vor den Flaggen Deutschlands und Sachsen-Anhalts" },
     { file: "die-antwort-auf-den-ansturm.html", kick: "Kurzartikel", ttl: "Die Antwort auf den Ansturm", img: "20260810ceuta.webp", alt: "Das geöffnete Grenztor von Ceuta, dahinter bewegt sich eine große Menschenmenge auf die spanische Seite" },
     { file: "keine-straftat-trotzdem-weg.html", kick: "Deutschland", ttl: "Keine Straftat. Trotzdem weg.", img: "20260810klingbeil.png", alt: "KI-Satire: Lars Klingbeil fährt mit Goldketten und Luxusuhr in einem Porsche-Cabrio aus einem eingezäunten Zollgelände; zerrissenes Absperrband liegt auf dem Auto" },
@@ -96,7 +97,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82704;
+  var HERO_EPOCH   = 82705;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
