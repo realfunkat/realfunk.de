@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "keine-straftat-trotzdem-weg.html", kick: "Deutschland", ttl: "Keine Straftat. Trotzdem weg.", img: "20260810klingbeil.png", alt: "KI-Satire: Lars Klingbeil fährt mit Goldketten und Luxusuhr in einem Porsche-Cabrio aus einem eingezäunten Zollgelände; zerrissenes Absperrband liegt auf dem Auto" },
     { file: "zehntausend-zuerst-das-etikett.html", kick: "Durchschaut", ttl: "10.000 – zuerst das Etikett", img: "20260809protest.jpg", alt: "KI-Satire: Ein Nachrichtensprecher sitzt vor einer gebogenen Studiowand, auf der eine friedliche Demonstration als rechtsextrem und gewaltsame Ausschreitungen als friedlicher Protest bezeichnet werden" },
     { file: "restle-hat-schuldige-keine-belege.html", kick: "ÖRR", ttl: "Restle hat Schuldige. Keine Belege.", img: "20260808restle.png", alt: "KI-Satire: Georg Restle präsentiert in einem erfundenen Fernsehstudio vor Bildern aus Ceuta die Einblendung Israel und USA sind schuld" },
     { file: "die-zustimmung-als-veto.html", kick: "Kurzartikel", ttl: "Die Zustimmung als Veto", img: "20260809zustimmung-v1.png", alt: "KI-Satire: Im Parlament wird ein sinnvoller Antrag mit Zugestimmt gestempelt, während zwei Politiker ihren eigenen Entwurf in einen Aktenvernichter schieben" },
@@ -93,7 +94,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82697;
+  var HERO_EPOCH   = 82701;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
