@@ -15,7 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "qualitaet-bis-zum-widerruf.html", kick: "Durchschaut", ttl: "Qualität, bis zum Widerruf", img: "20260814siegmund.webp", alt: "DER-SPIEGEL-Titel Nr. 34/2026 mit Ulrich Siegmund und der Schlagzeile Der gefährlichste Mann Deutschlands" },
+    { file: "qualitaet-bis-zum-widerruf.html", kick: "Durchschaut", ttl: "Schmierblatt mit Gütesiegel", img: "20260814siegmund.webp", alt: "DER-SPIEGEL-Titel Nr. 34/2026 mit Ulrich Siegmund und der Schlagzeile Der gefährlichste Mann Deutschlands" },
     { file: "ddr-politoffizier-als-wahlwaechter.html", kick: "Deutschland", ttl: "DDR-Politoffizier als Wahlwächter", img: "20260814polizei02.png", alt: "KI-Satire: Ein früherer DDR-Politoffizier blickt einem heutigen Polizisten in einer Wahlkabine über die Schulter" },
     { file: "53000-euro-gegen-783-euro.html", kick: "Deutschland", ttl: "53.000 Euro gegen 783 Euro", img: "20260813klingbeil.png", alt: "KI-Satire: Lars Klingbeil als Clown zieht von einem Sparschwein ein Etikett mit 53.000 Euro ab; darunter erscheint 783 Euro vor Steuern, daneben sitzt ein weinendes Kleinkind" },
     { file: "der-binnenmarkt-mit-tuersteher.html", kick: "EU", ttl: "Der Binnenmarkt mit Türsteher", img: "20260811EU-v5.png", alt: "KI-Satire: Links eine einfache Toilette, rechts eine mit EU-Flagge, Rohren, Messgeräten und Überwachungskamera überladene Toilette" },
