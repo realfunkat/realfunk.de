@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "ddr-politoffizier-als-wahlwaechter.html", kick: "Deutschland", ttl: "DDR-Politoffizier als Wahlwächter", img: "20260814polizei02.png", alt: "KI-Satire: Ein früherer DDR-Politoffizier blickt einem heutigen Polizisten in einer Wahlkabine über die Schulter" },
     { file: "53000-euro-gegen-783-euro.html", kick: "Deutschland", ttl: "53.000 Euro gegen 783 Euro", img: "20260813klingbeil.png", alt: "KI-Satire: Lars Klingbeil als Clown zieht von einem Sparschwein ein Etikett mit 53.000 Euro ab; darunter erscheint 783 Euro vor Steuern, daneben sitzt ein weinendes Kleinkind" },
     { file: "der-binnenmarkt-mit-tuersteher.html", kick: "EU", ttl: "Der Binnenmarkt mit Türsteher", img: "20260811EU-v5.png", alt: "KI-Satire: Links eine einfache Toilette, rechts eine mit EU-Flagge, Rohren, Messgeräten und Überwachungskamera überladene Toilette" },
     { file: "erst-der-queer-workshop-dann-das-bussgeld.html", kick: "Kurzartikel", ttl: "Erst der Queer-Workshop. Dann das Bußgeld.", img: "20260810lgbtq.png", alt: "Volle Schulklasse bei einem LGBTQ-Workshop; auf einem leeren Tisch liegt ein Bußgeldbescheid" },
@@ -99,7 +100,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82713;
+  var HERO_EPOCH   = 82717;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
