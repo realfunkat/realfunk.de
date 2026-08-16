@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "176-millionen-hoeren-siegmund.html", kick: "Durchschaut", ttl: "1,76 Millionen hören Siegmund", img: "20260816flegel.jpg", alt: "KI-Satire: Markus Lanz, Boris Pistorius und Saskia Esken blicken auf einen Laptop; das erfundene Magazin DER FLEGEL nennt Ben absichtlich ungeskripptet" },
     { file: "42300-jobs-spaeter.html", kick: "Deutschland", ttl: "42.300 Jobs später", img: "20260815autojobs.jpg", alt: "BMW-Werk Leipzig: Ein Arbeiter montiert an einem schwarzen BMW, dahinter stehen weitere Fahrzeuge auf der Produktionslinie" },
     { file: "qualitaet-bis-zum-widerruf.html", kick: "Durchschaut", ttl: "Schmierblatt mit Gütesiegel", img: "20260814siegmund.webp", alt: "DER-SPIEGEL-Titel Nr. 34/2026 mit Ulrich Siegmund und der Schlagzeile Der gefährlichste Mann Deutschlands" },
     { file: "ddr-politoffizier-als-wahlwaechter.html", kick: "Deutschland", ttl: "DDR-Politoffizier als Wahlwächter", img: "20260814polizei02.png", alt: "KI-Satire: Ein früherer DDR-Politoffizier blickt einem heutigen Polizisten in einer Wahlkabine über die Schulter" },
@@ -102,7 +103,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82721;
+  var HERO_EPOCH   = 82725;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
