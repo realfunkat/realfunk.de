@@ -372,6 +372,27 @@
       }
     }
 
+    // Externe Quellen sollen RealFunk nicht im selben Tab ersetzen.
+    // Interne RealFunk-Navigation sowie Mail-/Telefonlinks bleiben unverändert.
+    var currentHost = location.hostname.toLowerCase().replace(/^www\./, "");
+    document.querySelectorAll("a[href]").forEach(function (link) {
+      var raw = link.getAttribute("href");
+      if (!raw) return;
+      try {
+        var targetUrl = new URL(raw, location.href);
+        if (targetUrl.protocol !== "http:" && targetUrl.protocol !== "https:") return;
+        var targetHost = targetUrl.hostname.toLowerCase().replace(/^www\./, "");
+        var isRealFunk = targetHost === "realfunk.de";
+        if (targetHost === currentHost || isRealFunk) return;
+        link.setAttribute("target", "_blank");
+        var rel = (link.getAttribute("rel") || "").split(/\s+/).filter(Boolean);
+        ["noopener", "noreferrer"].forEach(function (token) {
+          if (rel.indexOf(token) === -1) rel.push(token);
+        });
+        link.setAttribute("rel", rel.join(" "));
+      } catch (er) {}
+    });
+
     // Kam der Klick aus dem Hero (#story)? Dann nach dem Einfügen des Heros
     // direkt zum Artikel scrollen – sonst landet man wieder oben beim Hero.
     if (location.hash === "#story") {
