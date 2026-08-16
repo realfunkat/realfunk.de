@@ -76,7 +76,7 @@ def write_feed(arts):
 def write_sitemap(arts):
     import os
     roots = [("/", "1.0")]
-    for p, pr in [("sport.html", "0.7"), ("wetter.html", "0.6"), ("archiv.html", "0.6"),
+    for p, pr in [("stempelautomat.html", "0.8"), ("sport.html", "0.7"), ("wetter.html", "0.6"), ("archiv.html", "0.6"),
                   ("impressum.html", "0.2"), ("datenschutz.html", "0.2")]:
         if os.path.exists(p):
             roots.append(("/" + p, pr))
