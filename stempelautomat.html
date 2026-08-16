@@ -111,7 +111,7 @@
     .intro{grid-template-columns:1fr;gap:15px}.deck{max-width:700px}.workbench{grid-template-columns:1fr}.portrait-bay{min-height:500px}.control{border-left:0;border-top:2px solid #3c3429;padding:24px}.press-button{width:160px;height:160px;margin:22px auto 16px}.press-button span{font-size:19px}.evidence-grid{grid-template-columns:1fr;gap:18px}
   }
   @media(max-width:500px){
-    .top,.shell{padding-left:14px;padding-right:14px}.top{padding-top:14px}.shell{padding-top:16px}.intro{margin-top:4px}h1{font-size:40px;letter-spacing:-1.3px}.deck{font-size:15px}.machine-head{padding:10px 12px}.machine-name{font-size:12px}.portrait-bay{min-height:420px}.portrait{object-position:55% center}.stamp-mark{left:53%;top:48%;width:86%;border-width:6px;font-size:30px;padding:12px 9px}.stamp-mark.is-long{font-size:24px}.stamp-hammer{left:53%;width:78%}.nameplate{left:12px;bottom:12px}.nameplate strong{font-size:19px}.control h2{font-size:27px}.evidence{padding-left:15px;padding-right:15px}.result-title{font-size:30px}.original{font-size:17px}.bottom{align-items:flex-start;flex-direction:column}
+    .top,.shell{padding-left:14px;padding-right:14px}.top{padding-top:14px}.shell{padding-top:16px}.intro{margin-top:4px}h1{font-size:40px;letter-spacing:-1.3px}.deck{font-size:15px}.machine-head{padding:10px 12px}.machine-name{font-size:12px}.portrait-bay{min-height:420px}.portrait{object-position:55% center}.stamp-mark{left:53%;top:48%;width:86%;border-width:6px;font-size:30px;padding:12px 9px}.stamp-mark.is-long{font-size:24px}.stamp-hammer{left:53%;width:78%}.nameplate{left:12px;bottom:12px}.nameplate strong{font-size:19px}.control{padding:10px 18px 22px}.press-button{order:1;margin:0 auto 23px}.control-label{order:2}.control h2{order:3;font-size:27px}.control>p:not(.control-label):not(.hint){order:4}.hint{order:5;margin-top:16px!important}.sound-toggle{order:6}.evidence{padding-left:15px;padding-right:15px}.result-title{font-size:30px}.original{font-size:17px}.bottom{align-items:flex-start;flex-direction:column}
   }
   @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.portrait-bay.is-stamping .stamp-hammer{animation:none;top:-165px}.portrait-bay.is-stamping .stamp-mark{animation:none;opacity:.94;transform:translate(-50%,-50%) rotate(-7deg) scale(1)}}
 </style>
@@ -486,7 +486,6 @@
       press.disabled=false;
       again.disabled=false;
       busy=false;
-      if(window.matchMedia("(max-width: 820px)").matches){evidence.scrollIntoView({behavior:"smooth",block:"start"});}
     },760);
   }
   press.addEventListener("click",stamp);
