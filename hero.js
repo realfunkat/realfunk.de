@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "deutschland-bremst-amerika-kauft.html", kick: "Deutschland", ttl: "Deutschland bremst, Amerika kauft", img: "20260818ebmpapst.jpg", alt: "KI-Illustration: Ein Preisschild mit 5,1 Milliarden Euro hängt vor einem Lastwagen des Ventilatorenherstellers ebm-papst" },
     { file: "ihre-toleranz-endet-am-widerspruch.html", kick: "Durchschaut", ttl: "Ihre Toleranz endet am Widerspruch", img: "20260817Antifa.jpg", alt: "Symbolbild: Demonstration mit roten Fahnen der Antifaschistischen Aktion und Pyrotechnik; die Aufnahme zeigt nicht den Göttinger Einsatz" },
     { file: "176-millionen-hoeren-siegmund.html", kick: "Durchschaut", ttl: "Der zweitgefährlichste Mann Deutschlands?", img: "20260816flegel.jpg", alt: "KI-Satire: Markus Lanz, Boris Pistorius und Saskia Esken blicken auf einen Laptop; das erfundene Magazin DER FLEGEL nennt Ben absichtlich ungeskripptet" },
     { file: "die-spende-ohne-ueberweisung.html", kick: "Durchschaut", ttl: "Die Spende ohne Überweisung", img: "20260817campact.png", alt: "Beweisgrafik: Campacts Aussage, kein Geld an SPD oder Grüne zu überweisen, über den beiden 310.000-Euro-Einträgen im Parteispendenregister des Bundestages" },
@@ -105,7 +106,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82730;
+  var HERO_EPOCH   = 82733;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
