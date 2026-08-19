@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "flugscham-gilt-nur-fuer-buerger.html", kick: "Kurzartikel", ttl: "Flugscham gilt nur für Bürger", img: "20260819leerflug.webp", alt: "KI-Satire: Eine Flugbegleiterin serviert Champagner in der leeren Luxuskabine eines deutschen Regierungsflugzeugs" },
     { file: "der-apparat-waechst-arbeit-geht.html", kick: "Deutschland", ttl: "Der Apparat wächst. Arbeit geht.", img: "20260819soccer.webp", alt: "KI-Illustration: Zwei Spieler stehen beim Anstoß einem großen Kreis von Schiedsrichtern gegenüber" },
     { file: "wer-vertraut-diesem-schalter.html", kick: "EU", ttl: "Wer vertraut diesem Schalter?", img: "20260818digitaler-euro.jpg", alt: "KI-Satire: Ursula von der Leyen steht in einer Überwachungszentrale vor dem erfassten Bild einer Familie" },
     { file: "deutschland-bremst-amerika-kauft.html", kick: "Deutschland", ttl: "Deutschland bremst, Amerika kauft", img: "20260818ebmpapst.jpg", alt: "KI-Illustration: Ein Preisschild mit 5,1 Milliarden Euro hängt vor einem Lastwagen des Ventilatorenherstellers ebm-papst" },
