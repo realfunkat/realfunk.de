@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "der-apparat-waechst-arbeit-geht.html", kick: "Deutschland", ttl: "Der Apparat wächst. Arbeit geht.", img: "20260819soccer.webp", alt: "KI-Illustration: Zwei Spieler stehen beim Anstoß einem großen Kreis von Schiedsrichtern gegenüber" },
     { file: "wer-vertraut-diesem-schalter.html", kick: "EU", ttl: "Wer vertraut diesem Schalter?", img: "20260818digitaler-euro.jpg", alt: "KI-Satire: Ursula von der Leyen steht in einer Überwachungszentrale vor dem erfassten Bild einer Familie" },
     { file: "deutschland-bremst-amerika-kauft.html", kick: "Deutschland", ttl: "Deutschland bremst, Amerika kauft", img: "20260818ebmpapst.jpg", alt: "KI-Illustration: Ein Preisschild mit 5,1 Milliarden Euro hängt vor einem Lastwagen des Ventilatorenherstellers ebm-papst" },
     { file: "ihre-toleranz-endet-am-widerspruch.html", kick: "Durchschaut", ttl: "Ihre Toleranz endet am Widerspruch", img: "20260817Antifa.jpg", alt: "Symbolbild: Demonstration mit roten Fahnen der Antifaschistischen Aktion und Pyrotechnik; die Aufnahme zeigt nicht den Göttinger Einsatz" },
@@ -107,7 +108,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82733;
+  var HERO_EPOCH   = 82737;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
