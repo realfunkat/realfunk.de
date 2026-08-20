@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "zehntausend-gegen-die-brandmauer.html", kick: "Deutschland", ttl: "Zehntausend gegen die Brandmauer", img: "20260820prange.png", alt: "KI-Satire: Bernd Prange mit AfD-Kappe und AfD-Shirt vor einem Dorf in Sachsen-Anhalt" },
     { file: "flugscham-gilt-nur-fuer-buerger.html", kick: "Kurzartikel", ttl: "Flugscham gilt nur für Bürger", img: "20260819leerflug.webp", alt: "KI-Satire: Eine Flugbegleiterin serviert Champagner in der leeren Luxuskabine eines deutschen Regierungsflugzeugs" },
     { file: "der-apparat-waechst-arbeit-geht.html", kick: "Deutschland", ttl: "Der Apparat wächst. Arbeit geht.", img: "20260819soccer.webp", alt: "KI-Illustration: Zwei Spieler stehen beim Anstoß einem großen Kreis von Schiedsrichtern gegenüber" },
     { file: "wer-vertraut-diesem-schalter.html", kick: "EU", ttl: "Wer vertraut diesem Schalter?", img: "20260818digitaler-euro.jpg", alt: "KI-Satire: Ursula von der Leyen steht in einer Überwachungszentrale vor dem erfassten Bild einer Familie" },
@@ -109,7 +110,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82737;
+  var HERO_EPOCH   = 82741;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
