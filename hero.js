@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "baerbock-fremdschaemen-ohne-ende.html", kick: "Deutschland", ttl: "Baerbock - Fremdschämen ohne absehbares Ende", img: "20260821baerbock.png", alt: "KI-Satire: Annalena Baerbock vor einem rosa-violetten Sternenhimmel, über ihrem Mund graues Klebeband mit der Aufschrift pls shut up" },
     { file: "gekuendigt-fuer-die-falsche-partei.html", kick: "Kurzartikel", ttl: "Gekündigt für die falsche Partei", img: "20260821hospiz.png", alt: "KI-Satire: Martina Müller geht im Regen mit einer Kiste persönlicher Dinge von einem Hospiz weg, während zwei selbstzufriedene Figuren hinter ihr die Drehtür schließen" },
     { file: "illegal-rein-weiter-aufs-festland.html", kick: "EU", ttl: "Illegal rein. Weiter aufs Festland.", img: "20260820ceuta.png", alt: "KI-Illustration: Eine große Menschenmenge geht im Hafen von Ceuta über eine Fährrampe auf eine Fähre" },
     { file: "zehntausend-gegen-die-brandmauer.html", kick: "Deutschland", ttl: "Zehntausend gegen die Brandmauer", img: "20260820prange.png", alt: "KI-Satire: Bernd Prange mit AfD-Kappe und AfD-Shirt vor einem Dorf in Sachsen-Anhalt" },
