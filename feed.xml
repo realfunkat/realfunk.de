@@ -4,21 +4,28 @@
   <link>https://realfunk.de/</link>
   <description>ORF-Watch. Wie der Staatsfunk Nachrichten rahmt und was er weglaesst.</description>
   <language>de-at</language>
-  <lastBuildDate>Thu, 20 Aug 2026 11:03:01 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 21 Aug 2026 09:11:37 +0000</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://realfunk.de/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
-    <title>Illegal rein. Weiter aufs Festland.</title>
-    <link>https://realfunk.de/artikel/illegal-rein-weiter-aufs-festland.html</link>
-    <guid>https://realfunk.de/artikel/illegal-rein-weiter-aufs-festland.html</guid>
-    <description>Spaniens Regierung arbeitet an einem dringenden Transfer von etwa 500 unbegleiteten Mädchen aus Ceuta aufs Festland. Die Folgen landen bei Regionen, Kommunen und Steuerzahlern.</description>
-    <pubDate>Thu, 20 Aug 2026 11:03:01 +0000</pubDate>
+    <title>Gekündigt für die falsche Partei</title>
+    <link>https://realfunk.de/artikel/gekuendigt-fuer-die-falsche-partei.html</link>
+    <guid>https://realfunk.de/artikel/gekuendigt-fuer-die-falsche-partei.html</guid>
+    <description>Nach 15 Jahren kündigt ein Diakonie-Träger Martina Müller fristlos, weil sie für die AfD kandidiert. Politische Ausgrenzung mit existenziellen Folgen.</description>
+    <pubDate>Fri, 21 Aug 2026 06:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Zehntausend gegen die Brandmauer</title>
     <link>https://realfunk.de/artikel/zehntausend-gegen-die-brandmauer.html</link>
     <guid>https://realfunk.de/artikel/zehntausend-gegen-die-brandmauer.html</guid>
     <description>Ein CDU-Ortsbürgermeister spendet 10.000 Euro an die AfD und will sie bei der Landtagswahl wählen. Sein Ziel: Die Brandmauer soll fallen.</description>
-    <pubDate>Thu, 20 Aug 2026 10:00:00 +0000</pubDate>
+    <pubDate>Thu, 20 Aug 2026 06:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Illegal rein. Weiter aufs Festland.</title>
+    <link>https://realfunk.de/artikel/illegal-rein-weiter-aufs-festland.html</link>
+    <guid>https://realfunk.de/artikel/illegal-rein-weiter-aufs-festland.html</guid>
+    <description>Spaniens Regierung arbeitet an einem dringenden Transfer von etwa 500 unbegleiteten Mädchen aus Ceuta aufs Festland. Die Folgen landen bei Regionen, Kommunen und Steuerzahlern.</description>
+    <pubDate>Thu, 20 Aug 2026 06:00:00 +0000</pubDate>
   </item>
   <item>
     <title>Flugscham gilt nur für Bürger</title>

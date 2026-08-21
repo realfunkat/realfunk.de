@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "gekuendigt-fuer-die-falsche-partei.html", kick: "Kurzartikel", ttl: "Gekündigt für die falsche Partei", img: "20260821hospiz.png", alt: "KI-Satire: Martina Müller geht im Regen mit einer Kiste persönlicher Dinge von einem Hospiz weg, während zwei selbstzufriedene Figuren hinter ihr die Drehtür schließen" },
     { file: "illegal-rein-weiter-aufs-festland.html", kick: "EU", ttl: "Illegal rein. Weiter aufs Festland.", img: "20260820ceuta.png", alt: "KI-Illustration: Eine große Menschenmenge geht im Hafen von Ceuta über eine Fährrampe auf eine Fähre" },
     { file: "zehntausend-gegen-die-brandmauer.html", kick: "Deutschland", ttl: "Zehntausend gegen die Brandmauer", img: "20260820prange.png", alt: "KI-Satire: Bernd Prange mit AfD-Kappe und AfD-Shirt vor einem Dorf in Sachsen-Anhalt" },
     { file: "flugscham-gilt-nur-fuer-buerger.html", kick: "Kurzartikel", ttl: "Flugscham gilt nur für Bürger", img: "20260819leerflug.webp", alt: "KI-Satire: Eine Flugbegleiterin serviert Champagner in der leeren Luxuskabine eines deutschen Regierungsflugzeugs" },
@@ -111,7 +112,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82741;
+  var HERO_EPOCH   = 82745;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
