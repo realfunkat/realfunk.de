@@ -4,13 +4,20 @@
   <link>https://realfunk.de/</link>
   <description>ORF-Watch. Wie der Staatsfunk Nachrichten rahmt und was er weglaesst.</description>
   <language>de-at</language>
-  <lastBuildDate>Sun, 23 Aug 2026 12:15:12 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 23 Aug 2026 14:12:58 +0000</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://realfunk.de/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Gewinne privat. Risiko beim Staat.</title>
     <link>https://realfunk.de/artikel/gewinne-privat-risiko-beim-staat.html</link>
     <guid>https://realfunk.de/artikel/gewinne-privat-risiko-beim-staat.html</guid>
     <description>Deutschlands Gasspeicher waren am 18. August nur zu 50,06 Prozent gefüllt. Wenn der Staat später Gas beschaffen muss, trägt laut § 35f EnWG der Bund den Fehlbetrag.</description>
+    <pubDate>Sun, 23 Aug 2026 06:00:00 +0000</pubDate>
+  </item>
+  <item>
+    <title>Anthropic verdient kein Vertrauen</title>
+    <link>https://realfunk.de/artikel/anthropic-verdient-kein-vertrauen.html</link>
+    <guid>https://realfunk.de/artikel/anthropic-verdient-kein-vertrauen.html</guid>
+    <description>Anthropics eigene Akten zeigen 42.000 aufgehobene Sperren, einen stillgelegten Betrieb, reale Cyberangriffe, sieben Millionen Piratenkopien und jahrelange Datenspeicherung.</description>
     <pubDate>Sun, 23 Aug 2026 06:00:00 +0000</pubDate>
   </item>
   <item>

@@ -10,6 +10,7 @@
 - [Archiv](https://realfunk.de/archiv.html)
 - [Sitemap](https://realfunk.de/sitemap.xml)
 - [RSS-Feed](https://realfunk.de/feed.xml)
+- [English: Anthropic Has Not Earned Trust](https://realfunk.de/en/anthropic-has-not-earned-trust.html)
 - [Impressum](https://realfunk.de/impressum.html)
 - [Datenschutz](https://realfunk.de/datenschutz.html)
 
