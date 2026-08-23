@@ -15,7 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "anthropic-verdient-kein-vertrauen.html", kick: "Durchschaut", ttl: "Anthropic verdient kein Vertrauen", img: "20260823anthropic-kontosperre.png", alt: "Screenshot einer Claude-Kontosperre: Der Prüfauftrag ist eingegangen, bis zur Prüfung bleibt der Zugang blockiert" },
+    { file: "anthropic-verdient-kein-vertrauen.html", kick: "Durchschaut", ttl: "Anthropic verdient kein Vertrauen", img: "20260823anthropic-account-banned.png", alt: "Screenshot einer Claude-Kontosperre mit dem gelben Hinweis account_banned" },
     { file: "gewinne-privat-risiko-beim-staat.html", kick: "Deutschland", ttl: "Gewinne privat. Risiko beim Staat.", img: "20260823gasspeicher.png", alt: "KI-Illustration: Beleuchtete Gas-Infrastruktur mit Rohren und Industrieanlagen in der Dämmerung" },
     { file: "doktor-weg-stabil-sagt-merz.html", kick: "Kurzartikel", ttl: "Doktor weg. Stabil, sagt Merz.", img: "20260822voigt.png", alt: "KI-Satire: Mario Voigt blickt erschrocken, während sein Doktorhut davonfliegt" },
     { file: "baerbock-fremdschaemen-ohne-ende.html", kick: "Deutschland", ttl: "Baerbock - Fremdschämen ohne absehbares Ende", img: "20260821baerbock.png", alt: "KI-Satire: Annalena Baerbock vor einem rosa-violetten Sternenhimmel, über ihrem Mund graues Klebeband mit der Aufschrift pls shut up" },
