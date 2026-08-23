@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "gewinne-privat-risiko-beim-staat.html", kick: "Deutschland", ttl: "Gewinne privat. Risiko beim Staat.", img: "20260823gasspeicher.png", alt: "KI-Illustration: Beleuchtete Gas-Infrastruktur mit Rohren und Industrieanlagen in der Dämmerung" },
     { file: "doktor-weg-stabil-sagt-merz.html", kick: "Kurzartikel", ttl: "Doktor weg. Stabil, sagt Merz.", img: "20260822voigt.png", alt: "KI-Satire: Mario Voigt blickt erschrocken, während sein Doktorhut davonfliegt" },
     { file: "baerbock-fremdschaemen-ohne-ende.html", kick: "Deutschland", ttl: "Baerbock - Fremdschämen ohne absehbares Ende", img: "20260821baerbock.png", alt: "KI-Satire: Annalena Baerbock vor einem rosa-violetten Sternenhimmel, über ihrem Mund graues Klebeband mit der Aufschrift pls shut up" },
     { file: "gekuendigt-fuer-die-falsche-partei.html", kick: "Kurzartikel", ttl: "Gekündigt für die falsche Partei", img: "20260821hospiz.png", alt: "KI-Satire: Martina Müller geht im Regen mit einer Kiste persönlicher Dinge von einem Hospiz weg, während zwei selbstzufriedene Figuren hinter ihr die Drehtür schließen" },
@@ -114,7 +115,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82747;
+  var HERO_EPOCH   = 82754;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
