@@ -66,5 +66,7 @@ footer strong{color:var(--ink);}
 /* Interne Links im Artikeltext sichtbar machen (13.07.2026) */
 .article .body a,.redaktion a{color:var(--accent);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;}
 .article .body a:hover,.redaktion a:hover{color:var(--accent-dark);text-decoration-thickness:2px;}
+.article .body a[href^="http"]:not([href*="realfunk.de"]),.redaktion a[href^="http"]:not([href*="realfunk.de"]){color:#53677c;font-size:.82em;font-weight:400;text-decoration-color:rgba(83,103,124,.55);text-decoration-thickness:1px;text-underline-offset:2px;}
+.article .body a[href^="http"]:not([href*="realfunk.de"]):hover,.redaktion a[href^="http"]:not([href*="realfunk.de"]):hover{color:#40566f;text-decoration-color:#40566f;text-decoration-thickness:1px;}
 
 .dateline{font-size:13px;color:#8a93b2;margin:2px 0 14px;letter-spacing:.02em;}
