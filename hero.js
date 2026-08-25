@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "operation-360-grad.html", kick: "Kurzartikel", ttl: "Operation 360 Grad*", img: "20260825baerbock.png", alt: "KI-Satire: Annalena Baerbock mit Doktorhut vor einem neoklassizistischen Universitätsgebäude" },
     { file: "die-rechnung-geht-an-die-kinder.html", kick: "Deutschland", ttl: "Die Rechnung geht an die Kinder", img: "20260824AAA.jpg", alt: "KI-Satire: Ein Ratingprüfer zieht eine goldene AAA-Kugel aus einer Trommel voller AAA-Kugeln" },
     { file: "zdf-unterbricht-weidel-gewinnt.html", kick: "Durchschaut", ttl: "ZDF unterbricht. Weidel gewinnt.", img: "20260824weidel-zdf.png", alt: "Alice Weidel spricht im ZDF-Sommerinterview mit Moderator Wulf Schmiese" },
     { file: "anthropic-verdient-kein-vertrauen.html", kick: "Durchschaut", ttl: "Anthropic verdient kein Vertrauen", img: "20260823anthropic-account-banned.png", alt: "Screenshot einer Claude-Kontosperre mit dem gelben Hinweis account_banned" },
@@ -118,7 +119,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82758;
+  var HERO_EPOCH   = 82761;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
