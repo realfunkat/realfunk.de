@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "klingbeils-zuckersteuer-auch-ohne-zucker.html", kick: "Deutschland", ttl: "Klingbeils Zuckersteuer. Auch ohne Zucker.", img: "20260826klingbeil-zero.png", alt: "KI-Satire: Lars Klingbeil presst Münzen aus einer Zero-Getränkeflasche in eine rote Geldkassette" },
     { file: "operation-360-grad.html", kick: "Kurzartikel", ttl: "Operation 360 Grad*", img: "20260825baerbock.png", alt: "KI-Satire: Annalena Baerbock mit Doktorhut vor einem neoklassizistischen Universitätsgebäude" },
     { file: "die-rechnung-geht-an-die-kinder.html", kick: "Deutschland", ttl: "Die Rechnung geht an die Kinder", img: "20260824AAA.jpg", alt: "KI-Satire: Ein Ratingprüfer zieht eine goldene AAA-Kugel aus einer Trommel voller AAA-Kugeln" },
     { file: "zdf-unterbricht-weidel-gewinnt.html", kick: "Durchschaut", ttl: "ZDF unterbricht. Weidel gewinnt.", img: "20260824weidel-zdf.png", alt: "Alice Weidel spricht im ZDF-Sommerinterview mit Moderator Wulf Schmiese" },
