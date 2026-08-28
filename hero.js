@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "wie-exakt-sind-umfragen.html", kick: "Durchschaut", ttl: "Wie exakt sind Umfragen?", img: "20260828landtag.jpg", alt: "Leeres Rednerpult im Landtag von Sachsen-Anhalt" },
     { file: "unter-kontrolle-nur-nicht-in-ceuta.html", kick: "EU", ttl: "Unter Kontrolle. Nur nicht in Ceuta.", img: "20260828ceuta.webp", alt: "Provisorisches Zeltlager auf einer asphaltierten Fläche in Ceuta; hinter den Zelten spielen junge Männer Fußball" },
     { file: "cdu-besser-als-cdu.html", kick: "Deutschland", ttl: "CDU besser als CDU?", img: "20260827schulze.jpeg", alt: "Sven Schulze und Ulrich Siegmund im MDR-TV-Duell, links die Moderatoren" },
     { file: "klingbeils-zuckersteuer-auch-ohne-zucker.html", kick: "Deutschland", ttl: "Klingbeils Zuckersteuer. Auch ohne Zucker.", img: "20260826klingbeil-zero.png", alt: "KI-Satire: Lars Klingbeil presst Münzen aus einer Zero-Getränkeflasche in eine rote Geldkassette" },
