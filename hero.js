@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "unter-kontrolle-nur-nicht-in-ceuta.html", kick: "EU", ttl: "Unter Kontrolle. Nur nicht in Ceuta.", img: "20260828ceuta.webp", alt: "Provisorisches Zeltlager auf einer asphaltierten Fläche in Ceuta; hinter den Zelten spielen junge Männer Fußball" },
     { file: "cdu-besser-als-cdu.html", kick: "Deutschland", ttl: "CDU besser als CDU?", img: "20260827schulze.jpeg", alt: "Sven Schulze und Ulrich Siegmund im MDR-TV-Duell, links die Moderatoren" },
     { file: "klingbeils-zuckersteuer-auch-ohne-zucker.html", kick: "Deutschland", ttl: "Klingbeils Zuckersteuer. Auch ohne Zucker.", img: "20260826klingbeil-zero.png", alt: "KI-Satire: Lars Klingbeil presst Münzen aus einer Zero-Getränkeflasche in eine rote Geldkassette" },
     { file: "operation-360-grad.html", kick: "Kurzartikel", ttl: "Operation 360 Grad*", img: "20260825baerbock.png", alt: "KI-Satire: Annalena Baerbock mit Doktorhut vor einem neoklassizistischen Universitätsgebäude" },
@@ -121,7 +122,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82769;
+  var HERO_EPOCH   = 82773;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
