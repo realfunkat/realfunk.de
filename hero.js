@@ -17,6 +17,7 @@
   var HERO_POOL = [
     { file: "unter-kontrolle-jetzt-mit-frontex.html", kick: "EU", ttl: "Unter Kontrolle. Jetzt mit Frontex.", img: "20260829ceuta.png", alt: "Menschen in einem provisorischen Lagerbereich in Ceuta; im Vordergrund brennt ein offenes Feuer" },
     { file: "verbotsverfahren-vor-der-wahl.html", kick: "Deutschland", ttl: "Verbotsverfahren vor der Wahl", img: "20260829pistoriusoezdemir.jpeg", alt: "Cem Özdemir und Boris Pistorius stehen nebeneinander" },
+    { file: "derad-13-millionen-spaeter.html", kick: "Österreich", ttl: "1,3 Millionen später", img: "20260829derad.png", alt: "Beweisgrafik mit dem Wiener Förderbeschluss über 22.500 Euro für DERAD und dem Hinweis Zusammenarbeit beendet", placement: "small" },
     { file: "wie-exakt-sind-umfragen.html", kick: "Durchschaut", ttl: "Wie exakt sind Umfragen?", img: "20260828landtag.jpg", alt: "Leeres Rednerpult im Landtag von Sachsen-Anhalt" },
     { file: "unter-kontrolle-nur-nicht-in-ceuta.html", kick: "EU", ttl: "Unter Kontrolle. Nur nicht in Ceuta.", img: "20260828ceuta.webp", alt: "Provisorisches Zeltlager auf einer asphaltierten Fläche in Ceuta; hinter den Zelten spielen junge Männer Fußball" },
     { file: "cdu-besser-als-cdu.html", kick: "Deutschland", ttl: "CDU besser als CDU?", img: "20260827schulze.jpeg", alt: "Sven Schulze und Ulrich Siegmund im MDR-TV-Duell, links die Moderatoren" },
@@ -125,7 +126,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82773;
+  var HERO_EPOCH   = 82777;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
