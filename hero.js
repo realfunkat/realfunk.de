@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "unter-kontrolle-jetzt-mit-frontex.html", kick: "EU", ttl: "Unter Kontrolle. Jetzt mit Frontex.", img: "20260829ceuta.png", alt: "Menschen in einem provisorischen Lagerbereich in Ceuta; im Vordergrund brennt ein offenes Feuer" },
     { file: "verbotsverfahren-vor-der-wahl.html", kick: "Deutschland", ttl: "Verbotsverfahren vor der Wahl", img: "20260829pistoriusoezdemir.jpeg", alt: "Cem Özdemir und Boris Pistorius stehen nebeneinander" },
     { file: "wie-exakt-sind-umfragen.html", kick: "Durchschaut", ttl: "Wie exakt sind Umfragen?", img: "20260828landtag.jpg", alt: "Leeres Rednerpult im Landtag von Sachsen-Anhalt" },
     { file: "unter-kontrolle-nur-nicht-in-ceuta.html", kick: "EU", ttl: "Unter Kontrolle. Nur nicht in Ceuta.", img: "20260828ceuta.webp", alt: "Provisorisches Zeltlager auf einer asphaltierten Fläche in Ceuta; hinter den Zelten spielen junge Männer Fußball" },
