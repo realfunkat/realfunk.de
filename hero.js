@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "merz-fuehrt-nutzniesserregister-ein.html", kick: "Deutschland", ttl: "Merz führt Nutznießerregister ein", img: "20260831merz-nutzniesser.jpg", alt: "KI-Satire: Friedrich Merz liegt im rosa Katzenpyjama im Krankenhausbett und kassiert per Kartenlesegerät eine erschöpfte Ärztin ab" },
     { file: "haftbefehl-egal-geld-fliesst-weiter.html", kick: "Deutschland", ttl: "Haftbefehl? Egal. Geld fließt weiter.", img: "20260831haftbefehl.jpg", alt: "KI-Satire: Ein Polizist chauffiert einen entspannten Urlauber mit Koffer auf einem Flughafenfahrzeug zu einem Passagierflugzeug" },
     { file: "unter-kontrolle-jetzt-mit-frontex.html", kick: "EU", ttl: "Unter Kontrolle. Jetzt mit Frontex.", img: "20260829ceuta.png", alt: "Menschen in einem provisorischen Lagerbereich in Ceuta; im Vordergrund brennt ein offenes Feuer" },
     { file: "verbotsverfahren-vor-der-wahl.html", kick: "Deutschland", ttl: "Verbotsverfahren vor der Wahl", img: "20260829pistoriusoezdemir.jpeg", alt: "Cem Özdemir und Boris Pistorius stehen nebeneinander" },
