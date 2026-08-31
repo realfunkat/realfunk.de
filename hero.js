@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "haftbefehl-egal-geld-fliesst-weiter.html", kick: "Deutschland", ttl: "Haftbefehl? Egal. Geld fließt weiter.", img: "20260831haftbefehl.jpg", alt: "KI-Satire: Ein Polizist chauffiert einen entspannten Urlauber mit Koffer auf einem Flughafenfahrzeug zu einem Passagierflugzeug" },
     { file: "unter-kontrolle-jetzt-mit-frontex.html", kick: "EU", ttl: "Unter Kontrolle. Jetzt mit Frontex.", img: "20260829ceuta.png", alt: "Menschen in einem provisorischen Lagerbereich in Ceuta; im Vordergrund brennt ein offenes Feuer" },
     { file: "verbotsverfahren-vor-der-wahl.html", kick: "Deutschland", ttl: "Verbotsverfahren vor der Wahl", img: "20260829pistoriusoezdemir.jpeg", alt: "Cem Özdemir und Boris Pistorius stehen nebeneinander" },
     { file: "derad-13-millionen-spaeter.html", kick: "Österreich", ttl: "1,3 Millionen später", img: "20260829derad.png", alt: "Beweisgrafik mit dem Wiener Förderbeschluss über 22.500 Euro für DERAD und dem Hinweis Zusammenarbeit beendet", placement: "small" },
@@ -126,7 +127,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82777;
+  var HERO_EPOCH   = 82785;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
