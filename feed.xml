@@ -4,8 +4,15 @@
   <link>https://realfunk.de/</link>
   <description>ORF-Watch. Wie der Staatsfunk Nachrichten rahmt und was er weglaesst.</description>
   <language>de-at</language>
-  <lastBuildDate>Tue, 01 Sep 2026 10:50:33 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 01 Sep 2026 11:45:55 +0000</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://realfunk.de/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Von der Leyen macht jedes Konto zum Gemeinschaftskonto</title>
+    <link>https://realfunk.de/artikel/von-der-leyen-gemeinschaftskonto.html</link>
+    <guid>https://realfunk.de/artikel/von-der-leyen-gemeinschaftskonto.html</guid>
+    <description>Satire: Von der Leyen macht aus privaten Sparkonten europäische Gemeinschaftskonten. Selenskyj erhält die erste Partnerkarte.</description>
+    <pubDate>Tue, 01 Sep 2026 06:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Tankstellen erkennen KI-Angriff an</title>
     <link>https://realfunk.de/artikel/tankstellen-erkennen-ki-angriff-an.html</link>

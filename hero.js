@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "von-der-leyen-gemeinschaftskonto.html", kick: "EU", ttl: "Von der Leyen macht jedes Konto zum Gemeinschaftskonto", img: "20260901ursula-gemeinschaftskonto.jpg", alt: "KI-Satire: Ursula von der Leyen reicht Wolodymyr Selenskyj am Bankschalter eine Karte, während eine ältere Sparerin ihr Portemonnaie öffnet" },
     { file: "tankstellen-erkennen-ki-angriff-an.html", kick: "Deutschland", ttl: "Tankstellen erkennen KI-Angriff an", img: "20260831trump-truth-social.png", alt: "Screenshot von Donald Trumps Truth-Social-Beitrag mit einem KI-generierten Video einer brennenden iranischen Ölanlage" },
     { file: "merz-fuehrt-nutzniesserregister-ein.html", kick: "Deutschland", ttl: "Merz führt Nutznießerregister ein", img: "20260831merz-nutzniesser.jpg", alt: "KI-Satire: Friedrich Merz liegt im rosa Katzenpyjama im Krankenhausbett und kassiert per Kartenlesegerät eine erschöpfte Ärztin ab" },
     { file: "haftbefehl-egal-geld-fliesst-weiter.html", kick: "Deutschland", ttl: "Haftbefehl? Egal. Geld fließt weiter.", img: "20260831haftbefehl.jpg", alt: "KI-Satire: Ein Polizist chauffiert einen entspannten Urlauber mit Koffer auf einem Flughafenfahrzeug zu einem Passagierflugzeug" },
