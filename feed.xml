@@ -4,8 +4,15 @@
   <link>https://realfunk.de/</link>
   <description>ORF-Watch. Wie der Staatsfunk Nachrichten rahmt und was er weglaesst.</description>
   <language>de-at</language>
-  <lastBuildDate>Thu, 03 Sep 2026 13:19:06 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 04 Sep 2026 10:10:03 +0000</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://realfunk.de/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Microsoft trennt ÖRR-Diagramme von Zahlen</title>
+    <link>https://realfunk.de/artikel/microsoft-trennt-oerr-diagramme-von-zahlen.html</link>
+    <guid>https://realfunk.de/artikel/microsoft-trennt-oerr-diagramme-von-zahlen.html</guid>
+    <description>Satire: Microsoft entkoppelt für den ÖRR Excel-Diagramme von ihren Zahlen. AfD-Balken lassen sich auf die gewünschte politische Größe ziehen.</description>
+    <pubDate>Fri, 04 Sep 2026 06:00:00 +0000</pubDate>
+  </item>
   <item>
     <title>Bundesregierung vereinfacht Russland-Ermittlungen: Ergebnis steht künftig am Anfang</title>
     <link>https://realfunk.de/artikel/russland-sofortzuordnung.html</link>

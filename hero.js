@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "microsoft-trennt-oerr-diagramme-von-zahlen.html", kick: "ÖRR", ttl: "Microsoft trennt ÖRR-Diagramme von Zahlen", img: "20260904zdf-afd-balken.png", alt: "Screenshot des ZDF-Politbarometers für Sachsen-Anhalt mit 41 Prozent für die AfD und 23 Prozent für die CDU; die Balkenhöhen geben den Abstand deutlich zu klein wieder" },
     { file: "endlich-experten-geben-wahlempfehlungen.html", kick: "Deutschland", ttl: "Endlich: Experten geben Wahlempfehlungen", img: "20260903experten-wahlempfehlungen.png", alt: "Satire-Montage: Eine alte Wetten-dass-Sendung mit rotem Pfeil und Kreis um eine Zuschauerin in der vierten Reihe" },
     { file: "russland-sofortzuordnung.html", kick: "Deutschland", ttl: "Bundesregierung vereinfacht Russland-Ermittlungen: Ergebnis steht künftig am Anfang", img: "20260903russland-sofortzuordnung.jpg", alt: "KI-Satire: Ursula von der Leyen, Alexander Dobrindt und Friedrich Merz sitzen kindlich dargestellt mit brennenden Streichhölzern auf einer großen Europakarte" },
     { file: "regierung-fahndet-nach-modellfamilie.html", kick: "Deutschland", ttl: "Regierung fahndet nach Familie, die durch Steuerreform 632 Euro spart", img: "20260902steuerreform-fahndung.jpg", alt: "KI-Satire: Eine Busfahrerin, ein Pfleger und zwei Kinder stehen wie bei einer polizeilichen Gegenüberstellung vor einer Messwand" },
@@ -133,7 +134,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82798;
+  var HERO_EPOCH   = 82801;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
