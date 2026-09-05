@@ -10,8 +10,14 @@ from PIL import Image, ImageDraw, ImageFont
 
 W, H = 1200, 630
 MARGIN = 70
-FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-FONT_REG = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+FONT_BOLD = next(p for p in (
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+) if os.path.exists(p))
+FONT_REG = next(p for p in (
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "/System/Library/Fonts/Supplemental/Arial.ttf",
+) if os.path.exists(p))
 ACCENT = (232, 162, 0)        # amber accent line
 OGDIR = "images/og"
 
@@ -107,7 +113,7 @@ def make_card(headline, out):
     d.text((funk_x + fkw + 4, 62), TLD, font=ImageFont.truetype(FONT_REG, 30), fill=(230, 240, 255))
     # Badge
     bf = ImageFont.truetype(FONT_BOLD, 20)
-    d.text((MARGIN, 118), "NACHRICHTEN OHNE ÖRR-FILTER", font=bf, fill=(210, 226, 246))
+    d.text((MARGIN, 118), "POLITISCHE SATIRE", font=bf, fill=(210, 226, 246))
 
     # Headline: passende Schriftgröße finden (max 5 Zeilen, min 40px)
     maxw = W - 2 * MARGIN
@@ -129,9 +135,32 @@ def make_card(headline, out):
         y += lh
     # Akzentlinie + Fußzeile
     d.rectangle([MARGIN, H - 92, MARGIN + 90, H - 86], fill=ACCENT)
-    d.text((MARGIN, H - 72), f"{HOST} — die Nachrichten, bevor sie durch den Filter gehen",
+    d.text((MARGIN, H - 72), f"{HOST} — fast so witzig wie Politiker. Aber gratis.",
            font=ImageFont.truetype(FONT_REG, 24), fill=(226, 238, 252))
     os.makedirs(OGDIR, exist_ok=True)
+    img.save(out, "PNG")
+
+
+def make_social_cover(out):
+    """Erzeugt das gemeinsame X-/Facebook-Titelbild im sicheren 3:1-Zuschnitt."""
+    width, height = 1500, 500
+    img = gradient().resize((width, height))
+    d = ImageDraw.Draw(img)
+    logo_f = ImageFont.truetype(FONT_BOLD, 46)
+    d.text((80, 48), "Real", font=logo_f, fill=(255, 255, 255))
+    rlw = d.textlength("Real", font=logo_f)
+    fx = int(80 + rlw + 18)
+    draw_signal(img, fx, 57, w=46, h=30)
+    funk_x = fx + 60
+    d.text((funk_x, 48), "Funk", font=logo_f, fill=(255, 255, 255))
+    fkw = d.textlength("Funk", font=logo_f)
+    d.text((funk_x + fkw + 5, 59), TLD,
+           font=ImageFont.truetype(FONT_REG, 30), fill=(230, 240, 255))
+    d.rectangle([80, 158, 205, 166], fill=ACCENT)
+    d.text((80, 190), "POLITISCHE SATIRE", font=ImageFont.truetype(FONT_BOLD, 68),
+           fill=(255, 255, 255))
+    d.text((80, 300), "Fast so witzig wie Politiker. Aber gratis.",
+           font=ImageFont.truetype(FONT_REG, 42), fill=(226, 238, 252))
     img.save(out, "PNG")
 
 

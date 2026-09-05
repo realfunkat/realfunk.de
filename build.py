@@ -62,9 +62,9 @@ def write_feed(arts):
     build = f"{DAYS[now.weekday()]}, {now.day:02d} {MONTHS[now.month]} {now.year} {now:%H:%M:%S} +0000"
     feed = (
         '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n'
-        "  <title>RealFunk — Nachrichten ohne ÖRR-Filter</title>\n"
+        "  <title>RealFunk — politische Satire</title>\n"
         f"  <link>{SITE}/</link>\n"
-        "  <description>ORF-Watch. Wie der Staatsfunk Nachrichten rahmt und was er weglaesst.</description>\n"
+        "  <description>Politische Satire über Politik, Medien und Behördenwahnsinn.</description>\n"
         "  <language>de-at</language>\n"
         f"  <lastBuildDate>{build}</lastBuildDate>\n"
         f'  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>\n'
