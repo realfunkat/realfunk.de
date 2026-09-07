@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "von-der-leyen-fordert-neuwahl.html", kick: "EU", ttl: "Von der Leyen fordert Neuwahl", img: "20260907vonderleyen-neuwahl.png", alt: "KI-Satire: Ursula von der Leyen entreißt dem verblüfften Ulrich Siegmund auf einer AfD-Wahlparty den Siegerblumenstrauß" },
     { file: "spahn-schmeisst-den-haushalt.html", kick: "Deutschland", ttl: "Spahn schmeißt den Haushalt", img: "20260906spahn-haushalt.png", alt: "KI-Satire: Jens Spahn steht mit Schürze und Mehl unter der Nase in einer Küche" },
     { file: "experten-warnen-vor-weniger-problemen.html", kick: "Deutschland", ttl: "Experten warnen vor weniger Problemen", img: "20260906experten-warnen-weniger-probleme.png", alt: "KI-Satire: Ulrich Siegmund sitzt hinter dem Schreibtisch des Ministerpräsidenten und winkt, während Sven Schulze mit einer Kiste das Büro verlässt" },
     { file: "cdu-linke-fusionieren-zur-msu.html", kick: "Deutschland", ttl: "CDU und Linke fusionieren zur MSU", img: "20260905msu.png", alt: "KI-Satire: Friedrich Merz und eine Politikerin stehen mit weißen MSU-Kappen vor einem Regierungsgebäude; Merz trägt ein weißes Hemd und einen gemusterten Schal" },
