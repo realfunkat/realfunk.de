@@ -7,7 +7,8 @@
   if (slides.length < 2) return;
   // Shared two-hour slots: reloading does not restart the rotation.
   const slotDuration = 2 * 60 * 60 * 1000;
-  const previewSpahn = new URLSearchParams(location.search).get('hero') === 'spahn';
+  const preview = new URLSearchParams(location.search).get('hero');
+  const previewFile = {spahn:'spahn-schmeisst-den-haushalt.html',neuwahl:'von-der-leyen-fordert-neuwahl.html'}[preview];
   let index = -1, timer;
   function show(next) {
     if (next === index) return;
@@ -53,7 +54,7 @@
   function sync() {
     clearTimeout(timer);
     const now = Date.now();
-    show(previewSpahn ? Math.max(0, slides.findIndex(slide => slide.file === 'spahn-schmeisst-den-haushalt.html')) : Math.floor(now / slotDuration) % slides.length);
+    show(previewFile ? Math.max(0, slides.findIndex(slide => slide.file === previewFile)) : Math.floor(now / slotDuration) % slides.length);
     timer = setTimeout(sync, slotDuration - (now % slotDuration) + 50);
   }
   document.addEventListener('visibilitychange', () => {

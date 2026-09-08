@@ -27,9 +27,10 @@ def update_magazine(arts):
   rotation.append(dict(item,subtitle=unescape(re.sub(r'<[^>]+>','',sub[1])).strip() if sub else ''))
  for slide in rotation:
   if slide['file']=='spahn-schmeisst-den-haushalt.html':slide['video']='videos/spahn-hero.mp4'
+  if slide['file']=='von-der-leyen-fordert-neuwahl.html':slide['video']='videos/vdl-hero.mp4'
  payload=json.dumps(rotation,ensure_ascii=False).replace('<','\\u003c')
  hero=hero.replace('</section>','<script type="application/json" id="hero-rotation-data">'+payload+'</script></section>')
- if 'src="hero-rotation.js' not in s:s=s.replace('</body>','<script defer src="hero-rotation.js?v=20260908-video1"></script></body>')
+ if 'src="hero-rotation.js' not in s:s=s.replace('</body>','<script defer src="hero-rotation.js?v=20260908-video2"></script></body>')
  small='<section class="small-heroes" aria-label="Weitere Top-Themen">'+''.join(f'''<a class="mini-hero" href="artikel/{esc(x['file'])}"><img src="images/{esc(x['img'])}" alt="{esc(x.get('alt',''))}" loading="lazy"><div><span>{esc(x['kick'])}</span><h2>{esc(x['ttl'])}</h2></div></a>''' for x in items[1:5])+'</section>'
  s=re.sub(r'<section class="hero" id="top">.*?</section>',lambda m:hero,s,count=1,flags=re.S)
  s=re.sub(r'<section class="small-heroes".*?</section>',lambda m:small,s,count=1,flags=re.S)
