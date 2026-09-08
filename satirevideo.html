@@ -38,12 +38,10 @@
   .sb{flex:1;min-width:120px;text-align:center;padding:11px 8px;border:1px solid #2b3c66;border-radius:10px;background:transparent;color:#cfd8ee;font-size:13px;font-weight:700;cursor:pointer;text-decoration:none;}
   footer{max-width:760px;margin:0 auto;padding:22px 18px 40px;font-size:12px;color:#6a7cab;line-height:1.6;border-top:1px solid #1a2a4d;}
 </style>
+<link rel="stylesheet" href="realfunk-shell.css?v=20260908">
 </head>
-<body>
-<div class="top">
-  <a class="logo" href="index.html">Real<span class="t"></span>Funk</a>
-  <a class="back" href="index.html">&larr; Startseite</a>
-</div>
+<body data-rf-layout="legacy"><header class="rf-header"><a class="rf-logo" href="index.html" aria-label="RealFunk Startseite">Real<span aria-hidden="true">◉</span>Funk</a><nav class="rf-nav" aria-label="Hauptnavigation"><a href="index.html#top">TOP THEMEN</a><a href="index.html#meldungen">MELDUNGEN</a><a href="index.html#mehr">MEHR</a><a href="archiv.html">ARCHIV</a><a class="rf-support" href="unterstuetzen.html">UNTERSTÜTZEN</a></nav></header>
+
 <div class="wrap">
   <span class="badge">Satire &middot; KI-generiert</span>
   <h1>Satirevideo der Woche</h1>
@@ -61,13 +59,10 @@
     <a class="sb" id="wa" target="_blank" rel="noopener">WhatsApp</a>
     <a class="sb" id="tw" target="_blank" rel="noopener">Auf X teilen</a>
     <button class="sb" id="cp">Link kopieren</button>
-    <a class="sb" href="phrasendrescher.html">Zum Phrasendrescher</a>
+    <a class="sb" href="lexikon.html">Zum Politikerlexikon</a>
   </div>
 </div>
-<footer>
-  Nicht mit ARD, ZDF, Deutschlandradio oder dem ORF verbunden.<br>
-  RealFunk · realfunk.de
-</footer>
+
 <script>
 (function(){
   var url='https://realfunk.de/satirevideo.html';
@@ -77,5 +72,5 @@
   document.getElementById('cp').addEventListener('click',function(){var b=this;navigator.clipboard&&navigator.clipboard.writeText(url).then(function(){b.textContent='Kopiert!';setTimeout(function(){b.textContent='Link kopieren';},1500);});});
 })();
 </script>
-</body>
+<footer class="rf-footer"><div><a class="rf-logo" href="index.html">Real<span>◉</span>Funk</a><p>Politische Satire, fast so witzig wie Politiker. Aber gratis.</p></div><nav aria-label="Weitere Informationen"><a href="ueber-realfunk.html">Über RealFunk</a><a href="unterstuetzen.html">Unterstützen</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="feed.xml">RSS</a></nav></footer></body>
 </html>

@@ -76,7 +76,7 @@ def write_feed(arts):
 def write_sitemap(arts):
     import os
     roots = [("/", "1.0")]
-    for p, pr in [("stempelautomat.html", "0.8"), ("sport.html", "0.7"), ("wetter.html", "0.6"), ("archiv.html", "0.6"),
+    for p, pr in [("lexikon.html", "0.8"), ("bild-des-tages.html", "0.8"), ("satirevideo.html", "0.7"), ("unterstuetzen.html", "0.5"), ("ueber-realfunk.html", "0.4"), ("phrasendrescher.html", "0.3"), ("stempelautomat.html", "0.8"), ("sport.html", "0.7"), ("wetter.html", "0.6"), ("archiv.html", "0.6"),
                   ("impressum.html", "0.2"), ("datenschutz.html", "0.2")]:
         if os.path.exists(p):
             roots.append(("/" + p, pr))
@@ -105,4 +105,6 @@ if __name__ == "__main__":
     write_feed(arts)
     write_sitemap(arts)
     write_search(arts)
+    from magazine_build import update_magazine
+    update_magazine(arts)
     print(f"OK: {len(arts)} Artikel -> feed.xml, sitemap.xml, search-index.json")
