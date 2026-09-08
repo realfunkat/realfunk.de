@@ -17,3 +17,9 @@
 @media(max-width:540px){.slot-scene{padding:25px 12px}.slot-intro{min-height:340px;padding:0 10px}.slot-intro h1{font-size:30px}.slot-intro p{font-size:13px}.slot-scene .fritz-stage .actor{top:135px;height:270px}.slot-intro .photo-caption{left:10px;font-size:9px}.slot-intro .eyebrow{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.fritz-layer{transition:none}}
 .slot-scene .fritz-stage .actor{mask-image:linear-gradient(90deg,transparent,#000 16%,#000 83%,transparent),linear-gradient(0deg,transparent,#000 12%,#000 86%,transparent);mask-composite:intersect}
+
+/* The backdrop is no longer an item in the old two-column intro grid. */
+.slot-scene .fritz-stage,.slot-scene .fritz-stage[data-state]{grid-area:auto;grid-column:auto;grid-row:auto;justify-self:auto;align-self:auto;min-width:0;max-width:none}
+
+/* Fast continuous reel: identical halves make the loop seamless. */
+.reel-motion>div{display:flex;flex-direction:column;line-height:72px;animation:slot-fast-roll .65s linear infinite;filter:blur(3px);will-change:transform}.reel-motion>div>span{display:block;height:72px;min-height:72px;line-height:72px;white-space:nowrap;overflow:hidden;font-size:32px;letter-spacing:-1px;padding:0 10px}.reel-motion:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(#d9d0bcaa,transparent 20%,transparent 80%,#d9d0bcaa)}@keyframes slot-fast-roll{from{transform:translateY(0)}to{transform:translateY(-50%)}}@media(prefers-reduced-motion:reduce){.reel-motion>div{animation:none;filter:none}}
