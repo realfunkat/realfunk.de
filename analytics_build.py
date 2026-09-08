@@ -17,7 +17,8 @@ class BeaconParser(HTMLParser):
         if tag == 'script' and 'cloudflareinsights.com/beacon.min.js' in attrs.get('src', ''):
             self.tags.append(attrs)
 
-def ensure_analytics(root=Path('.')):
+def ensure_analytics(root=None):
+    root = Path(root) if root is not None else Path(__file__).resolve().parent
     total = added = 0
     for page in sorted(Path(root).rglob('*.html')):
         if '.git' in page.parts:
