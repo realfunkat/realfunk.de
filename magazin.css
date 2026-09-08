@@ -49,3 +49,7 @@ header{position:relative!important;top:0!important;background:#05112A!important;
 .compact-nav .nav-support{color:#fff;background:#c52239;padding:11px 14px;border-radius:5px;font-weight:800}.compact-nav{align-items:center;flex-wrap:wrap}
 
 .hero .hero-full-link{position:absolute;inset:0;z-index:3;display:block;cursor:pointer}.hero .hero-full-link:focus-visible{outline:3px solid #e6a83a;outline-offset:-6px}.hero:has(.hero-full-link:hover) .link{color:#e6a83a}
+
+.hero .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;pointer-events:none}
+.hero-video-credit{position:absolute;right:6%;bottom:18px;z-index:2;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:white;background:#05112a99;padding:5px 8px}
+@media(max-width:700px){.hero .hero-video{object-position:60% center}}
