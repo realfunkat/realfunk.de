@@ -36,12 +36,13 @@ def update_magazine(arts):
  s=re.sub(r'<section class="hero" id="top">.*?</section>',lambda m:hero,s,count=1,flags=re.S)
  s=re.sub(r'<section class="small-heroes".*?</section>',lambda m:small,s,count=1,flags=re.S)
  active=['Deutschland','EU','ÖRR','Österreich','Ausland','Durchschaut','Kurzartikel']
+ hero_files={item['file'] for item in items[:5]}
  rows=[]
  for topic in active:
-  a=next((a for a in arts if a['ressort']==topic),None)
+  a=next((a for a in arts if a['ressort']==topic and a['file'] not in hero_files),None)
   if not a:continue
   rows.append(f'''<a href="artikel/{esc(a['file'])}"><span class="story-topic">{esc(topic)}</span><strong>{esc(a['title'])}</strong><time datetime="{esc(a['date'])}">{esc('.'.join(a['date'].split('-')[::-1]))}</time><span aria-hidden="true">↗</span></a>''')
- stories='<section class="top-stories" id="meldungen"><div class="section-head"><h2>Meldungen</h2><p>Die neueste Meldung aus jedem Ressort.</p></div><div class="story-list">'+''.join(rows)+'</div></section>'
+ stories='<section class="top-stories" id="meldungen"><div class="section-head"><h2>Meldungen</h2><p>Weitere Meldungen aus den Ressorts.</p></div><div class="story-list">'+''.join(rows)+'</div></section>'
  s=re.sub(r'<section class="top-stories".*?</section>',lambda m:stories,s,count=1,flags=re.S)
  p.write_text(s,encoding='utf-8')
  p=Path('archiv.html');s=p.read_text(encoding='utf-8')
