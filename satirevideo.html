@@ -8,8 +8,8 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="RealFunk">
 <meta property="og:locale" content="de_DE">
-<meta property="og:title" content="Satirevideo der Woche">
-<meta property="og:description" content="KI-generierte Satire, klar gekennzeichnet. Diese Woche: der anonyme Insider aus dem Kanzleramt.">
+<meta property="og:title" content="Satirevideo der Woche — RealFunk">
+<meta property="og:description" content="Der anonyme Insider aus dem Kanzleramt. Natürlich verfremdet.">
 <meta property="og:url" content="https://realfunk.de/satirevideo.html">
 <meta property="og:image" content="https://realfunk.de/images/satirevideo-og.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -39,7 +39,7 @@
   footer{max-width:760px;margin:0 auto;padding:22px 18px 40px;font-size:12px;color:#6a7cab;line-height:1.6;border-top:1px solid #1a2a4d;}
 </style>
 <link rel="stylesheet" href="realfunk-shell.css?v=20260908">
-</head>
+<link rel="stylesheet" href="realfunk-share.css?v=1"></head>
 <body data-rf-layout="legacy"><header class="rf-header"><a class="rf-logo" href="index.html" aria-label="RealFunk Startseite">Real<span aria-hidden="true">◉</span>Funk</a><nav class="rf-nav" aria-label="Hauptnavigation"><a href="index.html#top">TOP THEMEN</a><a href="index.html#meldungen">MELDUNGEN</a><a href="index.html#mehr">MEHR</a><a href="archiv.html">ARCHIV</a><a class="rf-support" href="unterstuetzen.html">UNTERSTÜTZEN</a></nav></header>
 
 <div class="wrap">
@@ -55,22 +55,9 @@
     <p class="kennz">Kennzeichnung: Dieses Video ist Satire und wurde mit Hilfe künstlicher Intelligenz erstellt. Die dargestellte Szene ist frei erfunden; die gezeigte Person ist eine satirische Kunstfigur. Es handelt sich nicht um eine echte Aufnahme.</p>
   </div>
 
-  <div class="share">
-    <a class="sb" id="wa" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="sb" id="tw" target="_blank" rel="noopener">Auf X teilen</a>
-    <button class="sb" id="cp">Link kopieren</button>
-    <a class="sb" href="lexikon.html">Zum Politikerlexikon</a>
-  </div>
+  <div class="rf-share" aria-label="Seite teilen"><strong>Teilen</strong><button type="button" data-native-share hidden>Teilen …</button><a href="https://api.whatsapp.com/send?text=Satirevideo%20der%20Woche%20%E2%80%94%20RealFunk%20https%3A//realfunk.de/satirevideo.html" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://twitter.com/intent/tweet?text=Satirevideo%20der%20Woche%20%E2%80%94%20RealFunk&url=https%3A//realfunk.de/satirevideo.html" target="_blank" rel="noopener noreferrer">X</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//realfunk.de/satirevideo.html" target="_blank" rel="noopener noreferrer">Facebook</a><a href="mailto:?subject=Satirevideo%20der%20Woche%20%E2%80%94%20RealFunk&body=https%3A//realfunk.de/satirevideo.html" target="_blank" rel="noopener noreferrer">E-Mail</a><button type="button" data-copy-share>Link kopieren</button><span role="status" data-share-status></span></div>
 </div>
 
-<script>
-(function(){
-  var url='https://realfunk.de/satirevideo.html';
-  var txt='Satirevideo der Woche: Ein anonymer Insider aus dem Kanzleramt packt aus.';
-  document.getElementById('wa').href='https://api.whatsapp.com/send?text='+encodeURIComponent(txt+' '+url);
-  document.getElementById('tw').href='https://twitter.com/intent/tweet?text='+encodeURIComponent(txt)+'&url='+encodeURIComponent(url);
-  document.getElementById('cp').addEventListener('click',function(){var b=this;navigator.clipboard&&navigator.clipboard.writeText(url).then(function(){b.textContent='Kopiert!';setTimeout(function(){b.textContent='Link kopieren';},1500);});});
-})();
-</script>
-<footer class="rf-footer"><div><a class="rf-logo" href="index.html">Real<span>◉</span>Funk</a><p>Politische Satire, fast so witzig wie Politiker. Aber gratis.</p></div><nav aria-label="Weitere Informationen"><a href="ueber-realfunk.html">Über RealFunk</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="feed.xml">RSS</a></nav></footer></body>
+
+<footer class="rf-footer"><div><a class="rf-logo" href="index.html">Real<span>◉</span>Funk</a><p>Politische Satire, fast so witzig wie Politiker. Aber gratis.</p></div><nav aria-label="Weitere Informationen"><a href="ueber-realfunk.html">Über RealFunk</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="feed.xml">RSS</a></nav></footer><script defer src="realfunk-share.js?v=1"></script></body>
 </html>

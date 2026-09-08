@@ -53,3 +53,5 @@ header{position:relative!important;top:0!important;background:#05112A!important;
 .hero .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;pointer-events:none}
 .hero-video-credit{position:absolute;right:6%;bottom:18px;z-index:2;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:white;background:#05112a99;padding:5px 8px}
 @media(max-width:700px){.hero .hero-video{object-position:60% center}}
+.hero-switch{position:absolute;right:6%;bottom:14px;z-index:4;display:flex;align-items:center;gap:8px;border:1px solid #ffffff55;border-radius:24px;padding:2px 8px;background:#05112acc;color:white;font-size:12px}
+.hero-switch button{background:none;border:0;color:inherit;font:inherit;font-size:21px;min-width:44px;min-height:44px;cursor:pointer}.hero-switch button:hover{color:#e6a83a}.hero:has(.hero-switch) .hero-video-credit{bottom:72px}

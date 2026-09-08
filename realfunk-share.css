@@ -1,0 +1,3 @@
+.rf-share{position:relative;z-index:2;display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:20px 0;color:white;font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:normal;text-transform:none}
+.rf-share strong{margin-right:5px}.rf-share a,.rf-share button{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;border:1px solid #66728b;border-radius:5px;background:#05112ae6;color:white;font:inherit;text-decoration:none;cursor:pointer}
+.rf-share [hidden]{display:none!important}.rf-share a:hover,.rf-share button:hover{border-color:#e6a83a;color:#e6a83a}.rf-share [role=status]{flex-basis:100%;font-size:12px;overflow-wrap:anywhere}.rf-share [role=status]:empty{display:none}
