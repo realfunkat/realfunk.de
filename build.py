@@ -107,4 +107,6 @@ if __name__ == "__main__":
     write_search(arts)
     from magazine_build import update_magazine
     update_magazine(arts)
+    from analytics_build import ensure_analytics
+    ensure_analytics()
     print(f"OK: {len(arts)} Artikel -> feed.xml, sitemap.xml, search-index.json")
