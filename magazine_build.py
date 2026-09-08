@@ -26,9 +26,8 @@ def update_magazine(arts):
   sub=re.search(r'<(?:div|p)[^>]*class=["\'][^"\']*\bsubheadline\b[^"\']*["\'][^>]*>(.*?)</(?:div|p)>',article,re.S)
   rotation.append(dict(item,subtitle=unescape(re.sub(r'<[^>]+>','',sub[1])).strip() if sub else ''))
  payload=json.dumps(rotation,ensure_ascii=False).replace('<','\\u003c')
- controls='<div class="hero-rotation-controls" hidden><button type="button" data-hero-prev aria-label="Vorheriges Top-Thema">←</button><span data-hero-position>1 / 2</span><button type="button" data-hero-next aria-label="Nächstes Top-Thema">→</button><button type="button" data-hero-pause aria-label="Automatischen Wechsel pausieren">Ⅱ</button></div>'
- hero=hero.replace('</section>',controls+'<script type="application/json" id="hero-rotation-data">'+payload+'</script></section>')
- if 'src="hero-rotation.js' not in s:s=s.replace('</body>','<script defer src="hero-rotation.js?v=20260908-1"></script></body>')
+ hero=hero.replace('</section>','<script type="application/json" id="hero-rotation-data">'+payload+'</script></section>')
+ if 'src="hero-rotation.js' not in s:s=s.replace('</body>','<script defer src="hero-rotation.js?v=20260908-2h"></script></body>')
  small='<section class="small-heroes" aria-label="Weitere Top-Themen">'+''.join(f'''<a class="mini-hero" href="artikel/{esc(x['file'])}"><img src="images/{esc(x['img'])}" alt="{esc(x.get('alt',''))}" loading="lazy"><div><span>{esc(x['kick'])}</span><h2>{esc(x['ttl'])}</h2></div></a>''' for x in items[1:5])+'</section>'
  s=re.sub(r'<section class="hero" id="top">.*?</section>',lambda m:hero,s,count=1,flags=re.S)
  s=re.sub(r'<section class="small-heroes".*?</section>',lambda m:small,s,count=1,flags=re.S)

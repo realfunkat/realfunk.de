@@ -49,8 +49,3 @@ header{position:relative!important;top:0!important;background:#05112A!important;
 .compact-nav .nav-support{color:#fff;background:#c52239;padding:11px 14px;border-radius:5px;font-weight:800}.compact-nav{align-items:center;flex-wrap:wrap}
 
 .hero .hero-full-link{position:absolute;inset:0;z-index:3;display:block;cursor:pointer}.hero .hero-full-link:focus-visible{outline:3px solid #e6a83a;outline-offset:-6px}.hero:has(.hero-full-link:hover) .link{color:#e6a83a}
-
-/* Main feature rotation; controls remain above the full-card link. */
-.hero-rotation-controls{position:absolute;right:6%;bottom:15px;z-index:4;display:flex;align-items:center;gap:8px;color:#fff;background:#05112acc;border:1px solid #ffffff40;border-radius:24px;padding:2px 8px;font-size:12px}
-.hero-rotation-controls button{color:inherit;background:transparent;border:0;min-width:40px;min-height:40px;padding:6px;font-size:19px}
-.hero-rotation-controls button:hover{color:#e6a83a}

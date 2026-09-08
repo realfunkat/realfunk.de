@@ -5,19 +5,12 @@
   if (!hero || !data) return;
   const slides = JSON.parse(data.textContent);
   if (slides.length < 2) return;
-  const controls = hero.querySelector('.hero-rotation-controls');
-  const pause = controls.querySelector('[data-hero-pause]');
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  let index = 0, paused = reduced.matches, timer;
-  slides.forEach(slide => { const image = new Image(); image.src = 'images/' + slide.img; });
-  function schedule() {
-    clearTimeout(timer);
-    if (!paused && !document.hidden && !hero.matches(':hover') && !hero.contains(document.activeElement)) {
-      timer = setTimeout(() => show(index + 1), 8000);
-    }
-  }
+  // Shared two-hour slots: reloading does not restart the rotation.
+  const slotDuration = 2 * 60 * 60 * 1000;
+  let index = -1, timer;
   function show(next) {
-    index = (next + slides.length) % slides.length;
+    if (next === index) return;
+    index = next;
     const slide = slides[index];
     const image = hero.querySelector('img');
     image.src = 'images/' + slide.img;
@@ -32,23 +25,15 @@
     subtitle.textContent = slide.subtitle;
     subtitle.hidden = !slide.subtitle;
     hero.querySelector('.hero-full-link').href = 'artikel/' + slide.file;
-    controls.querySelector('[data-hero-position]').textContent = `${index + 1} / ${slides.length}`;
-    if (!reduced.matches) [image, hero.querySelector('.hero-copy')].forEach(el => el.animate([{opacity:.25},{opacity:1}], {duration:450}));
-    schedule();
   }
-  function updatePause() {
-    pause.textContent = paused ? '▶' : 'Ⅱ';
-    pause.setAttribute('aria-label', paused ? 'Automatischen Wechsel starten' : 'Automatischen Wechsel pausieren');
-    schedule();
+  function sync() {
+    clearTimeout(timer);
+    const now = Date.now();
+    show(Math.floor(now / slotDuration) % slides.length);
+    timer = setTimeout(sync, slotDuration - (now % slotDuration) + 50);
   }
-  controls.hidden = false;
-  controls.querySelector('[data-hero-prev]').addEventListener('click', () => show(index - 1));
-  controls.querySelector('[data-hero-next]').addEventListener('click', () => show(index + 1));
-  pause.addEventListener('click', () => { paused = !paused; updatePause(); });
-  hero.addEventListener('mouseenter', () => clearTimeout(timer));
-  hero.addEventListener('mouseleave', schedule);
-  hero.addEventListener('focusin', () => clearTimeout(timer));
-  hero.addEventListener('focusout', () => setTimeout(schedule, 0));
-  document.addEventListener('visibilitychange', schedule);
-  updatePause();
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) sync();
+  });
+  sync();
 })();
