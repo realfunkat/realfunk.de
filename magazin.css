@@ -67,3 +67,10 @@ header{position:relative!important;top:0!important;background:#05112A!important;
   #top.hero .hero-video-credit{top:12px;bottom:auto;right:12px;font-size:9px}
   #top.hero .hero-switch{bottom:14px}
 }
+
+@media(max-width:700px){
+ .mini-hero[data-wide-scene="true"]{display:block;background:#17233b}
+ .mini-hero[data-wide-scene="true"] img{position:relative;display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:contain}
+ .mini-hero[data-wide-scene="true"]:after{display:none}
+ .mini-hero[data-wide-scene="true"]>div{padding:12px}
+}

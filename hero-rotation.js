@@ -58,6 +58,7 @@
     const tile = document.querySelector('.small-heroes .mini-hero');
     if (tile) {
       tile.href = 'artikel/' + companion.file;
+      tile.dataset.wideScene = companion.file === 'von-der-leyen-fordert-neuwahl.html' ? 'true' : 'false';
       tile.querySelector('img').src = 'images/' + companion.img;
       tile.querySelector('img').alt = companion.alt || '';
       tile.querySelector('span').textContent = companion.kick;
