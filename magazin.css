@@ -55,3 +55,15 @@ header{position:relative!important;top:0!important;background:#05112A!important;
 @media(max-width:700px){.hero .hero-video{object-position:60% center}}
 .hero-switch{position:absolute;right:6%;bottom:14px;z-index:4;display:flex;align-items:center;gap:8px;border:1px solid #ffffff55;border-radius:24px;padding:2px 8px;background:#05112acc;color:white;font-size:12px}
 .hero-switch button{background:none;border:0;color:inherit;font:inherit;font-size:21px;min-width:44px;min-height:44px;cursor:pointer}.hero-switch button:hover{color:#e6a83a}.hero:has(.hero-switch) .hero-video-credit{bottom:72px}
+
+/* Mobile main feature: preserve the complete two-person scene above the copy. */
+@media(max-width:700px){
+  #top.hero{display:block;min-height:0;background:#05112A}
+  #top.hero>img,#top.hero>.hero-video{inset:0 0 auto;width:100%;height:50vw;object-fit:contain;object-position:center;background:#05112A}
+  #top.hero:after{inset:0 0 auto;height:50vw;background:linear-gradient(0deg,#05112A,transparent 18%);pointer-events:none}
+  #top.hero .hero-copy{max-width:none;padding:calc(50vw + 20px) 6% 78px}
+  #top.hero h1{font-size:clamp(30px,8.6vw,43px);letter-spacing:-1px;line-height:1.08;margin:16px 0}
+  #top.hero .hero-copy p{max-width:none;margin:16px 0;font-size:15px;line-height:1.55}
+  #top.hero .hero-video-credit{top:12px;bottom:auto;right:12px;font-size:9px}
+  #top.hero .hero-switch{bottom:14px}
+}
