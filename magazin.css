@@ -47,3 +47,5 @@ header{position:relative!important;top:0!important;background:#05112A!important;
 .daily-picture-tile>img{object-position:center 56%}
 
 .compact-nav .nav-support{color:#fff;background:#c52239;padding:11px 14px;border-radius:5px;font-weight:800}.compact-nav{align-items:center;flex-wrap:wrap}
+
+.hero .hero-full-link{position:absolute;inset:0;z-index:3;display:block;cursor:pointer}.hero .hero-full-link:focus-visible{outline:3px solid #e6a83a;outline-offset:-6px}.hero:has(.hero-full-link:hover) .link{color:#e6a83a}

@@ -1,7 +1,7 @@
 """Refresh magazine sections using the existing editorial hero pool and article index."""
 from pathlib import Path
 import re,json
-from html import escape
+from html import escape, unescape
 
 def update_magazine(arts):
  p=Path('index.html');s=p.read_text(encoding='utf-8')
@@ -15,7 +15,11 @@ def update_magazine(arts):
  if len(items)<5:raise ValueError('Mindestens fünf vollständige Hero-Einträge erforderlich')
  def esc(t):return escape(t,quote=True)
  first=items[0]
- hero=f'''<section class="hero" id="top"><img src="images/{esc(first['img'])}" alt="{esc(first.get('alt',''))}"><div class="hero-copy"><span class="eyebrow">Top-Themen / {esc(first['kick'])}</span><h1>{esc(first['ttl'])}</h1><p>Politische Satire, fast so witzig wie Politiker. Aber gratis.</p><a class="link" href="artikel/{esc(first['file'])}">Zum Artikel ↗</a></div></section>'''
+ article=Path('artikel',first['file']).read_text(encoding='utf-8')
+ subtitle_match=re.search(r'<(?:div|p)[^>]*class=["\'][^"\']*\bsubheadline\b[^"\']*["\'][^>]*>(.*?)</(?:div|p)>',article,re.S)
+ subtitle=unescape(re.sub(r'<[^>]+>','',subtitle_match[1])).strip() if subtitle_match else ''
+ subtitle_html='<p>'+esc(subtitle)+'</p>' if subtitle else ''
+ hero=f'''<section class="hero" id="top"><img src="images/{esc(first['img'])}" alt="{esc(first.get('alt',''))}"><div class="hero-copy"><span class="eyebrow">Top-Themen / {esc(first['kick'])}</span><h1 id="hero-title">{esc(first['ttl'])}</h1>{subtitle_html}<span class="link" aria-hidden="true">Zum Artikel ↗</span></div><a class="hero-full-link" href="artikel/{esc(first['file'])}" aria-labelledby="hero-title"></a></section>'''
  small='<section class="small-heroes" aria-label="Weitere Top-Themen">'+''.join(f'''<a class="mini-hero" href="artikel/{esc(x['file'])}"><img src="images/{esc(x['img'])}" alt="{esc(x.get('alt',''))}" loading="lazy"><div><span>{esc(x['kick'])}</span><h2>{esc(x['ttl'])}</h2></div></a>''' for x in items[1:5])+'</section>'
  s=re.sub(r'<section class="hero" id="top">.*?</section>',lambda m:hero,s,count=1,flags=re.S)
  s=re.sub(r'<section class="small-heroes".*?</section>',lambda m:small,s,count=1,flags=re.S)
