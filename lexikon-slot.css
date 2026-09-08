@@ -23,3 +23,19 @@
 
 /* Fast continuous reel: identical halves make the loop seamless. */
 .reel-motion>div{display:flex;flex-direction:column;line-height:72px;animation:slot-fast-roll .65s linear infinite;filter:blur(3px);will-change:transform}.reel-motion>div>span{display:block;height:72px;min-height:72px;line-height:72px;white-space:nowrap;overflow:hidden;font-size:32px;letter-spacing:-1px;padding:0 10px}.reel-motion:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(#d9d0bcaa,transparent 20%,transparent 80%,#d9d0bcaa)}@keyframes slot-fast-roll{from{transform:translateY(0)}to{transform:translateY(-50%)}}@media(prefers-reduced-motion:reduce){.reel-motion>div{animation:none;filter:none}}
+
+/* Shared typography while rolling and at rest. */
+.slot-machine{--quote-size:clamp(23px,2.3vw,34px)}
+.slot-machine #quote,.slot-machine .reel-motion>div>span{font-family:inherit;font-size:var(--quote-size);font-weight:700;letter-spacing:-.8px;text-transform:none}
+/* On phones the spectator fills the screen width above the cabinet. */
+@media(max-width:540px){
+ .slot-scene{padding:24px 0;gap:12px;min-height:0}
+ .slot-intro{padding:0 20px;min-height:calc(135px + 80vw);width:100%}
+ .slot-intro h1{margin:18px 0 14px}
+ .slot-intro p{margin:0}
+ .slot-scene .fritz-stage .actor{inset:155px 0 auto;width:100%;height:80vw;object-fit:cover;object-position:center top;mask-image:linear-gradient(to bottom,#000 85%,transparent);mask-composite:add}
+ .slot-scene:before{background:linear-gradient(to bottom,#05112a 0,#05112a 125px,transparent 165px,transparent calc(135px + 80vw),#05112a calc(175px + 80vw))}
+ .slot-intro .photo-caption{left:20px;bottom:4px;z-index:1;text-shadow:0 1px 4px #000}
+ .slot-machine{--quote-size:25px;width:calc(100% - 24px)}
+ .slot-review{padding:0 12px}
+}

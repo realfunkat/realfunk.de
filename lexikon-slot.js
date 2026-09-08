@@ -3,7 +3,7 @@ const $=id=>document.getElementById(id),machine=$('machine'),lever=$('lever'),dr
 let bag=[],current=-1,busy=false,muted=false,audio,voices=[],dragStart=null,dragged=false,lastDrag=0;
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const reelStrip=document.querySelector('.reel-motion > div');
-const reelWords=lexicon.slice(0,18).map(x=>x.phrase.toLocaleUpperCase('de'));
+const reelWords=lexicon.slice(0,18).map(x=>'„'+x.phrase+'“');
 reelStrip.replaceChildren(...[...reelWords,...reelWords].map(word=>{const line=document.createElement('span');line.textContent=word;return line}));
 
 const stage=$('fritz-stage');
@@ -30,7 +30,7 @@ function spin(){
  if(busy)return;
  if(!bag.length)refill();
  current=bag.pop();
- const x=lexicon[current],duration=reduced?220:4042;
+ const x=lexicon[current],duration=reduced?220:2000;
  busy=true;draw.disabled=true;lever.setAttribute('aria-disabled','true');
  machine.classList.remove('landed','spinning');
  void machine.offsetWidth;
