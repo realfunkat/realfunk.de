@@ -53,6 +53,16 @@
     subtitle.textContent = slide.subtitle;
     subtitle.hidden = !slide.subtitle;
     hero.querySelector('.hero-full-link').href = 'artikel/' + slide.file;
+    // The other rotating feature occupies the first small tile.
+    const companion = slides[(index + 1) % slides.length];
+    const tile = document.querySelector('.small-heroes .mini-hero');
+    if (tile) {
+      tile.href = 'artikel/' + companion.file;
+      tile.querySelector('img').src = 'images/' + companion.img;
+      tile.querySelector('img').alt = companion.alt || '';
+      tile.querySelector('span').textContent = companion.kick;
+      tile.querySelector('h2').textContent = companion.ttl;
+    }
   }
   function sync() {
     clearTimeout(timer);
