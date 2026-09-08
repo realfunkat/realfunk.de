@@ -58,6 +58,6 @@ lever.addEventListener('pointermove',e=>{if(dragStart===null)return;const distan
 lever.addEventListener('pointerup',()=>{if(dragStart===null)return;dragStart=null;lever.style.setProperty('--pull','0px');if(dragged){lastDrag=performance.now();spin()}});
 lever.addEventListener('pointercancel',()=>{dragStart=null;lever.style.setProperty('--pull','0px')});
 lever.addEventListener('click',e=>{if(e.detail!==0&&performance.now()-lastDrag<400)return;spin()});draw.addEventListener('click',spin);
-const initial=lexicon.find(x=>x.id===10)||lexicon[0];$('quote').textContent='„'+initial.phrase+'“';$('translation').textContent=initial.translation;$('speaker').textContent=initial.speaker;$('context').textContent=initial.context;$('source').href=initial.source;
+const initial=lexicon[0];$('quote').textContent='„'+initial.phrase+'“';$('translation').textContent=initial.translation;$('speaker').textContent=initial.speaker;$('context').textContent=initial.context;$('source').href=initial.source;
 $('sound').addEventListener('click',()=>{muted=!muted;$('sound').textContent=muted?'♪ TON AUS':'♪ TON AN';$('sound').setAttribute('aria-pressed',String(!muted));$('sound').setAttribute('aria-label',muted?'Ton einschalten':'Ton ausschalten');if(muted)stopSound()});
 })();
