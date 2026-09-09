@@ -83,6 +83,11 @@ def write_sitemap(arts):
     urls = [f"  <url><loc>{SITE}{p}</loc><priority>{pr}</priority></url>" for p, pr in roots]
     for a in arts:
         urls.append(f"  <url><loc>{a['url']}</loc><lastmod>{a['date']}</lastmod><priority>0.7</priority></url>")
+    for page in sorted(glob.glob("bild-des-tages/*.html"), reverse=True):
+        name = page.split("/")[-1]
+        date_match = re.match(r"(\d{4}-\d{2}-\d{2})-", name)
+        lastmod = f"<lastmod>{date_match.group(1)}</lastmod>" if date_match else ""
+        urls.append(f"  <url><loc>{SITE}/{page}</loc>{lastmod}<priority>0.6</priority></url>")
     sm = ('<?xml version="1.0" encoding="UTF-8"?>\n'
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
           + "\n".join(urls) + "\n</urlset>\n")
@@ -101,6 +106,8 @@ if __name__ == "__main__":
         print(f"OG-Karten (Logo+Headline) generiert/aktualisiert: {ogimages.process()}")
     except Exception as e:
         print("OG-Schritt übersprungen:", e)
+    from bild_des_tages_build import build_daily_pictures
+    print(f"Bilder des Tages gebaut: {build_daily_pictures()}")
     arts = collect()
     write_feed(arts)
     write_sitemap(arts)
