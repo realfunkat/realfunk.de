@@ -15,8 +15,8 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "pisa-beweist-politik-wirkt.html", kick: "Deutschland", ttl: "PISA beweist: Politik wirkt", img: "20260909-pisa-politik-wirkt.png", alt: "KI-Satire: Ein Lehrer erklärt einer Schulklasse mit Tablets, ihre letzte Hoffnung sei künstliche Intelligenz" },
     { file: "cdu-insider-packt-aus.html", kick: "Deutschland", ttl: "EXKLUSIV: Ein CDU-Insider packt aus", img: "20260910-merz-cdu-insider.jpg", alt: "Friedrich Merz spricht am Rednerpult des Deutschen Bundestages" },
+    { file: "pisa-beweist-politik-wirkt.html", kick: "Deutschland", ttl: "PISA beweist: Politik wirkt", img: "20260909-pisa-politik-wirkt.png", alt: "KI-Satire: Ein Lehrer erklärt einer Schulklasse mit Tablets, ihre letzte Hoffnung sei künstliche Intelligenz" },
     { file: "von-der-leyen-fordert-neuwahl.html", kick: "EU", ttl: "Von der Leyen fordert Neuwahl", img: "20260907vonderleyen-neuwahl.png", alt: "KI-Satire: Ursula von der Leyen entreißt dem verblüfften Ulrich Siegmund auf einer AfD-Wahlparty den Siegerblumenstrauß" },
     { file: "spahn-schmeisst-den-haushalt.html", kick: "Deutschland", ttl: "Spahn schmeißt den Haushalt", img: "20260906spahn-haushalt.png", alt: "KI-Satire: Jens Spahn steht mit Schürze und Mehl unter der Nase in einer Küche" },
     { file: "experten-warnen-vor-weniger-problemen.html", kick: "Deutschland", ttl: "Experten warnen vor weniger Problemen", img: "20260906experten-warnen-weniger-probleme.png", alt: "KI-Satire: Ulrich Siegmund sitzt hinter dem Schreibtisch des Ministerpräsidenten und winkt, während Sven Schulze mit einer Kiste das Büro verlässt" },
