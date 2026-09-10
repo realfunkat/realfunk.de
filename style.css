@@ -71,3 +71,16 @@ footer strong{color:var(--ink);}
 .article .body a[href^="http"]:not([href*="realfunk.de"]):hover,.redaktion a[href^="http"]:not([href*="realfunk.de"]):hover{color:#40566f;text-decoration-color:#40566f;text-decoration-thickness:1px;}
 
 .dateline{font-size:13px;color:#8a93b2;margin:2px 0 14px;letter-spacing:.02em;}
+
+/* Pressekit-Satire: responsive Tabellen und hochkantiges Video. */
+.kit-article .body p:first-child{font-style:normal;font-size:17px;line-height:1.5;font-weight:400;color:var(--ink);}
+.translation-table-wrap{width:100%;overflow-x:auto;margin:0 0 24px;border:1px solid var(--line);border-radius:4px;-webkit-overflow-scrolling:touch;}
+.translation-table{width:100%;min-width:620px;border-collapse:collapse;background:#fff;color:#1c1c1c;font-size:15px;line-height:1.45;}
+.translation-table th,.translation-table td{padding:13px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);}
+.translation-table th{background:#05112A;color:#fff;font-size:12px;letter-spacing:.45px;text-transform:uppercase;}
+.translation-table th:first-child,.translation-table td:first-child{width:34%;font-weight:750;}
+.translation-table tbody tr:last-child td{border-bottom:0;}
+.translation-table tbody tr:nth-child(even){background:#f6f7fa;}
+.article-video{display:flex;justify-content:center;margin:10px 0 12px;}
+.article-video video{display:block;width:min(100%,430px);height:auto;max-height:80vh;background:#050505;border-radius:7px;box-shadow:0 8px 24px rgba(5,17,42,.2);}
+.tiktok-link{text-align:center;font-size:14px!important;}
