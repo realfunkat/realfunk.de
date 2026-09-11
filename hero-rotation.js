@@ -8,7 +8,11 @@
   // Shared two-hour slots: reloading does not restart the rotation.
   const slotDuration = 2 * 60 * 60 * 1000;
   const preview = new URLSearchParams(location.search).get('hero');
-  const previewFile = {spahn:'spahn-schmeisst-den-haushalt.html',neuwahl:'von-der-leyen-fordert-neuwahl.html'}[preview];
+  const previewFile = {
+    babler: 'bablers-neue-wirklichkeit.html',
+    merz: 'cdu-insider-packt-aus.html',
+    pisa: 'pisa-beweist-politik-wirkt.html'
+  }[preview];
   const controls = hero.querySelector(".hero-switch");
   let index = -1, timer, lastSlot = -1;
   function show(next) {
@@ -53,17 +57,18 @@
     subtitle.textContent = slide.subtitle;
     subtitle.hidden = !slide.subtitle;
     hero.querySelector('.hero-full-link').href = 'artikel/' + slide.file;
-    // The other rotating feature occupies the first small tile.
-    const companion = slides[(index + 1) % slides.length];
-    const tile = document.querySelector('.small-heroes .mini-hero');
-    if (tile) {
+    // The other two rotating features occupy the first two small tiles.
+    const companions = slides.filter((_, slideIndex) => slideIndex !== index);
+    document.querySelectorAll('.small-heroes .mini-hero').forEach((tile, tileIndex) => {
+      const companion = companions[tileIndex];
+      if (!companion || tileIndex > 1) return;
       tile.href = 'artikel/' + companion.file;
-      tile.dataset.wideScene = companion.file === 'von-der-leyen-fordert-neuwahl.html' ? 'true' : 'false';
+      tile.dataset.wideScene = 'false';
       tile.querySelector('img').src = 'images/' + companion.img;
       tile.querySelector('img').alt = companion.alt || '';
       tile.querySelector('span').textContent = companion.kick;
       tile.querySelector('h2').textContent = companion.ttl;
-    }
+    });
   }
   function sync() {
     clearTimeout(timer);

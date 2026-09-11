@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "bablers-neue-wirklichkeit.html", kick: "Österreich", ttl: "Endlich in Planung: Österreichs neue Wirklichkeit", img: "20260911-babler-neue-wirklichkeit-hero.png", alt: "KI-Satire: Andreas Babler als Kleinkind spielt vor einem Weihnachtsbaum mit einer ORF-Miniaturbühne und applaudierenden Spielfiguren" },
     { file: "cdu-insider-packt-aus.html", kick: "Deutschland", ttl: "EXKLUSIV: Ein CDU-Insider packt aus", img: "20260910-merz-cdu-insider.jpg", alt: "Friedrich Merz spricht am Rednerpult des Deutschen Bundestages" },
     { file: "pisa-beweist-politik-wirkt.html", kick: "Deutschland", ttl: "PISA beweist: Politik wirkt", img: "20260909-pisa-politik-wirkt.png", alt: "KI-Satire: Ein Lehrer erklärt einer Schulklasse mit Tablets, ihre letzte Hoffnung sei künstliche Intelligenz" },
     { file: "von-der-leyen-fordert-neuwahl.html", kick: "EU", ttl: "Von der Leyen fordert Neuwahl", img: "20260907vonderleyen-neuwahl.png", alt: "KI-Satire: Ursula von der Leyen entreißt dem verblüfften Ulrich Siegmund auf einer AfD-Wahlparty den Siegerblumenstrauß" },

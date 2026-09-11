@@ -20,9 +20,15 @@ def update_magazine(arts):
  subtitle=unescape(re.sub(r'<[^>]+>','',subtitle_match[1])).strip() if subtitle_match else ''
  subtitle_html='<p>'+esc(subtitle)+'</p>' if subtitle else ''
  hero=f'''<section class="hero" id="top"><img src="images/{esc(first['img'])}" alt="{esc(first.get('alt',''))}"><div class="hero-copy"><span class="eyebrow">Top-Themen / {esc(first['kick'])}</span><h1 id="hero-title">{esc(first['ttl'])}</h1>{subtitle_html}<span class="link" aria-hidden="true">Zum Artikel ↗</span></div><a class="hero-full-link" href="artikel/{esc(first['file'])}" aria-labelledby="hero-title"></a></section>'''
- # Der erste HERO_POOL-Eintrag bleibt statisch, bis die Redaktion ihn manuell ersetzt.
- # Keine zeitgesteuerte Rotation und keine Pfeile im Hauptaufmacher.
- s=re.sub(r'<script defer src="hero-rotation\.js[^\"]*"></script>','',s)
+ rotation=[]
+ for item in items[:3]:
+  article=Path('artikel',item['file']).read_text(encoding='utf-8')
+  sub=re.search(r'<(?:div|p)[^>]*class=["\'][^"\']*\bsubheadline\b[^"\']*["\'][^>]*>(.*?)</(?:div|p)>',article,re.S)
+  rotation.append(dict(item,subtitle=unescape(re.sub(r'<[^>]+>','',sub[1])).strip() if sub else ''))
+ payload=json.dumps(rotation,ensure_ascii=False).replace('<','\\u003c')
+ controls='<div class="hero-switch" hidden><button type="button" data-hero-prev aria-label="Vorheriges Top-Thema">←</button><span data-hero-position></span><button type="button" data-hero-next aria-label="Nächstes Top-Thema">→</button></div>'
+ hero=hero.replace('</section>',controls+'<script type="application/json" id="hero-rotation-data">'+payload+'</script></section>')
+ if 'src="hero-rotation.js' not in s:s=s.replace('</body>','<script defer src="hero-rotation.js?v=20260911-three"></script></body>')
  small='<section class="small-heroes" aria-label="Weitere Top-Themen">'+''.join(f'''<a class="mini-hero" href="artikel/{esc(x['file'])}"><img src="images/{esc(x['img'])}" alt="{esc(x.get('alt',''))}" loading="lazy"><div><span>{esc(x['kick'])}</span><h2>{esc(x['ttl'])}</h2></div></a>''' for x in items[1:5])+'</section>'
  s=re.sub(r'<section class="hero" id="top">.*?</section>',lambda m:hero,s,count=1,flags=re.S)
  s=re.sub(r'<section class="small-heroes".*?</section>',lambda m:small,s,count=1,flags=re.S)
@@ -35,6 +41,7 @@ def update_magazine(arts):
   rows.append(f'''<a href="artikel/{esc(a['file'])}"><span class="story-topic">{esc(topic)}</span><strong>{esc(a['title'])}</strong><time datetime="{esc(a['date'])}">{esc('.'.join(a['date'].split('-')[::-1]))}</time><span aria-hidden="true">↗</span></a>''')
  stories='<section class="top-stories" id="meldungen"><div class="section-head"><h2>Meldungen</h2><p>Weitere Meldungen aus den Ressorts.</p></div><div class="story-list">'+''.join(rows)+'</div></section>'
  s=re.sub(r'<section class="top-stories".*?</section>',lambda m:stories,s,count=1,flags=re.S)
+ s=re.sub(r'(<meta property="og:image" content=")[^"]*(">)',lambda m:m.group(1)+'https://realfunk.de/images/'+first['img']+m.group(2),s,count=1)
  p.write_text(s,encoding='utf-8')
  p=Path('archiv.html');s=p.read_text(encoding='utf-8')
  data=[{'t':a['title'],'d':a['desc'],'u':'/artikel/'+a['file'],'r':a['ressort'],'date':a['date'],'href':'artikel/'+a['file']} for a in arts]
