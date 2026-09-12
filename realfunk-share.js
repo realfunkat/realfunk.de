@@ -1,5 +1,6 @@
 (() => {
-  const url = document.querySelector('link[rel="canonical"]').href;
+  const canonical = document.querySelector('link[rel="canonical"]').href;
+  const url = document.querySelector('meta[property="og:url"]')?.content || canonical;
   const title = document.querySelector('meta[property="og:title"]').content;
   document.querySelectorAll('.rf-share').forEach(bar => {
     const status = bar.querySelector('[data-share-status]');
