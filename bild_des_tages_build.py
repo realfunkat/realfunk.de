@@ -95,7 +95,9 @@ def archive_page(entries: list[dict[str, str]]) -> str:
 def update_homepage(latest: dict[str, str]) -> None:
     path = ROOT / "index.html"
     source = path.read_text(encoding="utf-8")
-    replacement = f'''<a class="format-tile daily-picture-tile" href="bild-des-tages/{escape(filename(latest), quote=True)}" target="_blank" rel="noopener"><img src="images/{escape(latest["image"], quote=True)}" alt="{escape(latest["alt"], quote=True)}" loading="lazy"><div class="tile-copy"><span class="eyebrow">Bild des Tages</span><h3>{escape(latest["title"].rstrip("."))}</h3><p>{escape(latest["teaser"])}</p><span class="tile-cta">Bild ansehen →</span></div></a>'''
+    title = latest["title"]
+    homepage_title = title[:-1] if title.endswith(".") and not title.endswith("...") else title
+    replacement = f'''<a class="format-tile daily-picture-tile" href="bild-des-tages/{escape(filename(latest), quote=True)}" target="_blank" rel="noopener"><img src="images/{escape(latest["image"], quote=True)}" alt="{escape(latest["alt"], quote=True)}" loading="lazy"><div class="tile-copy"><span class="eyebrow">Bild des Tages</span><h3>{escape(homepage_title)}</h3><p>{escape(latest["teaser"])}</p><span class="tile-cta">Bild ansehen →</span></div></a>'''
     updated, count = re.subn(
         r'<a class="format-tile daily-picture-tile".*?</a>',
         replacement,
