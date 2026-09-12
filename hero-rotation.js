@@ -5,8 +5,9 @@
   if (!hero || !data) return;
   const slides = JSON.parse(data.textContent);
   if (slides.length < 2) return;
-  // Shared two-hour slots: reloading does not restart the rotation.
-  const slotDuration = 2 * 60 * 60 * 1000;
+  // Shared eight-second slots: reloading does not restart the rotation.
+  const slotDuration = 8 * 1000;
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const preview = new URLSearchParams(location.search).get('hero');
   const previewFile = {
     babler: 'bablers-neue-wirklichkeit.html',
@@ -43,7 +44,7 @@
       credit.textContent = 'KI-Satire';
       hero.append(credit);
       // Play once, then retain the final frame. The still remains as fallback.
-      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      if (!reducedMotion.matches) {
         video.play().catch(() => video.remove());
       }
     }
@@ -74,15 +75,23 @@
     clearTimeout(timer);
     const now = Date.now();
     const slot = Math.floor(now / slotDuration);
+    if (previewFile || reducedMotion.matches) {
+      if (lastSlot === -1) {
+        show(previewFile ? Math.max(0, slides.findIndex(slide => slide.file === previewFile)) : slot % slides.length);
+      }
+      lastSlot = slot;
+      return;
+    }
     if (slot !== lastSlot) {
-    show(previewFile ? Math.max(0, slides.findIndex(slide => slide.file === previewFile)) : Math.floor(now / slotDuration) % slides.length);
-    lastSlot = slot;
+      show(slot % slides.length);
+      lastSlot = slot;
     }
     timer = setTimeout(sync, slotDuration - (now % slotDuration) + 50);
   }
   document.addEventListener('visibilitychange', () => {
     if (!document.hidden) sync();
   });
+  reducedMotion.addEventListener?.('change', sync);
   if (controls) {
     controls.hidden = false;
     controls.querySelector('[data-hero-prev]').addEventListener('click', () => show(index - 1));
