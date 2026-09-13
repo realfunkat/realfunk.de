@@ -10,6 +10,7 @@
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const preview = new URLSearchParams(location.search).get('hero');
   const previewFile = {
+    afd: 'afd-tarnt-wahlwerbung-als-fuck-afd-protest.html',
     babler: 'bablers-neue-wirklichkeit.html',
     merz: 'cdu-insider-packt-aus.html',
     pisa: 'pisa-beweist-politik-wirkt.html'
@@ -58,11 +59,11 @@
     subtitle.textContent = slide.subtitle;
     subtitle.hidden = !slide.subtitle;
     hero.querySelector('.hero-full-link').href = 'artikel/' + slide.file;
-    // The other two rotating features occupy the first two small tiles.
+    // The other rotating features occupy the first companion tiles.
     const companions = slides.filter((_, slideIndex) => slideIndex !== index);
     document.querySelectorAll('.small-heroes .mini-hero').forEach((tile, tileIndex) => {
       const companion = companions[tileIndex];
-      if (!companion || tileIndex > 1) return;
+      if (!companion || tileIndex >= slides.length - 1) return;
       tile.href = 'artikel/' + companion.file;
       tile.dataset.wideScene = 'false';
       tile.querySelector('img').src = 'images/' + companion.img;
