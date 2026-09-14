@@ -15,6 +15,7 @@
    * KEIN taeglicher Push noetig — der Kalender macht das.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
+    { file: "falsch-waehlen-gerade-noch-vereitelt.html", kick: "Deutschland", ttl: "Falsch wählen gerade noch vereitelt", img: "20260914-falsch-waehlen-gerade-noch-vereitelt.jpg", alt: "Wahlhelfer sortieren Stimmzettel auf einem Tisch" },
     { file: "bablers-neue-wirklichkeit.html", kick: "Österreich", ttl: "Endlich in Planung: Österreichs neue Wirklichkeit", img: "20260911-babler-neue-wirklichkeit-hero.png", alt: "KI-Satire: Andreas Babler als Kleinkind spielt vor einem Weihnachtsbaum mit einer ORF-Miniaturbühne und applaudierenden Spielfiguren" },
     { file: "afd-tarnt-wahlwerbung-als-fuck-afd-protest.html", kick: "Deutschland", ttl: "AfD tarnt Wahlwerbung als „FCKAFD“-Protest", img: "20260913-afd-wahlwerbung-protest-v2.jpeg", alt: "KI-Satire: Ein weißer Hund uriniert neben einem knienden Mann in Hundemaske bei einem Straßenfest" },
     { file: "cdu-insider-packt-aus.html", kick: "Deutschland", ttl: "EXKLUSIV: Ein CDU-Insider packt aus", img: "20260910-merz-cdu-insider.jpg", alt: "Friedrich Merz spricht am Rednerpult des Deutschen Bundestages" },
@@ -141,7 +142,7 @@
   var HERO_PIN   = 2;
   var HERO_MAX   = 8;
   var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82822;
+  var HERO_EPOCH   = 82841;
 
   var HERO_ITEMS = (function () {
     var pool = HERO_POOL
