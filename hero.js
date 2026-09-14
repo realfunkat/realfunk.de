@@ -1,18 +1,16 @@
 /* ORealFunk – zentrale Hero-Section.
    Erscheint oben auf der Startseite UND auf jeder Artikel-Unterseite.
-   TÄGLICH NUR DIESE DATEI ÄNDERN: die Einträge in HERO_ITEMS unten.
+   TÄGLICH NUR DIESE DATEI ÄNDERN: die Einträge in HERO_POOL unten.
    Reihenfolge: erster Eintrag = großes Tile (Leitartikel), danach die kleinen.
    img: Dateiname im images/-Ordner (z. B. "klima.jpeg"). Leer "" = Platzhalter "Bild folgt".
    Bilder gibt es NUR hier im Hero – Artikelseiten selbst bekommen keine neuen Bilder. */
 
 (function () {
   /* ------------------------------------------------------------------ *
-   * HERO_POOL — der Vorrat, aus dem der Hero taeglich 5 Kacheln zieht.
-   * Neue Artikel kommen NACH VORNE. 6 bis 10 Eintraege sind gesund.
+   * HERO_POOL — Artikelvorrat in chronologischer Reihenfolge.
+   * Neue Artikel kommen NACH VORNE.
    * Jeder Eintrag braucht file, kick, ttl, img, alt.
-   * Die Rotation unten waehlt daraus jeden Tag ein anderes 5er-Fenster,
-   * damit der Leser morgens nicht dasselbe sieht wie am Vorabend.
-   * KEIN taeglicher Push noetig — der Kalender macht das.
+   * Im Hero erscheinen immer nur die vier neuesten Artikel.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
     { file: "falsch-waehlen-gerade-noch-vereitelt.html", kick: "Deutschland", ttl: "Falsch wählen gerade noch vereitelt", img: "20260914-falsch-waehlen-gerade-noch-vereitelt.jpg", alt: "Wahlhelfer sortieren Stimmzettel auf einem Tisch" },
@@ -128,42 +126,10 @@
     { file: "zwei-ueberschriften-ein-artikel.html", kick: "Durchschaut", ttl: "Zwei Überschriften, ein Artikel", img: "20260714grenzen.webp", alt: "Ein Zeitungskiosk in der Daemmerung mit zwei widerspruechlichen Schlagzeilen zum selben Thema" }
   ];
 
-  /* ------------------------------------------------------------------ *
-   * ROTATION
-   * HERO_PIN   : die ersten N Pool-Eintraege (= die NEUESTEN) stehen IMMER
-   *              in den zwei grossen Kacheln. Kein Karussell im Leitartikel.
-   * HERO_MAX   : nur die ersten N Pool-Eintraege zaehlen. Neuen Artikel
-   *              VORNE einfuegen -> der aelteste faellt automatisch raus.
-   * HERO_HOURS : alle wieviel Stunden die drei kleinen Kacheln wechseln.
-   * HERO_EPOCH : Nullpunkt. Bei jedem Push mit neuem Artikel neu setzen:
-   *              node -e 'console.log(Math.floor(Date.now()/(6*3600000)))'
-   * Kein Push noetig — die Uhr macht das.
-   * ------------------------------------------------------------------ */
-  var HERO_PIN   = 2;
-  var HERO_MAX   = 8;
-  var HERO_HOURS = 6;
-  var HERO_EPOCH   = 82841;
-
-  var HERO_ITEMS = (function () {
-    var pool = HERO_POOL
-      .filter(function (x) { return x && x.file && x.kick && x.ttl; })
-      .slice(0, HERO_MAX);
-    if (pool.length <= 5) return pool;
-    var pinned = pool.slice(0, HERO_PIN);          // die zwei neuesten, immer gross
-    var rest   = pool.slice(HERO_PIN);             // die uebrigen sechs
-    var slots  = 5 - HERO_PIN;                     // drei kleine Kacheln
-    var step   = Math.floor(Date.now() / (HERO_HOURS * 3600000)) - HERO_EPOCH;
-
-    // Die gepinnten Kacheln bleiben oben, tauschen aber bei jedem Wechsel
-    // die Seite (links <-> rechts). Bewegung oben, ohne die Hierarchie zu verlieren.
-    var swap = ((step % pinned.length) + pinned.length) % pinned.length;
-    var out = [];
-    for (var p = 0; p < pinned.length; p++) { out.push(pinned[(p + swap) % pinned.length]); }
-
-    var start = ((step % rest.length) + rest.length) % rest.length;
-    for (var i = 0; i < slots; i++) { out.push(rest[(start + i) % rest.length]); }
-    return out;
-  })();
+  var HERO_MAX = 4;
+  var HERO_ITEMS = HERO_POOL
+    .filter(function (x) { return x && x.file && x.kick && x.ttl; })
+    .slice(0, HERO_MAX);
 
 
   var inArtikel = /\/artikel\//.test(location.pathname);
