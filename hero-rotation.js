@@ -10,6 +10,7 @@
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const preview = new URLSearchParams(location.search).get('hero');
   const previewFile = {
+    sprit: 'regierung-deckelt-spritpreis-bei-sieben-euro.html',
     afd: 'afd-tarnt-wahlwerbung-als-fuck-afd-protest.html',
     babler: 'bablers-neue-wirklichkeit.html',
     merz: 'cdu-insider-packt-aus.html',
@@ -33,6 +34,7 @@
       video.className = 'hero-video';
       video.muted = true;
       video.defaultMuted = true;
+      video.loop = true;
       video.playsInline = true;
       video.setAttribute('playsinline', '');
       video.setAttribute('aria-hidden', 'true');
@@ -44,7 +46,7 @@
       credit.className = 'hero-video-credit';
       credit.textContent = 'KI-Satire';
       hero.append(credit);
-      // Play once, then retain the final frame. The still remains as fallback.
+      // Keep the short clip moving while its slide is active. The still remains as fallback.
       if (!reducedMotion.matches) {
         video.play().catch(() => video.remove());
       }
