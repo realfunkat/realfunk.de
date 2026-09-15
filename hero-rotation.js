@@ -34,7 +34,6 @@
       video.className = 'hero-video';
       video.muted = true;
       video.defaultMuted = true;
-      video.loop = true;
       video.playsInline = true;
       video.setAttribute('playsinline', '');
       video.setAttribute('aria-hidden', 'true');
@@ -46,7 +45,7 @@
       credit.className = 'hero-video-credit';
       credit.textContent = 'KI-Satire';
       hero.append(credit);
-      // Keep the short clip moving while its slide is active. The still remains as fallback.
+      // Play once, then retain the final frame. The still remains as fallback.
       if (!reducedMotion.matches) {
         video.play().catch(() => video.remove());
       }
