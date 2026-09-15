@@ -86,7 +86,8 @@ def detail_page(item: dict[str, str], older: dict[str, str] | None, newer: dict[
     description = item["teaser"] or item["title"]
     main_class = "daily-picture daily-detail" if show_comment else "daily-picture daily-detail daily-picture-standalone"
     if show_comment:
-        caption = f'''<figcaption><span class="eyebrow">DER REALFUNK-KOMMENTAR</span><p>{escape(item["comment"])}</p><p class="daily-punchline">{escape(item["punchline"])}</p><small>{escape(item["credit"])}</small></figcaption>'''
+        punchline = f'<p class="daily-punchline">{escape(item["punchline"])}</p>' if item["punchline"] else ""
+        caption = f'''<figcaption><span class="eyebrow">DER REALFUNK-KOMMENTAR</span><p>{escape(item["comment"])}</p>{punchline}<small>{escape(item["credit"])}</small></figcaption>'''
     else:
         credit = item["credit"].strip()
         caption = f'''<figcaption class="daily-credit-only"><small>{escape(credit)}</small></figcaption>''' if credit else ""
