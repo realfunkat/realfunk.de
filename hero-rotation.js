@@ -10,9 +10,9 @@
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const preview = new URLSearchParams(location.search).get('hero');
   const previewFile = {
+    kinder: 'eu-schuetzt-kinder-vor-falscher-beeinflussung.html',
     sprit: 'regierung-deckelt-spritpreis-bei-sieben-euro.html',
     afd: 'afd-tarnt-wahlwerbung-als-fuck-afd-protest.html',
-    babler: 'bablers-neue-wirklichkeit.html',
     merz: 'cdu-insider-packt-aus.html',
     pisa: 'pisa-beweist-politik-wirkt.html'
   }[preview];
