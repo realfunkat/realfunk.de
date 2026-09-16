@@ -5,8 +5,9 @@
   if (!hero || !data) return;
   const slides = JSON.parse(data.textContent);
   if (slides.length < 2) return;
-  // Shared eight-second slots: reloading does not restart the rotation.
-  const slotDuration = 8 * 1000;
+  // Shared twelve-second slots: enough time for the video and headline,
+  // while reloading still does not restart the rotation.
+  const slotDuration = 12 * 1000;
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const preview = new URLSearchParams(location.search).get('hero');
   const previewFile = {
