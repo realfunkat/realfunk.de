@@ -13,7 +13,7 @@
    * Im Hero erscheinen immer nur die vier neuesten Artikel.
    * ------------------------------------------------------------------ */
   var HERO_POOL = [
-    { file: "eu-schuetzt-kinder-vor-falscher-beeinflussung.html", kick: "EU", ttl: "EU schützt Kinder vor jeder Beeinflussung, die nicht von der EU kommt", img: "20260916-eu-kinderschutz-hero.jpg", video: "videos/20260916-eu-kinderschutz.mp4", alt: "KI-Satire: Ein EU-Beamter steckt das konfiszierte Smartphone ein und weist einen Jungen in einen Raum mit einer Drag-Vorlesestunde" },
+    { file: "eu-schuetzt-kinder-vor-falscher-beeinflussung.html", kick: "EU", ttl: "EU kümmert sich rührend um unsere Kinder", img: "20260916-eu-kinderschutz-hero.jpg", video: "videos/20260916-eu-kinderschutz.mp4", alt: "KI-Satire: Ein EU-Beamter steckt das konfiszierte Smartphone ein und weist einen Jungen in einen Raum mit einer Drag-Vorlesestunde" },
     { file: "regierung-deckelt-spritpreis-bei-sieben-euro.html", kick: "Deutschland", ttl: "Regierung deckelt Spritpreis bei sieben Euro", img: "20260915-spritpreise-hero.png", video: "videos/20260915-spritpreise.mp4", alt: "KI-Satire: Eine deutsche Tankstelle zeigt wechselnde Fantasiepreise von bis zu knapp zehn Euro pro Liter" },
     { file: "falsch-waehlen-gerade-noch-vereitelt.html", kick: "Deutschland", ttl: "Falsch wählen gerade noch vereitelt", img: "20260914-falsch-waehlen-gerade-noch-vereitelt.jpg", alt: "Wahlhelfer sortieren Stimmzettel auf einem Tisch" },
     { file: "afd-tarnt-wahlwerbung-als-fuck-afd-protest.html", kick: "Deutschland", ttl: "AfD tarnt Wahlwerbung als „FCKAFD“-Protest", img: "20260913-afd-wahlwerbung-protest-v2.jpeg", alt: "KI-Satire: Ein weißer Hund uriniert neben einem knienden Mann in Hundemaske bei einem Straßenfest" },
